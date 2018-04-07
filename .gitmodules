@@ -1,0 +1,3 @@
+[submodule "all-hugo-themes"]
+	path = all-hugo-themes
+	url = https://github.com/gohugoio/hugoThemes.git
