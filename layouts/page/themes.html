@@ -1,0 +1,147 @@
+{{ define "main" }}
+
+<!--{
+  "name": "BluestNight",
+  "license": "MIT",
+  "licenselink": "https://gitlab.com/BluestNight/BluestNight/blob/master/LICENSE.md",
+  "description": "A featureful, configurable, yet sleek dark theme for Hugo.",
+  "homepage": "https://bluestnight.shadow53.com/",
+  "tags": ["Blog", "Contact Form", "Custom Colors", "Dark", "Error Validation", "Font Awesome", "Netlify", "Responsive", "Syntax Highlighting", "Search", "Widgets", "Writing"],
+  "min_version": 0.3,
+  "author": {
+    "name": "Michael Bryant",
+    "homepage": "https://shadow53.com"
+  },
+  "path": "BluestNight",
+  "hasimage": true
+}-->
+
+{{ $.Scratch.Set "tags" (slice ) }}
+{{ $.Scratch.Set "licenses" (slice ) }}
+{{ $.Scratch.Set "hugoversion" (slice ) }}
+
+
+
+
+{{ range .Site.Data.themes.themes  }}
+  {{ range .tags }}
+    {{ if and ( not ( in ( $.Scratch.Get "tags" ) ( . | urlize ) ) ) ( gt ( len . ) 0 ) }}
+      {{ $.Scratch.Add "tags" ( slice ( . | urlize ) ) }}
+    {{ end }}
+  {{ end }}
+  
+  {{ if and ( not ( in ( $.Scratch.Get "licenses" ) ( .license | replaceRE "[.]" "_" | urlize ) ) ) ( gt ( len .license ) 0 ) }}
+    {{ $.Scratch.Add "licenses" ( slice ( .license | replaceRE "[.]" "_" | urlize ) ) }}
+  {{ end }}
+  
+  {{ with .min_version }}
+      {{ if ( not ( in ( $.Scratch.Get "hugoversion" ) ( string . ) ) )  }}
+        {{ $.Scratch.Add "hugoversion" ( slice ( string . ) ) }}
+      {{ end }}
+  {{ end }}
+  
+{{ end }}
+
+
+
+<div class="outer-wrapper row padding">
+  
+  <div class="wrapper col row gutters">
+
+    <div class="col col-8 themes-wrapper padding">
+      <h4>Showing <span id="selectedThemeCount"></span> of {{ len .Site.Data.themes.themes }} themes</h4>
+      <div class="scroll-container padding">
+        <div class="theme-box-container" >
+          
+          <div class="wall">
+        
+        {{ range  .Site.Data.themes.themes }}
+        <div class="item">
+        <div 
+            id="theme-{{.name|urlize}}"
+            class="filterDiv box theme-box"
+            data-tags="{{ range .tags }}{{ . | urlize }} {{ end }}"
+            data-license="{{ .license | replaceRE "[.]" "_" |urlize}}"
+            data-version="0"
+            data-minver="{{.min_version}}"
+            >
+          <a href="https://themes.gohugo.io/{{.path | urlize}}"><h6>{{.name}}</h6></a>
+          <br />{{ .min_version }} 
+          <br />{{ .license }}  
+          <br />{{ range .tags }}<span class="label outline">{{ . | humanize | upper }}</span> {{ end }}
+        </div>
+        
+      </div>
+
+        {{ end }}
+        </div>
+      
+      </div>
+      </div>
+
+    </div>
+    
+    <div class="col col-4 tabs-wrapper">
+      
+      
+        
+      
+        <nav class="tabs" data-component="tabs">
+          <ul>
+            <li class="active"><a href="#tab1">Tags</a></li>
+            <li><a href="#tab2">Licenses</a></li>
+            <li><a href="#tab3">Hugo Version</a></li>
+          </ul>
+        </nav>
+
+        <div id="tab1" class="tab-buttons-container">
+          <h4>{{ len ($.Scratch.Get "tags") }} tags</h4>
+          <div class="scroll-container">
+            <div class="tag-container">
+              
+              <button class="btn button small secondary outline w95" id="selectAllTags" onclick="showAll()"> Show all</button>
+              {{ range ( $.Scratch.Get "tags" ) }}
+              <button class="btn button small secondary outline tag-btn {{.}}" id="t-{{. | urlize }}" onclick="tagsCheck('{{ . | urlize }}', 't-')"> {{ . | humanize | upper }}</button>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+          
+        <div id="tab2" class="tab-buttons-container">
+          <h4>{{ len ($.Scratch.Get "licenses") }} tags</h4>
+          <div class="scroll-container">
+            <div class="tag-container">
+            
+              <button class="button small secondary outline active w95" id="selectAllLicenses" onclick="licenseCheck('')">
+                All Licenses
+              </button>
+              {{ range sort ( $.Scratch.Get "licenses" ) "value" "asc" }}
+              <button class="button small secondary outline license-btn" id="l-{{ . | urlize }}" onclick="tagsCheck('{{ . | urlize}}', 'l-')">
+                {{ . | replaceRE "[_]" "." | humanize | upper }}
+              </button>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+        
+        <div id="tab3" class="">
+          <form class="form">
+            <div class="form-item">
+                <label>Hugo Version <span class="desc"></span></label>
+                <select class="small" id="versionSelect" onchange="versionSelected()">
+                  <option>Select All</option>
+                  {{range sort ($.Scratch.Get "hugoversion") "value" "desc" }}<option>{{.}}</option>{{end}}
+                </select>
+            </div>
+          </form>
+        </div>
+        
+    </div>
+    
+    </div>
+
+  </div>
+
+
+
+{{ end }}

@@ -1,0 +1,18 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "My New Hugo Site"
+
+[params]
+  subtitle = "Adventures in Hugoland"
+  copyright = "Copyright © 2018"
+  author = "Pointy Far"
+
+  footerNotice = "Powered by Hugo. Themed by PointyFar"
+
+  mainSections = ["post", "themes"]
+  
+  brand = "Pointy's"
+  heroImage = "stock/beach.jpeg"
+  bundleCss = "/bundle.css"
+  bundleJs = "/bundle.js"
+

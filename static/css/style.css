@@ -1,0 +1,118 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.outer-wrapper {
+}
+.wrapper {
+  padding: 10px;yyy
+  border: 0px solid red;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+.tabs-wrapper {
+  border: 0px solid blue;
+  display: flex;
+  flex-direction: column;
+}
+
+.themes-wrapper {
+  border: 0px solid yellow;
+  display: flex;
+  flex-direction: column;
+}
+
+.scroll-container {
+  overflow-y: auto;
+  
+}
+
+
+.tab-buttons-container {
+  display: flex;
+  flex-direction: column;
+  border: 0px dashed pink;
+}
+
+.tag-container, .license-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tag-btn, .license-btn {
+  margin:2px;
+}
+
+.box {
+  border: 1px solid rgba(0,0,0,.25);
+  
+}
+
+.theme-box-container {
+  padding: 0;
+  flex: 1 0 auto;
+  margin: 4px;
+}
+
+.theme-box {
+  text-align: center;
+  font-size: 80%;
+  width: 100%;
+  padding: 20px 4px;
+}
+
+.grid-item {
+  padding: 0 4px 4px 4px;;
+  
+}
+
+.wall {
+  -moz-column-width: 13em;
+  -webkit-column-width: 13em;
+  -moz-column-gap: 1em;
+  -webkit-column-gap: 1em;
+}
+
+.item {
+  display: none;
+  width: 100%;
+  height:auto;
+}
+
+.show-item {
+  display: inline-block;
+  
+}
+
+.filterDiv {
+    float: left;
+    font-size: 10px; 
+    min-height: 100px;
+    text-align: center;
+    border: 1px solid rgba(0,0,0,.07);
+    margin-bottom: 8px;
+    display: none; /* Hidden by default */
+}
+
+.padding {
+  padding: 4px;
+}
+
+
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+/* Add a dark background to the active button */
+button.active {
+  background-color: #313439 !important;
+  color: white !important;
+}

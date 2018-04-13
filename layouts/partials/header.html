@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html{{ with .Site.LanguageCode }} lang="{{ . }}"{{ end }}>
+
+<head>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Slab">
+
+  <link rel="stylesheet" href="{{ "/vendor/kube/dist/css/kube.min.css" | relURL }}" />
+
+  <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}" />
+
+  {{ .Hugo.Generator }}
+  
+</head>
+
+<body >

@@ -1,0 +1,20 @@
+{
+  "name": "filterable-hugo-themes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "PointyFar",
+  "scripts": {},
+  "devDependencies": {
+    "del": "^3.0.0",
+    "file-loader": "^1.1.11",
+    "gulp": "gulpjs/gulp#4.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-util": "^3.0.8",
+    "node-sass": "^4.8.3",
+    "toml": "^2.3.3"
+  },
+  "dependencies": {
+    "shufflejs": "^5.1.2"
+  }
+}

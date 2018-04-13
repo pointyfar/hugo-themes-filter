@@ -1,0 +1,12 @@
+{{ define "main" }}
+
+  {{ range (.Site.RegularPages.GroupByDate "2006").Reverse }}
+    <h1>{{ .Key }}</h1>
+    <ol>
+    {{ range (where .Pages "Type" "post").Reverse }}
+      <li><a href="{{.Permalink}}">{{.Title}}</a></li>
+    {{ end }}
+    </ol>
+  {{ end }}
+
+{{ end }}
