@@ -15,7 +15,7 @@ Hello! I am PointyFar and I am new(-ish) to Hugo. I like cats.
 
 #### What 
 
-This project lets you filter through Hugo themes by tags, license, and Hugo version. 
+**PFHT: PointyFar's Filterable Hugo Themes** lets you filter through Hugo themes by tags, license, and Hugo version. 
 
 #### Why
 
@@ -28,3 +28,7 @@ Code is hosted on [github](https://github.com/pointyfar/hugo-themes-filter).
 #### How 
 
 I `git submodule`-d the [Hugo themes repo](https://github.com/gohugoio/hugoThemes). A bit of `gulp`-ing produces  `data/themes.json` which I then use to extract data from.
+
+#### Whooops
+
+Find something broken? Do let me know by emailing me at [pointyfar@gmail.com](mailto:pointyfar@gmail.com)! 
