@@ -11,7 +11,7 @@ menu:
 
 #### Who 
 
-Hello! I am PointyFar. I am new(-ish) to web dev and even newer(-ish) to Hugo. I like cats.
+Hello! I am PointyFar and I am new(-ish) to Hugo. I like cats.
 
 #### What 
 
