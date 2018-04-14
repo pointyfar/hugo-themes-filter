@@ -9,10 +9,5 @@ title = "My New Hugo Site"
 
   footerNotice = "Powered by Hugo. Themed by PointyFar"
 
-  mainSections = ["post", "themes"]
-  
   brand = "Pointy's"
-  heroImage = "stock/beach.jpeg"
-  bundleCss = "/bundle.css"
-  bundleJs = "/bundle.js"
 
