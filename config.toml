@@ -1,6 +1,6 @@
-baseURL = "http://example.org/"
+baseURL = "https://pfht.netlify.com/"
 languageCode = "en-us"
-title = "Hugo Themes Filter"
+title = "PointyFar's Filterable Hugo Themes"
 
 [params]
   copyright = "Copyright © 2018"
