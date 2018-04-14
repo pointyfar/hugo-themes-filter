@@ -1,7 +1,6 @@
 {
   "name": "filterable-hugo-themes",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
   "author": "PointyFar",
   "scripts": {},
@@ -15,6 +14,5 @@
     "toml": "^2.3.3"
   },
   "dependencies": {
-    "shufflejs": "^5.1.2"
   }
 }
