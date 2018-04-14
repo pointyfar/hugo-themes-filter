@@ -3,16 +3,82 @@
 }
 
 .outer-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
 }
 .wrapper {
-  padding: 10px;yyy
-  border: 0px solid red;
+  padding: 20px 36px 0 36px;
+  
   display: flex;
   flex-direction: row;
-  height: 100vh;
   overflow: hidden;
 }
+.header {
+  display: flex;
+  align-items: center;
+  flex: 1 0 auto;
+  height: auto;
+  padding: 20px 36px
+}
 
+.header .brand a, .header .brand span {
+  display: block;
+  font-size: 17px;
+  font-weight: 200;
+  color: #fff;
+  letter-spacing: .03em;
+  text-decoration: none;
+  text-transform: uppercase;
+  align-self: flex-start;
+
+}
+
+.header .navigation {
+  margin-left: auto
+}
+
+.header .navigation ul {
+  display: flex;
+  align-items: center;
+  margin: 0
+}
+
+.header .navigation li {
+  font-size: 17px;
+  font-weight: 500
+}
+
+.navigation-sm ul {
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 767px) {
+    .header {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .header > div.brand {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .brand-label {
+      display: inline-block;
+    }
+    .brand-toggle {
+      display: inline-block;
+    }
+}
+
+
+.box {
+  background: rgba(255, 255, 255, .92);
+  box-shadow: 0 2px 5px rgba(39, 40, 44, .1)
+}
 
 .tabs-wrapper {
   border: 0px solid blue;
@@ -47,11 +113,6 @@
 
 .tag-btn, .license-btn {
   margin:2px;
-}
-
-.box {
-  border: 1px solid rgba(0,0,0,.25);
-  
 }
 
 .theme-box-container {
@@ -105,13 +166,10 @@
 }
 
 
-
-/* The "show" class is added to the filtered elements */
 .show {
     display: block;
 }
 
-/* Add a dark background to the active button */
 button.active {
   background-color: #313439 !important;
   color: white !important;

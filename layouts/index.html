@@ -1,21 +1,5 @@
 {{ define "main" }}
 
-<!--{
-  "name": "BluestNight",
-  "license": "MIT",
-  "licenselink": "https://gitlab.com/BluestNight/BluestNight/blob/master/LICENSE.md",
-  "description": "A featureful, configurable, yet sleek dark theme for Hugo.",
-  "homepage": "https://bluestnight.shadow53.com/",
-  "tags": ["Blog", "Contact Form", "Custom Colors", "Dark", "Error Validation", "Font Awesome", "Netlify", "Responsive", "Syntax Highlighting", "Search", "Widgets", "Writing"],
-  "min_version": 0.3,
-  "author": {
-    "name": "Michael Bryant",
-    "homepage": "https://shadow53.com"
-  },
-  "path": "BluestNight",
-  "hasimage": true
-}-->
-
 {{ $.Scratch.Set "tags" (slice ) }}
 {{ $.Scratch.Set "licenses" (slice ) }}
 {{ $.Scratch.Set "hugoversion" (slice ) }}
@@ -44,9 +28,8 @@
 
 
 
-<div class="outer-wrapper row">
   
-  <div class="wrapper col row gutters">
+  <div class="wrapper row gutters">
 
     <div class="col col-8 themes-wrapper padding">
       <h4>Showing <span id="selectedThemeCount"></span> of {{ len .Site.Data.themes.themes }} themes</h4>
@@ -55,7 +38,7 @@
           
           <div class="wall">
         
-        {{ range  .Site.Data.themes.themes }}
+        {{ range  sort .Site.Data.themes.themes "min_version" "desc" }}
         <div class="item">
         <div 
             id="theme-{{.name|urlize}}"
@@ -66,11 +49,12 @@
             data-minver="{{.min_version}}"
             >
           <h6>{{.name}}</h6>
+          {{with .description}}<p>{{ . }}</p>{{ end }}
           <a class="label upper" href="https://themes.gohugo.io/{{.path | urlize}}">Hugo Theme Page</a>
           <a class="label upper" href="{{.homepage}}">Theme Repo</a>
           
-          <br />{{ .min_version }} | {{ .license }}  
-          <br />{{ range .tags }}<span class="label outline upper">{{ . | humanize }}</span> {{ end }}
+          <br />{{with .min_version}}{{ . }}{{end}} | {{with .license}}{{ . }}{{end}}
+          {{with .tags}}<br />{{ range . }}<span class="label outline upper">{{ . | humanize }}</span> {{ end }}{{end}}
         </div>
         
       </div>
@@ -102,7 +86,7 @@
             <div class="tag-container">
               
               <button class="btn button small secondary outline w95" id="selectAllTags" onclick="showAll()"> Show all</button>
-              {{ range ( $.Scratch.Get "tags" ) }}
+              {{ range sort ( $.Scratch.Get "tags" ) "value" "asc"}}
               <button class="btn button small secondary outline tag-btn {{.}}" id="t-{{. | urlize }}" onclick="tagsCheck('{{ . | urlize }}', 't-')"> {{ . | humanize | upper }}</button>
               {{ end }}
             </div>
@@ -147,7 +131,6 @@
     
     </div>
 
-  </div>
 
 
 
