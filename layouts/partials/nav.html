@@ -1,3 +1,5 @@
+{{ $currentPage := . }}
+
 <header class="header bg-darkgray ">
     <div class="brand" >
       <div class="brand-label"><a href="/">Filterable Hugo</a> </div>
@@ -7,24 +9,28 @@
 
   <nav class="navigation hide-sm">
     <ul>
-      <li><a class="button secondary" href="/redactor/">Redactor</a></li>
-      <li><b><a class="button secondary" href="/kube/">Kube</a></b></li>
-      <li><a class="button secondary" href="/blog/">Blog</a></li>
-      <li><a class="button secondary" href="/company/">Company</a></li>
-      <li><a class="button secondary"  href="/account/"><i class="fab fa-github"></i></a></li>
-      <li><a class="button secondary"  href="/account/"><i class="fab fa-twitter"></i></a></li>
+      {{ range .Site.Menus.main }}
+        <li><a class="button secondary {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} mdc-tab--active{{end}} mdc-theme--text-primary-on-primary" href="{{ .URL }}">
+          {{ .Name }}
+        </a></li>
+      {{ end}}
+      {{ range .Site.Params.social }}
+          <li class="px-tile-icon mdc-theme--secondary-bg">
+            <a class="button secondary" href="{{.url}}"><i class="{{.icon}}"></i></a>
+          </li>
+      {{ end }}
+      
     </ul>
   </nav>
 
   <div class="show-sm">
     <nav id="navbar" class="navigation-sm hide-sm">
       <ul>
-        <li><a class="button secondary w100"  href="/account/"><i class="fab fa-github"></i></a></li>
-        <li><a class="button secondary w100"  href="/account/"><i class="fab fa-twitter"></i></a></li>
-        <li><a class="button secondary w100" href="/redactor/">Redactor</a></li>
-        <li><b><a class="button secondary w100" href="/kube/">Kube</a></b></li>
-        <li><a class="button secondary w100" href="/blog/">Blog</a></li>
-        <li><a class="button secondary w100" href="/company/">Company</a></li>
+        {{ range .Site.Menus.main }}
+          <li><a class="button secondary {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} mdc-tab--active{{end}} mdc-theme--text-primary-on-primary" href="{{ .URL }}">
+            {{ .Name }}
+          </a></li>
+        {{ end}}
       </ul>
     </nav>
   </div>

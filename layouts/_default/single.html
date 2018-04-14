@@ -1,21 +1,9 @@
 {{ define "main" }}
+<div class="wrapper grow">
 
-{{ $PageTitle := .Title }}
-
-{{ with .Resources.ByType "image" }}
-  {{ range . }}
-  <img src="{{ .RelPermalink }}" alt="{{ $PageTitle | title }}" />
-  {{ end }}
-{{ end }}
-
-{{ .Content }}
-
-{{ if .PrevInSection }}
-  <a class="btn btn-light" href="{{ .PrevInSection.Permalink }}">Previous Post</a>
-{{ end }}
-{{ if .NextInSection }}
-  <a class="btn btn-light" href="{{ .NextInSection.Permalink }}">Next Post</a>
-{{ end }}
-
+  <div class="content">
+  {{ .Content }}
+  </div>
+</div>
 
 {{ end }}

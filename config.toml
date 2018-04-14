@@ -1,13 +1,20 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Hugo Themes Filter"
 
 [params]
-  subtitle = "Adventures in Hugoland"
   copyright = "Copyright © 2018"
   author = "Pointy Far"
 
   footerNotice = "Powered by Hugo. Themed by PointyFar"
 
   brand = "Pointy's"
+  
+[[params.social]]
+  url = "https://github.com/pointyfar/"
+  icon = "fab fa-github"
 
+[[params.social]]
+  url = "https://github.com/pointyfar/"
+  icon = "fab fa-twitter"
+    
