@@ -14,7 +14,3 @@ title = "Hugo Themes Filter"
   url = "https://github.com/pointyfar/"
   icon = "fab fa-github"
 
-[[params.social]]
-  url = "https://github.com/pointyfar/"
-  icon = "fab fa-twitter"
-    
