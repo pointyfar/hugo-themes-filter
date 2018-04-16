@@ -179,6 +179,8 @@ function getDataVersions() {
   }
 }
 
+// TODO: find/write semver parser
+
 function calcVersion(str) {
   var ver = 0;
   for( var j=0; j < str.length; j++ ){

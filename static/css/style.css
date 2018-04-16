@@ -39,7 +39,11 @@
 }
 
 .header .navigation {
-  margin-left: auto
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .header .navigation ul {
@@ -86,6 +90,7 @@
 .content {
   border: 1px solid rgba(0,0,0,0.1);
   align-self: stretch;
+  width: 100%;
   margin: 8px;
   padding: 16px;
 }
@@ -172,7 +177,7 @@
 }
 
 .padding {
-  padding: 8px;
+  padding: 8px !important;
 }
 
 
