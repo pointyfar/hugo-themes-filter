@@ -1,11 +1,11 @@
 ---
-title: "Attributions"
+title: "Notices"
 date: 2018-04-14T16:22:44+10:00
 draft: false
 menu:
   main:
-    title: "attributions"
-    identifier: "attributions"
+    title: "notices"
+    identifier: "notices"
     weight: 110
 ---
 
@@ -22,3 +22,12 @@ Open Source is awesome! Many thanks to the teams behind the resources which I us
 [Font Awesome](https://fontawesome.com/)
 : Awesome icon fonts
 
+
+#### Disclaimer
+
+Product names, company names, and theme names referenced in this website are either registered trademarks or trademarks of their respective owners. 
+
+
+#### License 
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
