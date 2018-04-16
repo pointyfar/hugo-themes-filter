@@ -43,7 +43,7 @@
         <div 
             id="theme-{{.name|urlize}}"
             class="filterDiv box theme-box "
-            data-tags="{{ range .tags }}{{ . | urlize }} {{ end }}"
+            data-tags="{{ range .tags }}{{ . | replaceRE "[.]" "_" | urlize }} {{ end }}"
             data-license="{{ .license | replaceRE "[.]" "_" |urlize}}"
             data-version="0"
             data-minver="{{.min_version}}"
@@ -87,7 +87,7 @@
               
               <button class="btn button small secondary outline w95" id="selectAllTags" onclick="showAll()"> Show all</button>
               {{ range sort ( $.Scratch.Get "tags" ) "value" "asc"}}
-              <button class="btn button small secondary outline tag-btn {{.}}" id="t-{{. | urlize }}" onclick="tagsCheck('{{ . | urlize }}', 't-')"> {{ . | humanize | upper }}</button>
+              <button class="btn button small secondary outline tag-btn {{.}}" id="t-{{. | replaceRE "[.]" "_" | urlize }}" onclick="tagsCheck('{{ . | replaceRE "[.]" "_"| urlize }}', 't-')"> {{ . | humanize | upper }}</button>
               {{ end }}
             </div>
           </div>
@@ -102,7 +102,7 @@
                 All Licenses
               </button>
               {{ range sort ( $.Scratch.Get "licenses" ) "value" "asc" }}
-              <button class="button small secondary outline license-btn" id="l-{{ . | urlize }}" onclick="tagsCheck('{{ . | urlize}}', 'l-')">
+              <button class="button small secondary outline license-btn" id="l-{{ . | urlize }}" onclick="tagsCheck('{{ . | replaceRE "[.]" "_" | urlize}}', 'l-')">
                 {{ . | replaceRE "[_]" "." | humanize | upper }}
               </button>
               {{ end }}
