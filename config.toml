@@ -10,7 +10,7 @@ title = "PointyFar's Filterable Hugo Themes"
 
   brand = "PFHT"
   
-  version = "0.1.0"
+  version = "0.1.1"
   
 [[params.social]]
   url = "https://github.com/pointyfar/"

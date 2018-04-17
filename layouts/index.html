@@ -69,9 +69,6 @@
     
     <div class="col col-4 tabs-wrapper">
       
-      
-        
-      
         <nav class="tabs" data-component="tabs">
           <ul>
             <li class="active"><a href="#tab1">Tags</a></li>
@@ -80,7 +77,7 @@
           </ul>
         </nav>
 
-        <div id="tab1" class="tab-buttons-container">
+        <div id="tab1" class="tab tab-buttons-container grow">
           <h6><span id="selectedTagsCount">Selected </span>{{ len ($.Scratch.Get "tags") }} tags</h6>
           <div class="scroll-container">
             <div class="tag-container">
@@ -93,7 +90,7 @@
           </div>
         </div>
           
-        <div id="tab2" class="tab-buttons-container">
+        <div id="tab2" class="tab tab-buttons-container">
           <h6><span id="selectedLicCount">Selected </span>{{ len ($.Scratch.Get "licenses") }} licenses</h6>
           <div class="scroll-container">
             <div class="tag-container">
@@ -110,7 +107,7 @@
           </div>
         </div>
         
-        <div id="tab3" class="">
+        <div id="tab3" class="tab">
           <form class="form">
             <label>Match Hugo Versions</label>
             <div class="form-item">

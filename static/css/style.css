@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: row;
   overflow: hidden;
+  height: 100%;
 }
 
 .grow {
@@ -96,15 +97,26 @@
 }
 
 .tabs-wrapper {
-  border: 0px solid blue;
   display: flex;
   flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+
+.tab {
+  display: flex;
+  height: 100%;
+  flex: 0 1 auto;
+  overflow: hidden;
 }
 
 .themes-wrapper {
-  border: 0px solid yellow;
+  flex: 1 0 auto;
   display: flex;
   flex-direction: column;
+  height:100%;
 }
 
 .scroll-container {
@@ -116,7 +128,6 @@
 .tab-buttons-container {
   display: flex;
   flex-direction: column;
-  border: 0px dashed pink;
 }
 
 .tag-container, .license-container {
@@ -124,6 +135,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  overflow: auto;
 }
 
 .tag-btn, .license-btn {
