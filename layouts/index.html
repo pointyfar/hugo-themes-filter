@@ -61,6 +61,9 @@
           <a class="label upper" href="{{.homepage}}">Theme Repo</a>
           
           <br />{{with .min_version}}{{ . }}{{end}} | {{with .license}}{{ . }}{{end}}
+          {{with .colors}}
+          <br />{{ range . }}<span class="dot" style="background-color:{{.}}">&nbsp;</span>{{ end }}
+          {{ end }}
           {{with .tags}}<br />{{ range . }}<span class="label outline upper">{{ . | humanize }}</span> {{ end }}{{end}}
         </div>
         

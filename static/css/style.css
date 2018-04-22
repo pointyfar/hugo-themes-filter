@@ -224,6 +224,14 @@
     display: block;
 }
 
+.dot {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin: 1px;
+  display: inline-block;
+}
+
 button.active {
   background-color: #313439 !important;
   color: white !important;

@@ -11,8 +11,8 @@
     "gulp-rename": "^1.2.2",
     "gulp-util": "^3.0.8",
     "node-sass": "^4.8.3",
+    "splashy": "^2.0.1",
     "toml": "^2.3.3"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
