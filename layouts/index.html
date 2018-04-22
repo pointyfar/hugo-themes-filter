@@ -27,12 +27,20 @@
 {{ end }}
 
 
+  <div class="bg-silver smaller upper status-bar">
+    <div class="status"><span id="selectedThemeCount"></span> of {{ len .Site.Data.themes.themes }} themes</div>
+    <div class="status"><span id="selectedTagsCount"></span> {{ len ($.Scratch.Get "tags") }} tags</div>
+    <div class="status"><span id="selectedLicCount"></span> {{ len ($.Scratch.Get "licenses") }} licenses</div>
+    <div class="status"><span id="selectedVerStatus">All</span> Hugo Version</div>
+    
+    <div class="status"><span>Last Updated </span><span>{{ now.Format "2 Jan 2006" }}</span></div>
+    
+  </div>
 
   
-  <div class="wrapper row gutters">
+  <div class="wrapper">
 
-    <div class="col col-8 themes-wrapper padding">
-      <h4>Showing <span id="selectedThemeCount"></span> of {{ len .Site.Data.themes.themes }} themes</h4>
+    <div class="themes-wrapper padding">
       <div class="scroll-container padding">
         <div class="theme-box-container" >
           
@@ -45,7 +53,6 @@
             class="filterDiv box theme-box "
             data-tags="{{ range .tags }}{{ . | replaceRE "[.]" "_" | urlize }} {{ end }}"
             data-license="{{ .license | replaceRE "[.]" "_" |urlize}}"
-            data-version="0"
             data-minver="{{.min_version}}"
             >
           <h6>{{.name}}</h6>
@@ -57,7 +64,7 @@
           {{with .tags}}<br />{{ range . }}<span class="label outline upper">{{ . | humanize }}</span> {{ end }}{{end}}
         </div>
         
-      </div>
+        </div>
 
         {{ end }}
         </div>
@@ -67,7 +74,7 @@
 
     </div>
     
-    <div class="col col-4 tabs-wrapper">
+    <div class="tabs-wrapper">
       
         <nav class="tabs" data-component="tabs">
           <ul>
@@ -78,20 +85,20 @@
         </nav>
 
         <div id="tab1" class="tab tab-buttons-container grow">
-          <h6><span id="selectedTagsCount">Selected </span>{{ len ($.Scratch.Get "tags") }} tags</h6>
           <div class="scroll-container">
             <div class="tag-container">
               
               <button class="btn button small secondary outline w95" id="selectAllTags" onclick="showAll()"> Show all</button>
               {{ range sort ( $.Scratch.Get "tags" ) "value" "asc"}}
-              <button class="btn button small secondary outline tag-btn {{.}}" id="t-{{. | replaceRE "[.]" "_" | urlize }}" onclick="tagsCheck('{{ . | replaceRE "[.]" "_"| urlize }}', 't-')"> {{ . | humanize | upper }}</button>
+              <button class="btn button small secondary outline tag-btn {{.}}" 
+                      id="t-{{. | replaceRE "[.]" "_" | urlize }}" 
+                      onclick="tagsCheck('{{ . | replaceRE "[.]" "_"| urlize }}', 't-')"> {{ . | humanize | upper }}</button>
               {{ end }}
             </div>
           </div>
         </div>
           
         <div id="tab2" class="tab tab-buttons-container">
-          <h6><span id="selectedLicCount">Selected </span>{{ len ($.Scratch.Get "licenses") }} licenses</h6>
           <div class="scroll-container">
             <div class="tag-container">
             
@@ -126,9 +133,6 @@
         
     </div>
     
-    </div>
-
-
-
+  </div>
 
 {{ end }}

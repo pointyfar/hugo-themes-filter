@@ -82,6 +82,19 @@
     }
 }
 
+.status-bar {
+  padding: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.status {
+  display: inline-block;
+  text-align: center;
+  padding: 0 8px;
+}
 
 .box {
   background: rgba(255, 255, 255, .92);
@@ -102,6 +115,8 @@
   align-items: stretch;
   justify-content: flex-start;
   height: 100%;
+  width: 33%;
+
 }
 
 
@@ -113,10 +128,12 @@
 }
 
 .themes-wrapper {
-  flex: 1 0 auto;
+  flex: 1 0 67%;
   display: flex;
   flex-direction: column;
   height:100%;
+  width: 67%;
+
 }
 
 .scroll-container {
@@ -140,6 +157,16 @@
 
 .tag-btn, .license-btn {
   margin:2px;
+}
+
+@media only screen and (max-width: 767px) {
+  .tag-btn, .license-btn {
+    width: 100%;
+    text-align: center;
+  }
+  .button.small.tag-btn, .button.small.license-btn {
+    padding: 4px 0;
+  }
 }
 
 .theme-box-container {

@@ -18,8 +18,14 @@ var totalLicenses = document.getElementsByClassName('license-btn').length;
 var totalTags  = document.getElementsByClassName('tag-btn').length;
 var totalVersions  = document.getElementById("versionSelect").options.length;
 
+/* Initially, show all*/
 showAll();
 
+
+/**
+ * showAll - Selects all tags
+ *  
+ */ 
 function showAll(){
   var selectedBtn = document.querySelector('#selectAllTags');
 
@@ -29,31 +35,46 @@ function showAll(){
   addClassIfMissing(selectedBtn, 'active');
 }
 
+/**
+ * tagsCheck - Triggered by tag-button click.
+ *  
+ * @param  {type} tag     specific tag to de-/select 
+ * @param  {type} tagType may be tag, license, etc 
+ */ 
 function tagsCheck(tag, tagType) {
+  
+  /**  
+   * Selects clicked button.  
+   */   
   var selectedBtn = document.querySelector(`#${tagType}${tag}`);
   
+  
   if( tagType === 't-') {
-    if( selectedTags.indexOf(tag) >= 0 ) { // deselect tag
+    /**  
+    * implies tagType = "tag"
+    */   
+    if( selectedTags.indexOf(tag) >= 0 ) { /* deselect tag */
       selectedTags.splice( selectedTags.indexOf(tag), 1 );
       delClassIfPresent(selectedBtn, 'active');
       
-    } else { // select tag
+    } else { /* select tag */
       selectedTags.push(tag);
       addClassIfMissing(selectedBtn, 'active');
       
     }
     
   } else if( tagType === 'l-') {
-    if( selectedLicense.indexOf(tag) >= 0 ) { // deselect tag
+    /**  
+     * implies tagType = "license"
+     */   
+    if( selectedLicense.indexOf(tag) >= 0 ) { /* deselect tag */
       selectedLicense.splice( selectedLicense.indexOf(tag), 1 );
       delClassIfPresent(selectedBtn, 'active');
       
-    } else { // select tag
+    } else { /* select tag */
       selectedLicense.push(tag);
       addClassIfMissing(selectedBtn, 'active');
-      
     }
-    
   }
 
   delClassIfPresent(selectAllLicenses, 'active')
@@ -102,8 +123,16 @@ function toggleClass(el, cn) {
   }
 }
 
-function showCheck(showAll) {
+
+/**
+ * showCheck - Applies "show" class to items containing selected tags
+ *  
+ */ 
+function showCheck() {
   
+  /**  
+   * If no tags/licenses selected, or all tags selected, SHOW ALL and DESELECT ALL BUTTONS.
+   */   
   if( (selectedTags.length === 0 || selectedTags.length === totalTags) && 
       (selectedLicense.length === 0 || selectedLicense.length === totalLicenses) &&
       (selectedVersions.length === 0 || selectedVersions.length === totalVersions)
@@ -116,16 +145,16 @@ function showCheck(showAll) {
       delClassIfPresent(tagBtns[i], 'active')
     }
     document.getElementById('versionSelect').options[0].selected = true;
-    
   }
   
   selectedThemeCount=0;
   
   for ( var i = 0; i < tiles.length; i++ ) {
-    
+      /* First remove "show" class */
       delClassIfPresent(tiles[i], 'show');
       delClassIfPresent(items[i], 'show-item');
       
+      /* Then check if "show" class should be applied */
       if (checkVisibility(selectedTags, tiles[i].getAttribute('data-tags')) &&
           checkVisibility(selectedLicense, tiles[i].getAttribute('data-license')) &&
           checkVisibility(selectedVersions, tiles[i].getAttribute('data-minver')) 
@@ -137,29 +166,35 @@ function showCheck(showAll) {
           
         }
       }
-       
-    
-    
   }
   
   document.getElementById("selectedThemeCount").textContent=`${selectedThemeCount}`;
+
   if(selectedTags.length > 0) {
-    document.getElementById("selectedTagsCount").textContent=`Selected ${selectedTags.length} of `;
+    document.getElementById("selectedTagsCount").textContent=` ${selectedTags.length} of `;
   } else {
-    document.getElementById("selectedTagsCount").textContent=`Selected `;
-    
+    document.getElementById("selectedTagsCount").textContent=` `;
   }
   if(selectedLicense.length > 0) {
-    document.getElementById("selectedLicCount").textContent=`Selected ${selectedLicense.length} of `;
+    document.getElementById("selectedLicCount").textContent=` ${selectedLicense.length} of `;
   } else {
-    document.getElementById("selectedLicCount").textContent=`Selected `;
-    
+    document.getElementById("selectedLicCount").textContent=` `;
   }
 
 }
 
+/**
+ * checkVisibility - Tests if attribute is included in list.
+ *  
+ * @param  {type} list     
+ * @param  {type} dataAttr to check 
+ * @return {boolean}          description 
+ */ 
 function checkVisibility(list, dataAttr) {
   
+  /**  
+   * Returns TRUE if list is empty or attribute is in list
+   */   
   if (list.length > 0) {
     for(var v = 0; v < list.length; v++){
       if(dataAttr.indexOf(list[v]) >=0 ) {
@@ -172,6 +207,8 @@ function checkVisibility(list, dataAttr) {
   }
 }
 
+
+//// TODO: check if superfluous
 function getDataVersions() {
   for ( var i = 0; i < tiles.length; i++ ) {
     var ver = calcVersion(tiles[i].getAttribute('data-minver').split("."));
@@ -189,6 +226,12 @@ function calcVersion(str) {
   return ver 
 }
 
+
+/**
+ * versionSelected - Triggered by selecting a version. 
+ *  
+ * @return {type}  description 
+ */ 
 function versionSelected(){
   selectedVersions = [];
   
@@ -211,14 +254,36 @@ function versionSelected(){
   for (var i = 0; i < vs.options.length; i++){
     var optVal = calcVersion(String(vs.options[i].text).split("."));
     
-    if( versionMatcher(matcher, optVal, selectedVer) ) {
+    if( versionMatcher(matcher, optVal, selectedVer) && selectedVer > 0 ) {
       selectedVersions.push(vs.options[i].text)
     }
   }
+  
+  if(selectedVersions.length > 0) {
+    var mtext = "==";
+    if(matcher==='lte') {
+      mtext = "<="
+    } else if(matcher==='gte') {
+      mtext = ">="
+    }
+    document.getElementById("selectedVerStatus").textContent=`${mtext} ${vs.value}  `;
+  } else {
+    document.getElementById("selectedVerStatus").textContent=`All`;
+  }
+
   showCheck();
 
 }
 
+
+/**
+ * versionMatcher - returns if opt ( = / > / < ) sel
+ *  
+ * @param  {type} m   operator 
+ * @param  {type} opt  left side operand
+ * @param  {type} sel right side operand
+ * @return {type}     m (opt , sel)
+ */ 
 function versionMatcher(m, opt, sel){
   if(m==='e') {
     return opt === sel;
