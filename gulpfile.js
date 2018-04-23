@@ -7,7 +7,7 @@ var del = require("del");
 var rename = require("gulp-rename");
 var splashy = require('splashy')();
 
-var themesPath = 'all-hugo-themes';
+var themesPath = 'all-themes';
 var themesImgPath = './static/theme-images';
 var themesJsonPath = './data/themes.json';
 
@@ -23,7 +23,8 @@ var exclude_dirs = [
   'cocoa-eh-hugo-theme', // min_version value
   'html5', // theme.json instead of .toml
   'osprey', // min_version value
-  'robust' // min_version value
+  'robust', // min_version value
+  'gohugo-theme-ananke' // min_version value
   
 ];
 
@@ -62,6 +63,7 @@ gulp.task('themes:assemble', function(done) {
       return done(); 
     }
     if ( checkIncluded(folder) ) {
+      // gutil.log(folder);
       var themePath = themesPath + '/' + folder + '/theme.toml';
       var imgPath = themesPath + '/' + folder + '/images/tn.png';
       
