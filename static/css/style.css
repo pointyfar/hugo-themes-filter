@@ -9,7 +9,7 @@
   
 }
 .wrapper {
-  padding: 20px 36px 0 36px;
+  padding: 0 8px;
   display: flex;
   flex-direction: row;
   overflow: hidden;

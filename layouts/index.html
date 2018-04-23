@@ -4,27 +4,31 @@
 {{ $.Scratch.Set "licenses" (slice ) }}
 {{ $.Scratch.Set "hugoversion" (slice ) }}
 
+{{ $.Scratch.Set "untagged" (slice ) }}
 
 
 
-{{ range .Site.Data.themes.themes  }}
-  {{ range .tags }}
-    {{ if and ( not ( in ( $.Scratch.Get "tags" ) ( . | urlize ) ) ) ( gt ( len . ) 0 ) }}
-      {{ $.Scratch.Add "tags" ( slice ( . | urlize ) ) }}
-    {{ end }}
-  {{ end }}
+
+
+{{- range .Site.Data.themes.themes -}}
+  {{- with .tags -}}
+    {{- range . -}}
+      {{- if and ( not ( in ( $.Scratch.Get "tags" ) ( . | urlize ) ) ) ( gt ( len . ) 0 ) -}}
+        {{- $.Scratch.Add "tags" ( slice ( . | urlize ) ) -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if and ( not ( in ( $.Scratch.Get "licenses" ) ( .license | replaceRE "[.]" "_" | urlize ) ) ) ( gt ( len .license ) 0 ) -}}
+    {{- $.Scratch.Add "licenses" ( slice ( .license | replaceRE "[.]" "_" | urlize ) ) -}}
+  {{- end -}}
   
-  {{ if and ( not ( in ( $.Scratch.Get "licenses" ) ( .license | replaceRE "[.]" "_" | urlize ) ) ) ( gt ( len .license ) 0 ) }}
-    {{ $.Scratch.Add "licenses" ( slice ( .license | replaceRE "[.]" "_" | urlize ) ) }}
-  {{ end }}
+  {{- with .min_version -}}
+      {{- if ( not ( in ( $.Scratch.Get "hugoversion" ) ( string . ) ) ) -}}
+        {{- $.Scratch.Add "hugoversion" ( slice ( string . ) ) -}}
+      {{- end -}}
+  {{- end -}}
   
-  {{ with .min_version }}
-      {{ if ( not ( in ( $.Scratch.Get "hugoversion" ) ( string . ) ) )  }}
-        {{ $.Scratch.Add "hugoversion" ( slice ( string . ) ) }}
-      {{ end }}
-  {{ end }}
-  
-{{ end }}
+{{- end -}}
 
 
   <div class="bg-silver smaller upper status-bar">
@@ -58,13 +62,13 @@
           <h6>{{.name}}</h6>
           {{with .description}}<p>{{ . }}</p>{{ end }}
           <a class="label upper" href="https://themes.gohugo.io/{{.path | urlize}}">Hugo Theme Page</a>
-          <a class="label upper" href="{{.homepage}}">Theme Repo</a>
+          {{with .homepage}}<a class="label upper" href="{{.}}">Theme Homepage</a>{{ end }}
           
           <br />{{with .min_version}}{{ . }}{{end}} | {{with .license}}{{ . }}{{end}}
           {{with .colors}}
           <br />{{ range . }}<span class="dot" style="background-color:{{.}}">&nbsp;</span>{{ end }}
           {{ end }}
-          {{with .tags}}<br />{{ range . }}<span class="label outline upper">{{ . | humanize }}</span> {{ end }}{{end}}
+          {{with .tags}}<br />{{ range . }}{{ if gt ( len . ) 0 }}<span class="label outline upper">{{ . | humanize }}</span> {{ end }}{{ end }}{{ end }}
         </div>
         
         </div>
@@ -77,7 +81,7 @@
 
     </div>
     
-    <div class="tabs-wrapper">
+    <div class="tabs-wrapper padding">
       
         <nav class="tabs" data-component="tabs">
           <ul>
