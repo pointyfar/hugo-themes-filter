@@ -77,12 +77,19 @@
           </ul>
           <ul class="uk-switcher">
             <li>
+              <div class="uk-width-1-1 uk-padding-small">
+                <form class="uk-search uk-search-default">
+                  <span class="uk-form-icon" uk-icon="icon: search"></span>
+                  <input class="uk-input" type="text" id="tagSearch" onkeyup="searchFilter('tag', 'tagSearch')">
+                  <a class="uk-form-icon uk-form-icon-flip" href="#" uk-icon="icon: close" onclick="document.getElementById('tagSearch').value = '';searchFilter('tag', 'tagSearch')"></a>
+                </form>
+              </div>
               <div class="tab_pane_container uk-padding-small uk-margin tab-buttons-container">
                 <button class="uk-button uk-button-default uk-button-small" id="selectAllTags" onclick="showAll()"> Show all</button>
                 {{- range sort ( $.Scratch.Get "tags" ) "value" "asc" -}}
                 <button class="uk-button uk-button-default uk-button-small tag-btn {{.}}" 
                         id="t-{{. | replaceRE "[.]" "_" | urlize }}" 
-                        onclick="tagsCheck('{{ . | replaceRE "[.]" "_"| urlize }}', 't-')"> {{ . | humanize | upper }}</button>
+                        onclick="tagsCheck('{{ . | replaceRE "[.]" "_"| urlize }}', 't-')"><span> {{ . | humanize | upper }}</span></button>
                 {{ end }}
               </div>
             </li>

@@ -293,3 +293,19 @@ function versionMatcher(m, opt, sel){
     return opt >= sel
   }
 }
+
+function searchFilter(filter, inputId) {
+
+  var input, filter, btnSpan;
+  input = document.getElementById(inputId);
+  filter = input.value.toUpperCase();
+
+  for (var i = 0; i < tagBtns.length; i++) {
+      btnSpan = tagBtns[i].getElementsByTagName("span")[0];
+      if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        delClassIfPresent(tagBtns[i], "hideBtn")
+      } else {
+        addClassIfMissing(tagBtns[i], "hideBtn")
+      }
+  }
+}

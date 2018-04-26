@@ -186,3 +186,9 @@ gulp.task("site", function(done){
   
   done();
 })
+
+gulp.task("watch", function(done){
+  gulp.watch("src/**/*.js", gulp.series("site:scripts"));
+  gulp.watch("src/**/*.scss", gulp.series("site:styles"));
+
+})
