@@ -2,10 +2,14 @@ var fs = require('fs');
 var path = require('path');
 var gulp = require('gulp');
 var gutil = require('gulp-util');
+var sass = require("gulp-sass");
+var autoprefixer = require("gulp-autoprefixer");
+var hash = require("gulp-hash");
 var toml = require('toml');
 var del = require("del");
 var rename = require("gulp-rename");
 var splashy = require('splashy')();
+var spawn = require('child_process').spawn;
 
 var themesPath = 'all-themes';
 var themesImgPath = './static/theme-images';
@@ -95,6 +99,42 @@ function getColor(imgPath, tj){
                   });
 }
 
+gulp.task("site:styles", function(done){
+  
+  del(["static/css/**/*"]);
+  
+  gulp.src("src/**/*.scss")
+      .pipe(sass({
+          outputStyle : "compressed"
+      }))
+      .pipe(autoprefixer({
+          browsers : ["last 20 versions"]
+      }))
+      .pipe(hash())
+      .pipe(gulp.dest("static/css"))
+      .pipe(hash.manifest("hash.json"))
+      .pipe(gulp.dest("data"))
+      ;
+      
+  done();
+  
+});
+
+gulp.task("site:scripts", function(done){
+  
+  del(["static/js/**/*"])
+  
+  gulp.src("src/**/*.js")
+      .pipe(hash())
+      .pipe(gulp.dest("static/js"))
+      .pipe(hash.manifest("hash.json"))
+      .pipe(gulp.dest("data"))
+      ;
+      
+  done();
+})
+
+
 gulp.task('themes:write', function(done){
   
   Promise.all(themePromises)
@@ -123,12 +163,30 @@ gulp.task("themes:clean", function(done){
 gulp.task("themes", function(done){
   gutil.log('---------- BUILDING themes.json ----------');
   
-  var site_tasks = gulp.series(
+  var theme_tasks = gulp.series(
     "themes:clean",
     "themes:assemble",
     "themes:write"
 
   );
-  site_tasks();
+  theme_tasks();
   done();
 });
+
+gulp.task("site", function(done){
+  gutil.log('---------- BUILDING ----------');
+
+  var build_tasks = gulp.series(
+    "site:scripts",
+    "site:styles"
+  );
+
+  build_tasks();
+  
+  spawn('hugo', [], { stdio: 'inherit' }, (err) => {
+    if (err) return cb(err)
+    cb()
+  });
+  
+  done();
+})

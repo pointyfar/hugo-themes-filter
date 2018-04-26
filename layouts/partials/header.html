@@ -8,7 +8,7 @@
 
   <link rel="stylesheet" href="{{"/vendor/uikit/css/uikit.min.css" | relURL}}" />
 
-  <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}" />
+  <link rel="stylesheet" href="/css/{{index .Site.Data.hash "style.css"}}" />
   
   <link rel="icon" href="{{"/favicon.ico" | relURL}}" type="image/x-icon"/>
 
