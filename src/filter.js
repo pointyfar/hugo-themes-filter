@@ -302,7 +302,7 @@ function searchFilter(filter, inputId) {
 
   for (var i = 0; i < tagBtns.length; i++) {
       btnSpan = tagBtns[i].getElementsByTagName("span")[0];
-      if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      if (btnSpan.innerHTML.toUpperCase().indexOf(filter) > -1) {
         delClassIfPresent(tagBtns[i], "hideBtn")
       } else {
         addClassIfMissing(tagBtns[i], "hideBtn")
