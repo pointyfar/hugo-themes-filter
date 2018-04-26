@@ -3,7 +3,9 @@
   "version": "0.3.0",
   "license": "MIT",
   "author": "PointyFar",
-  "scripts": {},
+  "scripts": {
+    "build" : "gulp site && hugo"
+  },
   "devDependencies": {
     "del": "^3.0.0",
     "file-loader": "^1.1.11",

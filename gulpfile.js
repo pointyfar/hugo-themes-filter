@@ -184,10 +184,5 @@ gulp.task("site", function(done){
 
   build_tasks();
   
-  spawn('hugo', [], { stdio: 'inherit' }, (err) => {
-    if (err) return cb(err)
-    cb()
-  });
-  
   done();
 })
