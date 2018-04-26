@@ -1,45 +1,23 @@
 {{ $currentPage := . }}
+<nav class="uk-navbar-container uk-dark" uk-navbar>
 
-<header class="header bg-darkgray ">
-    <div class="brand" >
-      <div class="brand-label"><a href="/">{{.Site.Params.brand}}</a> </div>
-      <div class="brand-toggle"><a href="#" class="show-sm" data-component="toggleme" data-target="#navbar"><i class="fas fa-bars"></i></a></div>
+    <div class="uk-navbar-left">
+        <ul class="uk-navbar-nav">
+            <li><a href="/">{{.Site.Params.brand}}</a> </li>
+        </ul>
     </div>
-
-
-  <nav class="navigation hide-sm">
-    <ul>
-      {{ range .Site.Menus.main }}
-        <li><a class="button secondary {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} mdc-tab--active{{end}} mdc-theme--text-primary-on-primary" href="{{ .URL }}">
-          {{ .Name }}
-        </a></li>
-      {{ end}}
-      {{ range .Site.Params.social }}
-          <li class="px-tile-icon mdc-theme--secondary-bg">
-            <a class="button secondary" href="{{.url}}"><i class="{{.icon}}"></i></a>
-          </li>
-      {{ end }}
-      
-    </ul>
-    {{with .Site.Params.version}}<span class="label tag inverted small padding">{{.}}</span>{{end}}
-  </nav>
-
-  <div class="show-sm">
-    
-    <nav id="navbar" class="navigation-sm hide-sm">
-      {{with .Site.Params.version}}<span class="label tag inverted small padding">{{.}}</span>{{end}}
-      <ul>
-        {{ range .Site.Menus.main }}
-          <li><a class="button secondary {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} mdc-tab--active{{end}} mdc-theme--text-primary-on-primary" href="{{ .URL }}">
-            {{ .Name }}
-          </a></li>
-        {{ end}}
-        {{ range .Site.Params.social }}
-            <li class="px-tile-icon mdc-theme--secondary-bg">
-              <a class="button secondary" href="{{.url}}"><i class="{{.icon}}"></i></a>
-            </li>
-        {{ end }}
-      </ul>
-    </nav>
-  </div>
-</header>
+    <div class="uk-navbar-right">
+        <ul class="uk-navbar-nav">
+          
+            {{ range .Site.Menus.main }}
+              <li><a class="button secondary {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} mdc-tab--active{{end}} mdc-theme--text-primary-on-primary" href="{{ .URL }}">
+                {{ .Name }}
+              </a></li>
+            {{ end}}
+            {{ range .Site.Params.social }}
+                <li><a class="button secondary" href="{{.url}}"><i class="{{.icon}}"></i></a></li>
+            {{ end }}
+            {{with .Site.Params.version}}<li><a>{{.}}</a></li>{{end}}
+          </ul>
+    </div>
+</nav>

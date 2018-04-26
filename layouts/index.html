@@ -6,10 +6,6 @@
 
 {{ $.Scratch.Set "untagged" (slice ) }}
 
-
-
-
-
 {{- range .Site.Data.themes.themes -}}
   {{- with .tags -}}
     {{- range . -}}
@@ -27,119 +23,104 @@
         {{- $.Scratch.Add "hugoversion" ( slice ( string . ) ) -}}
       {{- end -}}
   {{- end -}}
-  
 {{- end -}}
 
-
-  <div class="bg-silver smaller upper status-bar">
-    <div class="status"><span id="selectedThemeCount"></span> of {{ len .Site.Data.themes.themes }} themes</div>
-    <div class="status"><span id="selectedTagsCount"></span> {{ len ($.Scratch.Get "tags") }} tags</div>
-    <div class="status"><span id="selectedLicCount"></span> {{ len ($.Scratch.Get "licenses") }} licenses</div>
-    <div class="status"><span id="selectedVerStatus">All</span> Hugo Version</div>
-    
-    <div class="status"><span>Last Updated </span><span>{{ now.Format "2 Jan 2006" }}</span></div>
-    
-  </div>
-
+<div class="uk-background-muted status-bar uk-text-small">
+  <div class="status"><div class="status-inner"><span id="selectedThemeCount"></span> of {{ len .Site.Data.themes.themes }} </div><div class="status-inner">&nbsp;themes</div></div>
+  <div class="status"><div class="status-inner"><span id="selectedTagsCount"></span> {{ len ($.Scratch.Get "tags") }} </div><div class="status-inner">&nbsp;tags</div></div>
+  <div class="status"><div class="status-inner"><span id="selectedLicCount"></span> {{ len ($.Scratch.Get "licenses") }} </div><div class="status-inner">&nbsp;licenses</div></div>
+  <div class="status"><div class="status-inner"><span id="selectedVerStatus">All Ver.</span></div><div class="status-inner">&nbsp;Hugo</div></div>
   
-  <div class="wrapper">
-
-    <div class="themes-wrapper padding">
-      <div class="scroll-container padding">
-        <div class="theme-box-container" >
-          
+  <div class="status"><div class="status-inner">Last Updated </div><div class="status-inner">&nbsp;{{ now.Format "2 Jan 2006" }}</div></div>
+  
+</div>
+    <div class="uk-container uk-container-expand wrapper">
+      <section>
+        <main>
           <div class="wall">
         
         {{ range  sort .Site.Data.themes.themes "min_version" "desc" }}
         <div class="item">
-        <div 
-            id="theme-{{.name|urlize}}"
-            class="filterDiv box theme-box "
-            data-tags="{{ range .tags }}{{ . | replaceRE "[.]" "_" | urlize }} {{ end }}"
-            data-license="{{ .license | replaceRE "[.]" "_" |urlize}}"
-            data-minver="{{.min_version}}"
-            >
-          <h6>{{.name}}</h6>
-          {{with .description}}<p>{{ . }}</p>{{ end }}
-          <a class="label upper" href="https://themes.gohugo.io/{{.path | urlize}}">Hugo Theme Page</a>
-          {{with .homepage}}<a class="label upper" href="{{.}}">Theme Homepage</a>{{ end }}
-          
-          <br />{{with .min_version}}{{ . }}{{end}} | {{with .license}}{{ . }}{{end}}
-          {{with .colors}}
-          <br />{{ range . }}<span class="dot" style="background-color:{{.}}">&nbsp;</span>{{ end }}
-          {{ end }}
-          {{with .tags}}<br />{{ range . }}{{ if gt ( len . ) 0 }}<span class="label outline upper">{{ . | humanize }}</span> {{ end }}{{ end }}{{ end }}
-        </div>
-        
+          <div 
+              id="theme-{{.name|urlize}}"
+              
+              class="filterDiv box"
+              
+              data-tags="{{ range .tags }}{{ . | replaceRE "[.]" "_" | urlize }} {{ end }}"
+              data-license="{{ .license | replaceRE "[.]" "_" |urlize}}"
+              data-minver="{{.min_version}}"
+              >
+              <div class="theme-box">
+              <h6 class="uk-card-title">{{.name}}</h6>
+              {{with .description}}<p>{{ . }}</p>{{ end }}
+              <span class="uk-label uk-background-muted tag-label"><a href="https://themes.gohugo.io/{{.path | urlize}}">Hugo Theme Page</a></span>
+              {{with .homepage}}<span class="uk-label uk-background-muted tag-label"><a href="{{.}}">Theme Homepage</a></span>{{ end }}
+              
+              <br />{{with .min_version}}{{ . }}{{end}} | {{with .license}}{{ . }}{{end}}
+              {{with .colors}}
+              <br />{{ range . }}<span class="dot" style="background-color:{{.}}">&nbsp;</span>{{ end }}
+              {{ end }}
+              {{with .tags}}<br />{{ range . }}{{ if gt ( len . ) 0 }}<span class="uk-label uk-background-muted tag-label">{{ . | humanize }}</span> {{ end }}{{ end }}{{ end }}
+            </div>
+          </div>
         </div>
 
         {{ end }}
         </div>
-      
-      </div>
-      </div>
-
-    </div>
-    
-    <div class="tabs-wrapper padding">
-      
-        <nav class="tabs" data-component="tabs">
-          <ul>
-            <li class="active"><a href="#tab1">Tags</a></li>
-            <li><a href="#tab2">Licenses</a></li>
-            <li><a href="#tab3">Version</a></li>
+        </main>
+        
+        <aside class="">
+          <ul class="" uk-tab uk-switcher>
+            <li class="active"><a href="#">Tags</a></li>
+            <li><a href="#">Licenses</a></li>
+            <li><a href="#">Version</a></li>
           </ul>
-        </nav>
+          <ul class="uk-switcher">
+            <li>
+              <div class="tab_pane_container uk-padding-small uk-margin tab-buttons-container">
+                <button class="uk-button uk-button-default uk-button-small" id="selectAllTags" onclick="showAll()"> Show all</button>
+                {{- range sort ( $.Scratch.Get "tags" ) "value" "asc" -}}
+                <button class="uk-button uk-button-default uk-button-small tag-btn {{.}}" 
+                        id="t-{{. | replaceRE "[.]" "_" | urlize }}" 
+                        onclick="tagsCheck('{{ . | replaceRE "[.]" "_"| urlize }}', 't-')"> {{ . | humanize | upper }}</button>
+                {{ end }}
+              </div>
+            </li>
+            <li>
+              <div class="tab_pane_container uk-padding-small  tab-buttons-container">
+                <button class="uk-button uk-button-default uk-button-small uk-width-1-1" id="selectAllLicenses" onclick="licenseCheck('')">
+                  All Licenses
+                </button>
+                {{ range sort ( $.Scratch.Get "licenses" ) "value" "asc" }}
+                <button class="uk-button uk-button-default uk-button-small  license-btn" id="l-{{ . | urlize }}" onclick="tagsCheck('{{ . | replaceRE "[.]" "_" | urlize}}', 'l-')">
+                  {{ . | replaceRE "[_]" "." | humanize | upper }}
+                </button>
+                {{ end }}
+              </div>
 
-        <div id="tab1" class="tab tab-buttons-container grow">
-          <div class="scroll-container">
-            <div class="tag-container">
-              
-              <button class="btn button small secondary outline w95" id="selectAllTags" onclick="showAll()"> Show all</button>
-              {{ range sort ( $.Scratch.Get "tags" ) "value" "asc"}}
-              <button class="btn button small secondary outline tag-btn {{.}}" 
-                      id="t-{{. | replaceRE "[.]" "_" | urlize }}" 
-                      onclick="tagsCheck('{{ . | replaceRE "[.]" "_"| urlize }}', 't-')"> {{ . | humanize | upper }}</button>
-              {{ end }}
-            </div>
-          </div>
-        </div>
-          
-        <div id="tab2" class="tab tab-buttons-container">
-          <div class="scroll-container">
-            <div class="tag-container">
-            
-              <button class="button small secondary outline active w95" id="selectAllLicenses" onclick="licenseCheck('')">
-                All Licenses
-              </button>
-              {{ range sort ( $.Scratch.Get "licenses" ) "value" "asc" }}
-              <button class="button small secondary outline license-btn" id="l-{{ . | urlize }}" onclick="tagsCheck('{{ . | replaceRE "[.]" "_" | urlize}}', 'l-')">
-                {{ . | replaceRE "[_]" "." | humanize | upper }}
-              </button>
-              {{ end }}
-            </div>
-          </div>
-        </div>
-        
-        <div id="tab3" class="tab">
-          <form class="form">
-            <label>Match Hugo Versions</label>
-            <div class="form-item">
-              <label class="checkbox"><input name="versionMatch" value="e" type="radio" onchange="versionSelected()" checked> Exactly</label>
-              <label class="checkbox"><input name="versionMatch" value="gte" onchange="versionSelected()" type="radio"> Greater than or equal</label>
-              <label class="checkbox"><input name="versionMatch" value="lte" onchange="versionSelected()" type="radio"> Less than or equal</label>
-            </div>
-            <div class="form-item">
-                <select class="small" id="versionSelect" onchange="versionSelected()">
-                  <option>Select All</option>
-                  {{range sort ($.Scratch.Get "hugoversion") "value" "desc" }}<option>{{.}}</option>{{end}}
-                </select>
-            </div>
-          </form>
-        </div>
-        
+            <li style="min-height: calc(100vh - 165px);">
+              <div class="tab_pane_container uk-padding-small">
+                <form class="form">
+                  <label>Match Hugo Versions</label>
+                  <div class="form-item">
+                      <select class="uk-select" id="versionSelect" onchange="versionSelected()">
+                        <option>Select All</option>
+                        {{range sort ($.Scratch.Get "hugoversion") "value" "desc" }}<option>{{.}}</option>{{end}}
+                      </select>
+                  </div>
+                  <div class="form-item">
+                    <label class="checkbox"><input name="versionMatch" class="uk-radio" value="e" type="radio" onchange="versionSelected()" checked> Exactly</label>
+                    <label class="checkbox"><input name="versionMatch" class="uk-radio" value="gte" onchange="versionSelected()" type="radio"> Greater than or equal</label>
+                    <label class="checkbox"><input name="versionMatch" class="uk-radio" value="lte" onchange="versionSelected()" type="radio"> Less than or equal</label>
+                  </div>
+                </form>
+              </div>
+            </li>
+          </ul>
+
+
+        </aside>
+      </section>
     </div>
-    
-  </div>
-
+  
 {{ end }}
