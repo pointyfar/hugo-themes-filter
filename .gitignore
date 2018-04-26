@@ -68,3 +68,5 @@ typings/
 .env
 
 
+static/css/
+static/js/
