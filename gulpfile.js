@@ -102,7 +102,6 @@ function getColor(imgPath, tj){
 gulp.task("site:styles", function(done){
   
   del(["static/css/**/*"]);
-  
   gulp.src("src/**/*.scss")
       .pipe(sass({
           outputStyle : "compressed"
@@ -175,7 +174,9 @@ gulp.task("themes", function(done){
 
 gulp.task("site", function(done){
   gutil.log('---------- BUILDING ----------');
-
+  
+  CLEAN("./public")
+  
   var build_tasks = gulp.series(
     "site:scripts",
     "site:styles"
