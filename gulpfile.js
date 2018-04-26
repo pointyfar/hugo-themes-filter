@@ -101,7 +101,7 @@ gulp.task('themes:write', function(done){
           .then( th => {
             THEMEBUNDLE.themes = th;
             // gutil.log('res', th)
-            return JSON.stringify(THEMEBUNDLE);
+            return JSON.stringify(THEMEBUNDLE, null, ' ');
           })
           .then( res => {
             fs.writeFile(themesJsonPath, res, 'utf8', function (err) {
