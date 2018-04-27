@@ -7442,6 +7442,39 @@
    "hasimage": true
   },
   {
+   "name": "Sublime Hugo",
+   "license": "MIT",
+   "licenselink": "//github.com/dt801ts/sublime-hugo-theme/LICENSE.MD",
+   "description": "hugo theme",
+   "homepage": "//github.com/dt801ts/sublime-hugo-theme",
+   "tags": [
+    "blog",
+    "minimal",
+    "syntax highlighting",
+    "dev"
+   ],
+   "features": [
+    "",
+    ""
+   ],
+   "min_version": 0.17,
+   "original": {
+    "name": "Mathieu Mayer-Mazzoli",
+    "homepage": "//mx3m.github.io",
+    "repo": "//github.com/mx3m/hikari-for-Jekyll"
+   },
+   "path": "sublime-hugo-theme",
+   "colors": [
+    "#f2f8ea",
+    "#6a1c36",
+    "#838581",
+    "#344d24",
+    "#9e1544",
+    "#c4ccbc"
+   ],
+   "hasimage": true
+  },
+  {
    "author": "Marlon Cabrera Oliveira",
    "description": "Hugo theme using tachyons.io css3 framework & geomicons.com icons",
    "license": "MIT",
