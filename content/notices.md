@@ -22,6 +22,8 @@ Open Source is awesome! Many thanks to the teams behind the resources which I us
 [Font Awesome](https://fontawesome.com/)
 : Awesome icon fonts
 
+[Splashy](https://github.com/microlinkhq/splashy)
+: Extracts dominant colors from an image
 
 #### Disclaimer
 
