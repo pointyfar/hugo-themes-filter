@@ -38,38 +38,38 @@
   
 </div>
     <div class="uk-container uk-container-expand wrapper">
-      <section>
-        <main>
+      <div class="content-wrapper">
+        <main class="main">
           <div class="wall">
         
-        {{ range  sort .Site.Data.themes.themes "min_version" "desc" }}
-        <div class="item">
-          <div 
-              id="theme-{{.name|urlize}}"
-              
-              class="filterDiv box"
-              
-              data-tags="{{ range .tags }}{{ . | replaceRE "[.]" "_" | urlize }} {{ end }}"
-              data-license="{{ .license | replaceRE "[.]" "_" |urlize}}"
-              data-minver="{{.min_version}}"
-              >
-              <div class="theme-box">
-              <h6 class="uk-card-title">{{.name}}</h6>
-              {{with .description}}<p>{{ . }}</p>{{ end }}
-              <span class="uk-label uk-background-muted tag-label"><a href="https://themes.gohugo.io/{{.path | urlize}}">Hugo Theme Page</a></span>
-              {{with .homepage}}<span class="uk-label uk-background-muted tag-label"><a href="{{.}}">Theme Homepage</a></span>{{ end }}
-              
-              <br />{{with .min_version}}{{ . }}{{end}} | {{with .license}}{{ . }}{{end}}
-              {{with .colors}}
-              <br />{{ range . }}<span class="dot" style="background-color:{{.}}">&nbsp;</span>{{ end }}
-              {{ end }}
-              {{with .tags}}<br />{{ range . }}{{ if gt ( len . ) 0 }}<span class="uk-label uk-background-muted tag-label">{{ . | humanize }}</span> {{ end }}{{ end }}{{ end }}
+            {{ range  sort .Site.Data.themes.themes "min_version" "desc" }}
+            <div class="item">
+              <div 
+                  id="theme-{{.name|urlize}}"
+                  
+                  class="filterDiv box"
+                  
+                  data-tags="{{ range .tags }}{{ . | replaceRE "[.]" "_" | urlize }} {{ end }}"
+                  data-license="{{ .license | replaceRE "[.]" "_" |urlize}}"
+                  data-minver="{{.min_version}}"
+                >
+                <div class="theme-box">
+                  <h6 class="uk-card-title">{{.name}}</h6>
+                  {{with .description}}<p>{{ . }}</p>{{ end }}
+                  <span class="uk-label uk-background-muted tag-label"><a href="https://themes.gohugo.io/{{.path | urlize}}">Hugo Theme Page</a></span>
+                  {{with .homepage}}<span class="uk-label uk-background-muted tag-label"><a href="{{.}}">Theme Homepage</a></span>{{ end }}
+                  
+                  <br />{{with .min_version}}{{ . }}{{end}} | {{with .license}}{{ . }}{{end}}
+                  {{with .colors}}
+                  <br />{{ range . }}<span class="dot" style="background-color:{{.}}">&nbsp;</span>{{ end }}
+                  {{ end }}
+                  {{with .tags}}<br />{{ range . }}{{ if gt ( len . ) 0 }}<span class="uk-label uk-background-muted tag-label">{{ . | humanize }}</span> {{ end }}{{ end }}{{ end }}
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
 
-        {{ end }}
-        </div>
+            {{ end }}
+          </div>
         </main>
         
         <aside class="">
@@ -130,7 +130,7 @@
 
 
         </aside>
-      </section>
+      </div>
     </div>
   
 {{ end }}

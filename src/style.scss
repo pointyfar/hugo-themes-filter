@@ -26,12 +26,20 @@
   overflow: hidden;
   border:0px solid green;
 }
-section {
+
+main.single {
+  overflow: auto;
+  height: 100%;
+  display: block;
+  border:0px solid hotpink;
+  
+}
+.content-wrapper {
    border:0px dashed indigo;
    display: flex;
    flex-direction: row;
 }
-main {
+main.main {
   overflow: auto;
   height: 100%;
   display: block;
@@ -128,11 +136,7 @@ label.checkbox {
   width: auto;
 }
 .wall {
-  -moz-column-width: 10em;
-  -webkit-column-width: 10em;
   column-width: 10em;
-  -moz-column-gap: 1em;
-  -webkit-column-gap: 1em;
   column-gap: 1em;
   border:0px dashed cyan;
   margin: 5px;
