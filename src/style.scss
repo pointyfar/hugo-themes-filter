@@ -97,32 +97,35 @@ label.checkbox {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-around;
 }
 
 .status {
   border: 0px solid teal;
   text-align: center;
   display: flex;
-  flex: 1 1 auto;
+  flex: 0 1 auto;
   flex-wrap: wrap;
   flex-direction: row;
-  align-items: stretch;
-  justify-content:space-between;
+  align-items: center;
+  justify-content:center;
   padding: 0 4px;
   margin: 0;
-  border-right: 1px solid #ccc;
 }
 
-.status-bar div.status:last-child {
-  border: none;
+.status-separator {
+
+  width: 1px;
 }
+
 .status-inner {
-  flex: 1 0 auto;
+  flex: 0 1 auto;
   border: 0px solid brown;
   display: inline-block;
   text-align: center;
   align-items: center;
   flex-wrap: wrap;
+  width: auto;
 }
 .wall {
   -moz-column-width: 10em;

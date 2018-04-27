@@ -27,10 +27,13 @@
 
 <div class="uk-background-muted status-bar uk-text-small">
   <div class="status"><div class="status-inner"><span id="selectedThemeCount"></span> of {{ len .Site.Data.themes.themes }} </div><div class="status-inner">&nbsp;themes</div></div>
+  <div class="status-separator">|</div>
   <div class="status"><div class="status-inner"><span id="selectedTagsCount"></span> {{ len ($.Scratch.Get "tags") }} </div><div class="status-inner">&nbsp;tags</div></div>
+  <div class="status-separator">|</div>
   <div class="status"><div class="status-inner"><span id="selectedLicCount"></span> {{ len ($.Scratch.Get "licenses") }} </div><div class="status-inner">&nbsp;licenses</div></div>
-  <div class="status"><div class="status-inner"><span id="selectedVerStatus">All Ver.</span></div><div class="status-inner">&nbsp;Hugo</div></div>
-  
+  <div class="status-separator">|</div>
+  <div class="status"><div class="status-inner"><span id="selectedVerStatus">All</span></div><div class="status-inner">&nbsp;Hugo Version</div></div>
+  <div class="status-separator">|</div>
   <div class="status"><div class="status-inner">Last Updated </div><div class="status-inner">&nbsp;{{ now.Format "2 Jan 2006" }}</div></div>
   
 </div>
