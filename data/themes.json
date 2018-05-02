@@ -2595,7 +2595,13 @@
     "clean",
     "blog",
     "landing page",
-    "responsive"
+    "responsive",
+    "google analytics",
+    "disqus",
+    "personal",
+    "syntax highlighting",
+    "single page",
+    "material design"
    ],
    "features": [
     "randomBackground",
@@ -2621,12 +2627,12 @@
    },
    "path": "hugo-dream-plus",
    "colors": [
-    "#c7b998",
-    "#2594f3",
-    "#8c766d",
-    "#9ccef5",
-    "#293a48",
-    "#24547c"
+    "#d0c19d",
+    "#145b93",
+    "#898673",
+    "#ecba1c",
+    "#ea71b1",
+    "#2c4156"
    ],
    "hasimage": true
   },
@@ -6279,7 +6285,7 @@
     "clean",
     "light"
    ],
-   "min_version": "0.24",
+   "min_version": "0.30",
    "author": {
     "name": "Yurizal Susanto",
     "homepage": "https://github.com/yursan9"
