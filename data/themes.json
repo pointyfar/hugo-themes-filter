@@ -150,10 +150,14 @@
    "description": "A retro dark theme for Hugo.",
    "homepage": "https://comfusion.github.io/after-dark/",
    "tags": [
+    "personal",
+    "simple",
     "minimal",
     "responsive",
     "accessible",
-    "dark"
+    "search",
+    "dark",
+    "blog"
    ],
    "features": [
     "Mobile-optimized",
@@ -696,7 +700,7 @@
     "shortcuts"
    ],
    "min_version": "0.29",
-   "theme_version": "1.2.0",
+   "theme_version": "1.4.0",
    "author": {
     "name": "Lednerb | Sascha Brendel",
     "homepage": "https://sascha-brendel.de"
@@ -1447,6 +1451,33 @@
     "#c5c4c4",
     "#7a7876",
     "#f4ece8"
+   ],
+   "hasimage": true
+  },
+  {
+   "name": "Er",
+   "license": "MIT",
+   "licenselink": "https://github.com/lingxz/er/blob/master/LICENSE.md",
+   "description": "",
+   "homepage": "http://github.com/lingxz/er",
+   "tags": [
+    "responsive",
+    "white",
+    "blog"
+   ],
+   "features": [
+    "responsive",
+    "blog"
+   ],
+   "min_version": "0.38",
+   "author": {
+    "name": "Lingyi Hu",
+    "homepage": "https://theconfused.me"
+   },
+   "path": "er",
+   "colors": [
+    "#947165",
+    "#ccbcb4"
    ],
    "hasimage": true
   },
@@ -4501,7 +4532,7 @@
    "license": "MIT",
    "licenselink": "https://github.com/g1eny0ung/hugo-theme-dream/blob/master/LICENSE",
    "description": "A hugo theme named dream",
-   "homepage": "https://github.com/g1eny0ung/hugo-theme-dream",
+   "homepage": "http://g1eny0ung.site/hugo-theme-dream",
    "tags": [
     "flip",
     "colorful",
@@ -4544,12 +4575,12 @@
    },
    "path": "hugo-theme-dream",
    "colors": [
-    "#c8bb9e",
-    "#88877d",
-    "#303d4e",
-    "#60471a",
-    "#dea326",
-    "#ec7ca8"
+    "#ee4776",
+    "#4e4844",
+    "#273557",
+    "#b453a1",
+    "#445cf8",
+    "#b6b2a7"
    ],
    "hasimage": true
   },
@@ -5052,7 +5083,7 @@
    "name": "W3.CSS Basic",
    "license": "MIT",
    "licenselink": "https://github.com/it-gro/hugo-theme-w3css-basic/blob/master/LICENSE.md",
-   "description": "This theme is built with W3.CSS and is highly configurable. More than 50 monochromatic color themes and 25 shortcodes. Support for image processing and attachments.",
+   "description": "This theme is built with W3.CSS and is highly configurable. More than 50 monochromatic color themes and 25 shortcodes. It has support for Cookie consent, image processing, page bundles and resources (attachments).",
    "homepage": "https://it-gro.github.io/hugo-theme-w3css-basic.github.io",
    "tags": [
     "blog",
@@ -5080,11 +5111,13 @@
     "animate",
     "attachments",
     "blog",
+    "branch bundle",
     "carousel",
     "clients",
     "color themes",
     "configuration",
     "contact form",
+    "cookie consent",
     "custom themes",
     "data",
     "debug",
@@ -5100,17 +5133,20 @@
     "google fonts",
     "google map",
     "google translate",
+    "headless bundle",
     "hugo-easy-gallery",
     "i18n",
     "image processing",
     "jumbotron",
     "landing page",
+    "leaf bundle",
     "marquee",
     "menu",
     "menutopbar",
     "mobile",
     "monochromatic colors",
     "navigation",
+    "page bundles",
     "page resources",
     "pages",
     "pagination",
@@ -5120,16 +5156,16 @@
     "search",
     "see more",
     "submenu",
-    "tracing",
     "taxonomy bar",
     "taxonomy list",
     "teaser pictures",
     "teasers",
     "term list",
     "testimonials",
+    "tracing",
     "w3css"
    ],
-   "min_version": "0.37.1",
+   "min_version": "0.39",
    "author": {
     "name": "it-gro",
     "homepage": "https://github.com/it-gro/"
@@ -5141,12 +5177,12 @@
    },
    "path": "hugo-theme-w3css-basic",
    "colors": [
-    "#789a56",
-    "#bac2d3",
-    "#ebdc8c",
-    "#eeb724",
-    "#3c342c",
-    "#44641c"
+    "#63fcd4",
+    "#13fbbb",
+    "#25332d",
+    "#0667a8",
+    "#6098ae",
+    "#bcbfbe"
    ],
    "hasimage": true
   },
