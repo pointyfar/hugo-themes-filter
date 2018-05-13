@@ -1,10 +1,10 @@
 {{ define "main" }}
 
-{{ $.Scratch.Set "tags" (slice ) }}
-{{ $.Scratch.Set "licenses" (slice ) }}
-{{ $.Scratch.Set "hugoversion" (slice ) }}
+{{- $.Scratch.Set "tags" (slice ) -}}
+{{- $.Scratch.Set "licenses" (slice ) -}}
+{{- $.Scratch.Set "hugoversion" (slice ) -}}
 
-{{ $.Scratch.Set "untagged" (slice ) }}
+{{- $.Scratch.Set "untagged" (slice ) -}}
 
 {{- range .Site.Data.themes.themes -}}
   {{- with .tags -}}
@@ -44,11 +44,8 @@
         
             {{ range  sort .Site.Data.themes.themes "min_version" "desc" }}
             <div class="item">
-              <div 
-                  id="theme-{{.name|urlize}}"
-                  
+              <div id="theme-{{.name|urlize}}"
                   class="filterDiv box"
-                  
                   data-tags="{{ range .tags }}{{ . | replaceRE "[.]" "_" | urlize }} {{ end }}"
                   data-license="{{ .license | replaceRE "[.]" "_" |urlize}}"
                   data-minver="{{.min_version}}"
@@ -63,7 +60,23 @@
                   {{with .colors}}
                   <br />{{ range . }}<span class="dot" style="background-color:{{.}}">&nbsp;</span>{{ end }}
                   {{ end }}
-                  {{with .tags}}<br />{{ range . }}{{ if gt ( len . ) 0 }}<span class="uk-label uk-background-muted tag-label">{{ . | humanize }}</span> {{ end }}{{ end }}{{ end }}
+                  {{with .tags}}
+                  <div class="uk-margin item-tags-container">
+                    {{ range . }}{{ if gt ( len . ) 0 }}
+                    <button class="uk-button uk-button-small uk-button-text item-tags-button" onclick="tagsCheck('{{ . | replaceRE "[.]" "_"| urlize }}', 't-')">
+                      {{- . | humanize -}}
+                    </button> 
+                    {{ end }}{{ end }}
+                  </div>
+                  {{ end }}
+                  {{with .features }}
+                    <button class="uk-button uk-button-default uk-button-small uk-width-1-1" type="button">Features</button>
+                    <div uk-drop="pos: top-left; boundary: .wall; mode:click">
+                        <div class="uk-card uk-card-body uk-card-default">
+                          {{ range . }}{{ if gt ( len . ) 0 }}<span> | {{.}}  </span>{{end}}{{end}}|
+                        </div>
+                    </div>
+                  {{end}}
                 </div>
               </div>
             </div>
@@ -74,25 +87,25 @@
         
         <aside class="">
           <ul class="" uk-tab uk-switcher>
-            <li class="active"><a href="#">Tags</a></li>
-            <li><a href="#">Licenses</a></li>
-            <li><a href="#">Version</a></li>
+            <li class="active"><a class="uk-width-1-1 uk-text-truncate" href="#">Tags</a></li>
+            <li><a class="uk-width-1-1 uk-text-truncate" href="#">Licenses</a></li>
+            <li><a class="uk-width-1-1 uk-text-truncate" href="#">Version</a></li>
           </ul>
           <ul class="uk-switcher">
             <li>
               <div class="uk-width-1-1 uk-padding-small">
                 <form class="uk-search uk-search-default">
                   <span class="uk-form-icon" uk-icon="icon: search"></span>
-                  <input class="uk-input" type="text" id="tagSearch" onkeyup="searchFilter('tag', 'tagSearch')">
+                  <input class="uk-input" type="text" id="tagSearch" onkeyup="searchTermFilter('tagSearch', 'tag-btn', 'span', 'hideBtn' )">
                   <a class="uk-form-icon uk-form-icon-flip" href="#" uk-icon="icon: close" onclick="document.getElementById('tagSearch').value = '';searchFilter('tag', 'tagSearch')"></a>
                 </form>
               </div>
               <div class="tab_pane_container uk-padding-small uk-margin tab-buttons-container">
-                <button class="uk-button uk-button-default uk-button-small" id="selectAllTags" onclick="showAll()"> Show all</button>
+                <button class="uk-button uk-button-default uk-button-small" id="selectAllTags" onclick="showAll()">Show all</button>
                 {{- range sort ( $.Scratch.Get "tags" ) "value" "asc" -}}
                 <button class="uk-button uk-button-default uk-button-small tag-btn {{.}}" 
                         id="t-{{. | replaceRE "[.]" "_" | urlize }}" 
-                        onclick="tagsCheck('{{ . | replaceRE "[.]" "_"| urlize }}', 't-')"><span> {{ . | humanize | upper }}</span></button>
+                        onclick="tagsCheck('{{ . | replaceRE "[.]" "_"| urlize }}', 't-')"><span>{{- . | humanize | upper -}}</span></button>
                 {{ end }}
               </div>
             </li>
@@ -132,5 +145,6 @@
         </aside>
       </div>
     </div>
-  
+
+<script src="/js/{{index .Site.Data.hash "filter.js"}}"></script>
 {{ end }}

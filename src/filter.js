@@ -181,6 +181,8 @@ function showCheck() {
     document.getElementById("selectedLicCount").textContent=` `;
   }
 
+  document.getElementById("mainSearch").value= '';
+
 }
 
 /**
@@ -308,4 +310,26 @@ function searchFilter(filter, inputId) {
         addClassIfMissing(tagBtns[i], "hideBtn")
       }
   }
+}
+
+function searchTermFilter(searchTermInput, target, innerEl, hideClass ) {
+
+  var searchTerm = document.getElementById(searchTermInput).value;
+  var searchElements = document.getElementsByClassName(target);
+  var count = 0;
+  for( var i = 0; i <searchElements.length; i++ ) {
+    
+    var textContainer = searchElements[i].getElementsByTagName(innerEl)[0];
+    var s = textContainer.textContent.toUpperCase();
+
+    if((textContainer.textContent.toUpperCase()).indexOf(searchTerm.toUpperCase()) > -1) {
+      count++;
+      delClassIfPresent(searchElements[i], hideClass)
+    } else {
+      addClassIfMissing(searchElements[i], hideClass)
+    }
+  }
+  document.getElementById("selectedThemeCount").textContent=`${count}`;
+  
+
 }

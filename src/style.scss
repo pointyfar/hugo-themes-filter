@@ -84,6 +84,13 @@ label.checkbox {
   display: block;
 }
 
+
+.uk-tab {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
 @media screen and (max-width: 870px) {
   .uk-tab {
     flex-direction: column;
@@ -94,10 +101,14 @@ label.checkbox {
 }
 
 .uk-tab > li {
-  border: 0px solid green;
-  padding: 0 10px;
+  padding: 0 ;
   height: 32px;
-  flex: initial;
+  
+  a {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .status-bar {
@@ -136,7 +147,7 @@ label.checkbox {
   width: auto;
 }
 .wall {
-  column-width: 10em;
+  column-width: 15em;
   column-gap: 1em;
   border:0px dashed cyan;
   margin: 5px;
@@ -169,9 +180,15 @@ label.checkbox {
   justify-content: center;
 }
 .tag-btn, .license-btn {
-  margin: 0.25em;
+  margin: 0.2em;
   flex: 1 1 auto;
 }
+
+.item-tags-button {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
 
 .tag-label {
   font-size: .7rem!important;
@@ -199,7 +216,9 @@ label.checkbox {
 .show {
     display: block;
 }
-
+.hide {
+  display: none;
+}
 .dot {
   height: 15px;
   width: 15px;
@@ -215,7 +234,10 @@ label.checkbox {
 .hideBtn {
   display: none;
 }
-
+button {
+  font-size: .8rem !important;
+  padding: 0 5px !important;
+}
 button.active {
   background-color: #313439 !important;
   color: white !important;
