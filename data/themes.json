@@ -328,8 +328,8 @@
    ],
    "min_version": 0.19,
    "author": {
-    "name": "Giacomo Mariani",
-    "homepage": "https://karju-dev.github.io"
+    "name": "Themefisher",
+    "homepage": "https://themefisher.com"
    },
    "original": {
     "name": "airspace",
@@ -464,9 +464,7 @@
    "homepage": "https://github.com/otterpro/apricot-hugo-theme/",
    "tags": [
     "blog",
-    "highlight.js",
-    "responsive",
-    "google analytics"
+    "responsive"
    ],
    "features": [
     "blog"
@@ -1451,33 +1449,6 @@
     "#c5c4c4",
     "#7a7876",
     "#f4ece8"
-   ],
-   "hasimage": true
-  },
-  {
-   "name": "Er",
-   "license": "MIT",
-   "licenselink": "https://github.com/lingxz/er/blob/master/LICENSE.md",
-   "description": "",
-   "homepage": "http://github.com/lingxz/er",
-   "tags": [
-    "responsive",
-    "white",
-    "blog"
-   ],
-   "features": [
-    "responsive",
-    "blog"
-   ],
-   "min_version": "0.38",
-   "author": {
-    "name": "Lingyi Hu",
-    "homepage": "https://theconfused.me"
-   },
-   "path": "er",
-   "colors": [
-    "#947165",
-    "#ccbcb4"
    ],
    "hasimage": true
   },
@@ -5083,7 +5054,7 @@
    "name": "W3.CSS Basic",
    "license": "MIT",
    "licenselink": "https://github.com/it-gro/hugo-theme-w3css-basic/blob/master/LICENSE.md",
-   "description": "This theme is built with W3.CSS and is highly configurable. More than 50 monochromatic color themes and 25 shortcodes. It has support for Cookie consent, image processing, page bundles and resources (attachments).",
+   "description": "This theme is built with W3.CSS and is highly configurable. More than 50 monochromatic color themes and 25 shortcodes. It has support for Cookie consent, image processing, image galleries, page bundles and resources (attachments).",
    "homepage": "https://it-gro.github.io/hugo-theme-w3css-basic.github.io",
    "tags": [
     "blog",
@@ -5181,7 +5152,7 @@
     "#13fbbb",
     "#25332d",
     "#0667a8",
-    "#6098ae",
+    "#6198ae",
     "#bcbfbe"
    ],
    "hasimage": true
@@ -7134,6 +7105,35 @@
    "hasimage": true
   },
   {
+   "name": "Seminyak",
+   "license": "WTFPL",
+   "licenselink": "https://github.com/comfusion/seminyak/blob/master/COPYING",
+   "description": "Really, really, really ridiculously good looking splash page for Hugo.",
+   "homepage": "https://github.com/comfusion/seminyak",
+   "tags": [
+    "minimal",
+    "simple",
+    "landing-page",
+    "one-page"
+   ],
+   "features": [],
+   "min_version": "0.16",
+   "author": {
+    "name": "Josh Habdas",
+    "homepage": "https://habd.as"
+   },
+   "path": "seminyak",
+   "colors": [
+    "#946a5a",
+    "#5a433b",
+    "#b39a84",
+    "#632f22",
+    "#c6763e",
+    "#fcd07c"
+   ],
+   "hasimage": true
+  },
+  {
    "name": "Shiori",
    "license": "MIT",
    "licenselink": "https://github.com/chibicode/hugo-theme-shiori/blob/master/LICENSE.md",
@@ -7238,19 +7238,19 @@
     "disqus",
     "lightbox"
    ],
-   "min_version": "0.30.2",
+   "min_version": "0.38",
    "author": {
     "name": "Przemysław Kołodziejczyk",
     "homepage": "https://eshlox.net"
    },
    "path": "simplicity",
    "colors": [
-    "#ced9e4",
-    "#6d6d6d",
-    "#85cc55",
-    "#a2d57d",
-    "#848484",
-    "#3b661e"
+    "#737c89",
+    "#505050",
+    "#c4b4ac",
+    "#30d460",
+    "#fcbc5c",
+    "#166d30"
    ],
    "hasimage": true
   },
