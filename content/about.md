@@ -11,11 +11,20 @@ menu:
 
 #### Who 
 
-Hello! I am PointyFar and I am new(-ish) to Hugo. I like cats.
+Hello! I am PointyFar and I like cats. And filtering things.
+
+See my other project here:
+
+  - [Generic filtering for Hugo](https://github.com/pointyfar/hugo-tags-filter) [(Demo here)](https://pointy.netlify.com/filter/)
 
 #### What 
 
 **PFHT: PointyFar's Filterable Hugo Themes** lets you filter through Hugo themes by tags, license, and Hugo version. 
+  
+- **NEW:** Search Bar added!
+  - Tags search
+  - Main search: searches the contents of the theme 'boxes'. 
+    - Note: Still a WIP. Currently, if you want to use the main search box in addition to tags or the other buttons, you have to select the other buttons **first** then type your search term. Otherwise selecting a button clears the search box.
 
 #### Why
 
