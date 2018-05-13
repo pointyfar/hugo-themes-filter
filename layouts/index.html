@@ -56,7 +56,7 @@
                   <span class="uk-label uk-background-muted tag-label"><a href="https://themes.gohugo.io/{{.path | urlize}}">Hugo Theme Page</a></span>
                   {{with .homepage}}<span class="uk-label uk-background-muted tag-label"><a href="{{.}}">Theme Homepage</a></span>{{ end }}
                   
-                  <br />{{with .min_version}}{{ . }}{{end}} | {{with .license}}{{ . }}{{end}}
+                  <br />{{with .min_version}}{{.}}{{else}}No Version Specified{{end}} | {{with .license}}{{.}}{{else}}No License Specified{{end}}
                   {{with .colors}}
                   <br />{{ range . }}<span class="dot" style="background-color:{{.}}">&nbsp;</span>{{ end }}
                   {{ end }}

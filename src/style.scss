@@ -19,6 +19,12 @@
   background-color: #222!important;
 }
 
+.uk-navbar-toggle, .uk-navbar-item {
+  height: inherit;
+}
+.uk-search-navbar .uk-search-input {
+  font-size: 1rem;
+}
 .wrapper {
   display: flex;
   flex-direction: row;
