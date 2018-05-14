@@ -4114,6 +4114,46 @@
    "hasimage": true
   },
   {
+   "name": "Shopping Product Catalogue - Simple",
+   "license": "MIT",
+   "licenselink": "https://github.com/kishaningithub/hugo-shopping-product-catalogue-simple/blob/master/LICENSE.md",
+   "description": "Kishan B",
+   "homepage": "https://github.com/kishaningithub",
+   "tags": [
+    "shopping",
+    "catalogue",
+    "product catalogue",
+    "ecommerce",
+    "minimal",
+    "responsive"
+   ],
+   "features": [
+    "catalogue",
+    "bootstrap",
+    "responsive"
+   ],
+   "min_version": "0.38",
+   "author": {
+    "name": "Kishan B",
+    "homepage": "https://github.com/kishaningithub"
+   },
+   "original": {
+    "name": "",
+    "homepage": "",
+    "repo": ""
+   },
+   "path": "hugo-shopping-product-catalogue-simple",
+   "colors": [
+    "#c6bba5",
+    "#574941",
+    "#3d8bc4",
+    "#5796cb",
+    "#21364f",
+    "#67849c"
+   ],
+   "hasimage": true
+  },
+  {
    "name": "hugo-simpledoc-theme",
    "license": "MIT",
    "licenselink": "https://github.com/aerohub/hugo-simpledoc-theme/blob/master/LICENSE.md",
