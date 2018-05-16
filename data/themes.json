@@ -366,6 +366,44 @@
    "hasimage": true
   },
   {
+   "name": "Alpha Church",
+   "license": "CC0",
+   "licenselink": "https://github.com/funkydan2/alpha-church/blob/master/LICENSE.md",
+   "description": "A port of html5up Alpha theme. Ported to hugo and customised for church use.",
+   "homepage": "http://example.com/",
+   "tags": [
+    "church",
+    "podcast"
+   ],
+   "features": [
+    "drop down menu",
+    "banner",
+    "feature images",
+    "fontawesome",
+    "podcast"
+   ],
+   "min_version": "0.38",
+   "author": {
+    "name": "Daniel Saunders",
+    "homepage": "https://github.com/funkydan2"
+   },
+   "original": {
+    "name": "",
+    "homepage": "",
+    "repo": ""
+   },
+   "path": "alpha-church",
+   "colors": [
+    "#485040",
+    "#7f867c",
+    "#ceddaf",
+    "#caac92",
+    "#d4b888",
+    "#614a23"
+   ],
+   "hasimage": true
+  },
+  {
    "name": "AMP",
    "license": "Apache v2",
    "licenselink": "https://github.com/pdevty/amp/blob/master/LICENSE.md",

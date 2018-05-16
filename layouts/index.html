@@ -41,8 +41,7 @@
       <div class="content-wrapper">
         <main class="main">
           <div class="wall">
-        
-            {{ range  sort .Site.Data.themes.themes "min_version" "desc" }}
+            {{ range .Site.Data.themes.themes }}
             <div class="item">
               <div id="theme-{{.name|urlize}}"
                   class="filterDiv box"
