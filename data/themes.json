@@ -1491,6 +1491,33 @@
    "hasimage": true
   },
   {
+   "name": "Er",
+   "license": "MIT",
+   "licenselink": "https://github.com/lingxz/er/blob/master/LICENSE.md",
+   "description": "A clean Hugo theme for blogging",
+   "homepage": "http://github.com/lingxz/er",
+   "tags": [
+    "responsive",
+    "white",
+    "blog"
+   ],
+   "features": [
+    "responsive",
+    "blog"
+   ],
+   "min_version": "0.38",
+   "author": {
+    "name": "Lingyi Hu",
+    "homepage": "https://theconfused.me"
+   },
+   "path": "er",
+   "colors": [
+    "#947165",
+    "#ccbcb4"
+   ],
+   "hasimage": true
+  },
+  {
    "name": "Forty",
    "license": "Creative Commons Attribution 3.0",
    "licenselink": "https://github.com/MarcusVirg/forty/blob/master/LICENSE.md",
@@ -7150,6 +7177,38 @@
     "#95b7bf",
     "#b6f0f5",
     "#6a808e"
+   ],
+   "hasimage": true
+  },
+  {
+   "name": "reveal-hugo",
+   "license": "MIT",
+   "licenselink": "https://github.com/dzello/reveal-hugo/blob/master/LICENSE",
+   "homepage": "https://dzello.com/reveal-hugo/",
+   "tags": [
+    "presentation",
+    "revealjs"
+   ],
+   "features": [
+    "presentation"
+   ],
+   "author": {
+    "name": "Josh Dzielak",
+    "homepage": "https://dzello.com/"
+   },
+   "original": {
+    "name": "reveal.js",
+    "homepage": "https://revealjs.com",
+    "repo": "https://github.com/hakimel/reveal.js/"
+   },
+   "path": "reveal-hugo",
+   "colors": [
+    "#fc3c74",
+    "#d3ced0",
+    "#343434",
+    "#7c7c7c",
+    "#fc9cbc",
+    "#820227"
    ],
    "hasimage": true
   },
