@@ -6591,6 +6591,40 @@
    "hasimage": true
   },
   {
+   "name": "min_night",
+   "license": "MIT",
+   "licenselink": "https://github.com/nathancday/min_night/blob/master/LICENSE.md",
+   "description": "An easy on the eyes blog theme with night-mode.",
+   "homepage": "http://github.com/nathancday/min_night",
+   "tags": [
+    "blog",
+    "night-mode"
+   ],
+   "features": [
+    "twitter-cards"
+   ],
+   "min_version": "0.30.2",
+   "author": {
+    "name": "Nate Day",
+    "homepage": "https://natedayta.com"
+   },
+   "original": {
+    "author": "Calin Tataru",
+    "homepage": "https://calintat.github.io/",
+    "repo": "https://github.com/calintat/minimal"
+   },
+   "path": "min_night",
+   "colors": [
+    "#345c84",
+    "#283d50",
+    "#2c5376",
+    "#97acc2",
+    "#6488ac",
+    "#9cbcd4"
+   ],
+   "hasimage": true
+  },
+  {
    "name": "Minimal",
    "license": "MIT",
    "licenselink": "https://github.com/calintat/minimal/blob/master/LICENSE.md",
