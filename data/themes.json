@@ -3,9 +3,9 @@
   {
    "name": "BluestNight",
    "license": "MIT",
-   "licenselink": "https://gitlab.com/BluestNight/BluestNight/blob/master/LICENSE.md",
+   "licenselink": "https://dev.shadow53.com/source/BluestNight/browse/master/LICENSE.md",
    "description": "A featureful, configurable, yet sleek dark theme for Hugo.",
-   "homepage": "https://bluestnight.shadow53.com/",
+   "homepage": "https://bluestnight.com/",
    "tags": [
     "Blog",
     "Contact Form",
@@ -20,7 +20,7 @@
     "Widgets",
     "Writing"
    ],
-   "min_version": 0.3,
+   "min_version": 0.39,
    "author": {
     "name": "Michael Bryant",
     "homepage": "https://shadow53.com"
@@ -367,7 +367,7 @@
   },
   {
    "name": "Alpha Church",
-   "license": "CC0",
+   "license": "Creative Commons Attribution 3.0",
    "licenselink": "https://github.com/funkydan2/alpha-church/blob/master/LICENSE.md",
    "description": "A hugo port of html5up Alpha theme. Customised for church use.",
    "homepage": "https://github.com/funkydan2/alpha-church",
@@ -1599,7 +1599,7 @@
    "license": "MIT",
    "licenselink": "https://github.com/yourname/yourtheme/blob/master/LICENSE.md",
    "description": "Hugo Foundation Starter",
-   "homepage": "https://github.com/hdcdstr8fwd/hugo-foundation",
+   "homepage": "https://github.com/hdcdstr8fwd/foundation-theme",
    "tags": [
     "hugo",
     "foundation"
@@ -1726,7 +1726,7 @@
     "technical",
     "personal"
    ],
-   "min_version": 0.37,
+   "min_version": "0.41",
    "author": {
     "name": "Juraj Bubniak",
     "homepage": "https://github.com/jbub"
@@ -4249,12 +4249,12 @@
    },
    "path": "hugo-shopping-product-catalogue-simple",
    "colors": [
-    "#c6bba5",
-    "#574941",
-    "#3d8bc4",
-    "#5796cb",
-    "#21364f",
-    "#67849c"
+    "#c6bba4",
+    "#564a42",
+    "#3e8bc3",
+    "#5898cd",
+    "#1c3452",
+    "#6584a2"
    ],
    "hasimage": true
   },
@@ -4807,9 +4807,9 @@
   {
    "name": "Introduction",
    "license": "Creative Commons Attribution 3.0 Unported",
-   "licenselink": "https://github.com/hivickylai/hugo-theme-introduction/blob/master/LICENSE.md",
+   "licenselink": "https://github.com/vickylai/hugo-theme-introduction/blob/master/LICENSE.md",
    "description": "Minimal, single page, smooth scrolling theme for Hugo.",
-   "homepage": "https://github.com/hivickylai/hugo-theme-introduction",
+   "homepage": "https://github.com/vickylai/hugo-theme-introduction",
    "tags": [
     "clean",
     "simple",
@@ -4830,7 +4830,7 @@
    "min_version": "0.30",
    "author": {
     "name": "Vicky Lai",
-    "homepage": "https://vickylai.io"
+    "homepage": "https://vickylai.com"
    },
    "original": {
     "name": "",
@@ -5133,9 +5133,9 @@
   {
    "name": "Call me Sam.",
    "license": "Creative Commons Attribution 3.0 Unported",
-   "licenselink": "https://github.com/hivickylai/hugo-theme-sam/blob/master/LICENSE.txt",
+   "licenselink": "https://github.com/vickylai/hugo-theme-sam/blob/master/LICENSE.txt",
    "description": "Simple And Minimalist theme for Hugo.",
-   "homepage": "https://github.com/hivickylai/hugo-theme-sam",
+   "homepage": "https://github.com/vickylai/hugo-theme-sam",
    "tags": [
     "clean",
     "simple",
@@ -5156,7 +5156,7 @@
    "min_version": "0.30",
    "author": {
     "name": "Vicky Lai",
-    "homepage": "https://vickylai.io"
+    "homepage": "https://vickylai.com"
    },
    "path": "hugo-theme-sam",
    "colors": [
@@ -6603,7 +6603,7 @@
    "features": [
     "twitter-cards"
    ],
-   "min_version": "0.30.2",
+   "min_version": "0.35",
    "author": {
     "name": "Nate Day",
     "homepage": "https://natedayta.com"
@@ -6961,9 +6961,12 @@
    "source_repo": "https://github.com/azmelanar/hugo-theme-pixyll",
    "tags": [
     "blog",
-    "personal"
+    "personal",
+    "search",
+    "responsive",
+    "minimal"
    ],
-   "min_version": 0.14,
+   "min_version": 0.25,
    "path": "pixyll",
    "colors": [
     "#797979",
@@ -7965,6 +7968,36 @@
     "#707c94",
     "#bdc4c8",
     "#ee9c04"
+   ],
+   "hasimage": true
+  },
+  {
+   "name": "Yourfolio",
+   "license": "MIT",
+   "licenselink": "https://github.com/serg/yourfolio/blob/master/LICENSE.md",
+   "description": "A simple and responsive theme for your personal website",
+   "homepage": "https://github.com/serg/yourfolio",
+   "tags": [
+    "responsive",
+    "minimal",
+    "simple",
+    "personal",
+    "portfolio"
+   ],
+   "features": [],
+   "min_version": "0.38",
+   "author": {
+    "name": "Sergey Furtak",
+    "homepage": "https://sergfurtak.com"
+   },
+   "path": "yourfolio",
+   "colors": [
+    "#4f4f4f",
+    "#7c7c7c",
+    "#254cfb",
+    "#939fcf",
+    "#728cf1",
+    "#021982"
    ],
    "hasimage": true
   }
