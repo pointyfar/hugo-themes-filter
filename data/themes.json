@@ -311,15 +311,17 @@
   {
    "name": "Airspace Hugo",
    "license": "MIT",
-   "licenselink": "https://github.com/themefisher/airspace-hugo/blob/master/LICENSE.md",
-   "description": "Hugo porting for the Themefisher's Airspace theme",
-   "homepage": "http://karju-dev.github.io/airspace-example-site",
+   "licenselink": "https://github.com/themefisher/airspace-hugo/blob/master/LICENSE",
+   "description": "Hugo port of the Themefisher’s Airspace theme",
+   "homepage": "https://github.com/themefisher/airspace-hugo",
    "tags": [
     "blog",
+    "bootstrap",
     "company",
     "portfolio",
     "projects",
-    "responsive"
+    "responsive",
+    "themefisher"
    ],
    "features": [
     "blog",
@@ -328,11 +330,11 @@
    ],
    "min_version": 0.19,
    "author": {
-    "name": "Themefisher",
-    "homepage": "https://themefisher.com"
+    "name": "Giacomo Mariani (@karjudev) for Themefisher",
+    "homepage": "https://themefisher.com/"
    },
    "original": {
-    "name": "airspace",
+    "name": "Airspace",
     "homepage": "https://themefisher.com/products/airspace-free-bootstrap-website-template/",
     "repo": "https://github.com/themefisher/airspace-free-html5-agency-template"
    },
@@ -5293,12 +5295,12 @@
    },
    "path": "hugo-theme-w3css-basic",
    "colors": [
-    "#63fcd4",
-    "#13fbbb",
-    "#25332d",
-    "#0667a8",
-    "#6198ae",
-    "#bcbfbe"
+    "#b4dcfc",
+    "#042444",
+    "#25a3fa",
+    "#9abdd2",
+    "#2a4a62",
+    "#726487"
    ],
    "hasimage": true
   },
@@ -7882,6 +7884,43 @@
     "#5e5e61",
     "#b8b5b6",
     "#822602"
+   ],
+   "hasimage": true
+  },
+  {
+   "name": "Vex",
+   "license": "CC-BY-3.0",
+   "licenselink": "https://github.com/themefisher/vex-hugo/blob/master/LICENSE",
+   "description": "Vex by Themefisher ported to Hugo",
+   "homepage": "https://github.com/themefisher/vex-hugo",
+   "tags": [
+    "onepage",
+    "bootstrap",
+    "product",
+    "themefisher"
+   ],
+   "features": [
+    "onepage",
+    "product"
+   ],
+   "min_version": 0.16,
+   "author": {
+    "name": "Giacomo Mariani (@karjudev) for Themefisher",
+    "homepage": "https://themefisher.com/"
+   },
+   "original": {
+    "name": "Vex",
+    "homepage": "https://themefisher.com/products/vex-bootstrap4-product-landing-page-website-template/",
+    "repo": ""
+   },
+   "path": "vex-hugo",
+   "colors": [
+    "#787a7e",
+    "#3b3c42",
+    "#bcbcbc",
+    "#fcc486",
+    "#fcac4c",
+    "#824802"
    ],
    "hasimage": true
   },
