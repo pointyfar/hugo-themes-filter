@@ -1,6 +1,35 @@
 {
  "themes": [
   {
+   "name": "BeyondNothing",
+   "license": "MIT",
+   "licenselink": "https://github.com/salcan/BeyondNothing/blob/master/LICENSE",
+   "description": "Simplest Hugo theme possible",
+   "homepage": "https://cloudconfusing.com/",
+   "min_version": 0.14,
+   "tags": [
+    "blog",
+    "lander",
+    "minimalist",
+    "clean"
+   ],
+   "features": "nothing yet",
+   "author": {
+    "name": "Cloud Confusing",
+    "homepage": "https://cloudconfusing.com/"
+   },
+   "path": "BeyondNothing",
+   "colors": [
+    "#fbfb90",
+    "#ccc3bc",
+    "#3a474d",
+    "#697484",
+    "#c9c964",
+    "#626222"
+   ],
+   "hasimage": true
+  },
+  {
    "name": "BluestNight",
    "license": "MIT",
    "licenselink": "https://dev.shadow53.com/source/BluestNight/browse/master/LICENSE.md",
@@ -3427,6 +3456,39 @@
     "#475558",
     "#e4f4fc",
     "#947c4c"
+   ],
+   "hasimage": true
+  },
+  {
+   "name": "hugo-lamp",
+   "license": "MIT",
+   "licenselink": "https://github.com/huyb1991/hugo-lamp/blob/master/LICENSE.md",
+   "description": "A light responsive Hugo AMP theme for blogger.",
+   "homepage": "https://github.com/huyb1991/hugo-lamp",
+   "tags": [
+    "hugo",
+    "amp",
+    "blog",
+    "theme",
+    "responsive",
+    "static-site-generator"
+   ],
+   "features": [
+    "Blog"
+   ],
+   "min_version": "0.35",
+   "author": {
+    "name": "Huy Nguyen",
+    "homepage": "https://about.me/huyb1991"
+   },
+   "path": "hugo-lamp",
+   "colors": [
+    "#0f4b69",
+    "#22a3db",
+    "#638e9e",
+    "#bcd49e",
+    "#3adcfa",
+    "#34444c"
    ],
    "hasimage": true
   },
