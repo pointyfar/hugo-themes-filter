@@ -72,7 +72,10 @@
                     <button class="uk-button uk-button-default uk-button-small uk-width-1-1" type="button">Features</button>
                     <div uk-drop="pos: top-left; boundary: .wall; mode:click">
                         <div class="uk-card uk-card-body uk-card-default">
-                          {{ range . }}{{ if gt ( len . ) 0 }}<span> | {{.}}  </span>{{end}}{{end}}|
+                          {{- if eq ( printf "%T" . ) "[]interface {}" }}
+                          {{ if gt ( len . ) 0 }}<span>{{delimit . " | "}}</span>{{ end }}
+                          {{ else }}{{ . }}
+                          {{ end }}
                         </div>
                     </div>
                   {{end}}
