@@ -2273,7 +2273,7 @@
     "development"
    ],
    "features": [],
-   "min_version": "0.32",
+   "min_version": "0.42",
    "author": {
     "name": "Kaushal Modi",
     "homepage": "https://scripter.co"
@@ -4533,6 +4533,37 @@
    "hasimage": true
   },
   {
+   "name": "Stellar",
+   "license": "MIT",
+   "licenselink": "https://github.com/antonpolishko/hugo-stellar-theme/blob/master/LICENSE.md",
+   "description": "a one page site for gohugo.io created by html5up",
+   "homepage": "https://github.com/antonpolishko/hugo-stellar-theme",
+   "tags": [],
+   "features": [
+    "responsive",
+    "contact form",
+    "portfolio",
+    "substitutable strings"
+   ],
+   "min_version": "0.38",
+   "author": {
+    "name": "Anton Polishko",
+    "homepage": "//github.com/antonpolishko"
+   },
+   "original": {
+    "name": "@ajlkn",
+    "homepage": "https://twitter.com/ajlkn",
+    "repo": "https://html5up.net/stellar"
+   },
+   "path": "hugo-stellar-theme",
+   "colors": [
+    "#655494",
+    "#bcb1cc",
+    "#8eccec"
+   ],
+   "hasimage": true
+  },
+  {
    "name": "Sustain",
    "license": "MIT",
    "licenselink": "https://github.com/nurlansu/hugo-sustain/blob/master/LICENSE.md",
@@ -4870,8 +4901,8 @@
   },
   {
    "name": "Introduction",
-   "license": "Creative Commons Attribution 3.0 Unported",
-   "licenselink": "https://github.com/vickylai/hugo-theme-introduction/blob/master/LICENSE.md",
+   "license": "GNU Affero General Public License version 3",
+   "licenselink": "https://github.com/vickylai/hugo-theme-introduction/blob/master/LICENSE",
    "description": "Minimal, single page, smooth scrolling theme for Hugo.",
    "homepage": "https://github.com/vickylai/hugo-theme-introduction",
    "tags": [
@@ -4889,17 +4920,13 @@
    ],
    "features": [
     "responsive",
-    "single page"
+    "blog",
+    "portfolio"
    ],
    "min_version": "0.30",
    "author": {
     "name": "Vicky Lai",
     "homepage": "https://vickylai.com"
-   },
-   "original": {
-    "name": "",
-    "homepage": "",
-    "repo": ""
    },
    "path": "hugo-theme-introduction",
    "colors": [
@@ -7139,11 +7166,12 @@
    },
    "path": "potato-dark",
    "colors": [
-    "#4a0844",
-    "#7c7c7c",
-    "#192330",
-    "#b0bcc4",
-    "#e618d3"
+    "#9d5160",
+    "#1e354b",
+    "#ddd4c4",
+    "#314659",
+    "#ece4cc",
+    "#4880b6"
    ],
    "hasimage": true
   },
