@@ -4,11 +4,12 @@
   "license": "MIT",
   "author": "PointyFar",
   "scripts": {
-    "build" : "gulp site && hugo"
+    "build": "gulp site && hugo"
   },
   "devDependencies": {
     "del": "^3.0.0",
     "file-loader": "^1.1.11",
+    "glob": "^7.1.2",
     "gulp": "gulpjs/gulp#4.0",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-hash": "^4.2.2",

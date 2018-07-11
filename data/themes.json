@@ -6,7 +6,7 @@
    "licenselink": "https://github.com/salcan/BeyondNothing/blob/master/LICENSE",
    "description": "Simplest Hugo theme possible",
    "homepage": "https://cloudconfusing.com/",
-   "min_version": 0.14,
+   "min_version": "0.14",
    "tags": [
     "blog",
     "lander",
@@ -35,21 +35,30 @@
    "licenselink": "https://dev.shadow53.com/source/BluestNight/browse/master/LICENSE.md",
    "description": "A featureful, configurable, yet sleek dark theme for Hugo.",
    "homepage": "https://bluestnight.com/",
+   "min_version": "0.40.3",
    "tags": [
     "Blog",
-    "Contact Form",
+    "Clean",
+    "Creative",
     "Custom Colors",
     "Dark",
-    "Error Validation",
-    "Font Awesome",
+    "Extensible",
+    "Mobile Friendly",
     "Netlify",
-    "Responsive",
-    "Syntax Highlighting",
-    "Search",
     "Widgets",
     "Writing"
    ],
-   "min_version": 0.39,
+   "features": [
+    "Contact Form",
+    "Error Validation",
+    "Extensible",
+    "Flexbox",
+    "Font Awesome",
+    "Print CSS",
+    "Responsive",
+    "Search",
+    "Syntax Highlighting"
+   ],
    "author": {
     "name": "Michael Bryant",
     "homepage": "https://shadow53.com"
@@ -77,7 +86,7 @@
     "SVG",
     "design"
    ],
-   "min_version": 0.16,
+   "min_version": "0.16",
    "author": {
     "name": "djuelg",
     "homepage": "https://github.com/djuelg"
@@ -99,7 +108,7 @@
    "licenselink": "https://github.com/gcushen/hugo-academic/blob/master/LICENSE.md",
    "description": "Easily create beautifully simple academic or personal sites",
    "homepage": "https://github.com/gcushen/hugo-academic",
-   "min_version": 0.3,
+   "min_version": "0.38",
    "tags": [
     "academic",
     "portfolio",
@@ -151,7 +160,7 @@
    "features": [
     "responsive"
    ],
-   "min_version": 0.18,
+   "min_version": "0.18",
    "author": {
     "name": "Seth MacLeod",
     "homepage": "https://www.sethmacleod.com/"
@@ -174,10 +183,10 @@
   },
   {
    "name": "After Dark",
-   "license": "WTFPL",
-   "licenselink": "https://github.com/comfusion/after-dark/blob/master/COPYING",
+   "license": "BTC",
+   "licenselink": "https://git.habd.as/comfusion/after-dark/src/branch/master/COPYING",
    "description": "A retro dark theme for Hugo.",
-   "homepage": "https://comfusion.github.io/after-dark/",
+   "homepage": "https://git.habd.as/comfusion/after-dark/",
    "tags": [
     "personal",
     "simple",
@@ -217,10 +226,10 @@
     "Inclusive Design",
     "Theme Variants"
    ],
-   "min_version": 0.27,
+   "min_version": "0.27",
    "author": {
     "name": "Josh Habdas",
-    "homepage": "https://hackcabin.com"
+    "homepage": "https://habd.as"
    },
    "path": "after-dark",
    "colors": [
@@ -246,7 +255,7 @@
     "google analytics",
     "piwik"
    ],
-   "min_version": 0.15,
+   "min_version": "0.15",
    "author": {
     "name": "digitalcraftsman",
     "homepage": "//github.com/digitalcraftsman"
@@ -286,7 +295,7 @@
     "ogp",
     "twitter cards"
    ],
-   "min_version": 0.16,
+   "min_version": "0.42.2",
    "author": {
     "name": "Daisuke Tsuji",
     "homepage": "https://yet.unresolved.xyz/"
@@ -316,7 +325,7 @@
     "google analytics",
     "share"
    ],
-   "min_version": 0.14,
+   "min_version": "0.14",
    "author": {
     "name": "syui",
     "homepage": "https://syui.github.io"
@@ -357,7 +366,7 @@
     "company",
     "responsive"
    ],
-   "min_version": 0.19,
+   "min_version": "0.19",
    "author": {
     "name": "Giacomo Mariani (@karjudev) for Themefisher",
     "homepage": "https://themefisher.com/"
@@ -369,9 +378,9 @@
    },
    "path": "airspace-hugo",
    "colors": [
-    "#7c7484",
-    "#443b4b",
-    "#b4b4bb"
+    "#747484",
+    "#4b4353",
+    "#b4a4ac"
    ],
    "hasimage": true
   },
@@ -455,7 +464,7 @@
     "Categories",
     "Social links"
    ],
-   "min_version": 0.2,
+   "min_version": "0.20",
    "author": {
     "name": "pdevty",
     "homepage": "http://pdevty.github.io"
@@ -482,7 +491,7 @@
    "features": [
     "blog"
    ],
-   "min_version": 0.13,
+   "min_version": "0.13",
    "author": {
     "name": "tanksuzuki",
     "homepage": "http://tanksuzuki.com/"
@@ -512,7 +521,7 @@
     "highlightjs",
     "Blog only"
    ],
-   "min_version": 0.16,
+   "min_version": "0.16",
    "author": {
     "name": "Lasse Borly",
     "homepage": "https://lasseborly.com/"
@@ -578,7 +587,7 @@
     "carousel for client's quotes",
     "contact form"
    ],
-   "min_version": 0.2,
+   "min_version": "0.20",
    "author": {
     "name": "digitalcraftsman",
     "homepage": "//github.com/digitalcraftsman"
@@ -610,7 +619,7 @@
     "minimal",
     "blog"
    ],
-   "min_version": 0.14,
+   "min_version": "0.14",
    "author": {
     "name": "Cory Shaw",
     "homepage": "http://coryshaw.com"
@@ -640,7 +649,7 @@
     "blog",
     "syntax highlighting"
    ],
-   "min_version": 0.14,
+   "min_version": "0.14",
    "author": {
     "name": "Hylke Visser",
     "homepage": "https://github.com/htdvisser"
@@ -677,7 +686,7 @@
     "responsive",
     "staticman"
    ],
-   "min_version": 0.28,
+   "min_version": "0.28",
    "author": {
     "name": "halogenica",
     "homepage": "http://halogenica.net"
@@ -713,7 +722,7 @@
     "ogp",
     "twitter cards"
    ],
-   "min_version": 0.16,
+   "min_version": "0.42.2",
    "author": {
     "name": "Daisuke Tsuji",
     "homepage": "https://yet.unresolved.xyz/"
@@ -766,8 +775,8 @@
     "premium theme",
     "shortcuts"
    ],
-   "min_version": "0.29",
-   "theme_version": "1.4.0",
+   "min_version": "0.32",
+   "theme_version": "2.0.0",
    "author": {
     "name": "Lednerb | Sascha Brendel",
     "homepage": "https://sascha-brendel.de"
@@ -796,7 +805,7 @@
    "homepage": "https://github.com/davidhampgonsalves/hugo-black-and-light-theme",
    "tags": [],
    "features": [],
-   "min_version": 0.17,
+   "min_version": "0.17",
    "author": {
     "name": "David Hamp-Gonsalves",
     "homepage": "https://davidhampgonsalves.com"
@@ -827,7 +836,7 @@
     "purecss",
     "responsive"
    ],
-   "min_version": 0.15,
+   "min_version": "0.15",
    "author": {
     "name": "Yoshiharu Yamashita",
     "homepage": "http://yoshiharuyamashita.com"
@@ -861,7 +870,7 @@
    "features": [
     "blog"
    ],
-   "min_version": 0.19,
+   "min_version": "0.19",
    "author": {
     "name": "Vimux",
     "homepage": "https://github.com/vimux"
@@ -888,7 +897,7 @@
     "",
     ""
    ],
-   "min_version": 0.15,
+   "min_version": "0.15",
    "author": {
     "name": "Eduardo Bellido Bellido",
     "homepage": "http://edubxb.net"
@@ -925,7 +934,7 @@
     "documentation",
     ""
    ],
-   "min_version": 0.15,
+   "min_version": "0.15",
    "author": {
     "name": "IKEDA Kiyoshi",
     "homepage": "https://github.com/progrhyme"
@@ -1010,7 +1019,7 @@
     "Table of Contents",
     "SEO Site Verification"
    ],
-   "min_version": 0.19,
+   "min_version": "0.19",
    "author": {
     "name": "jeblister",
     "homepage": "http://findme.surge.sh/"
@@ -1052,7 +1061,7 @@
     "pagination",
     "sharing options"
    ],
-   "min_version": 0.2,
+   "min_version": "0.20",
    "author": {
     "name": "digitalcraftsman",
     "homepage": "//github.com/digitalcraftsman"
@@ -1105,7 +1114,7 @@
     "pygments syntax highlighting",
     "sort posts by categories and tags"
    ],
-   "min_version": 0.18,
+   "min_version": "0.18",
    "author": {
     "name": "sudorook"
    },
@@ -1134,7 +1143,7 @@
     "google analytics",
     "share"
    ],
-   "min_version": 0.25,
+   "min_version": "0.25",
    "author": {
     "name": "Valere JEANTET",
     "homepage": "http://vjeantet.fr"
@@ -1168,7 +1177,7 @@
     "podcast RSS",
     "subscribe buttons"
    ],
-   "min_version": 0.36,
+   "min_version": "0.36",
    "theme_version": "0.9.1",
    "author": {
     "name": "Matt Stratton",
@@ -1241,7 +1250,7 @@
     "disqus",
     "metadata"
    ],
-   "min_version": 0.26,
+   "min_version": "0.26",
    "author": {
     "name": "Nishanth Shanmugham",
     "homepage": "https://github.com/nishanths"
@@ -1253,6 +1262,46 @@
     "#988880",
     "#e8c490",
     "#593f2a"
+   ],
+   "hasimage": true
+  },
+  {
+   "name": "Cocoa-EH",
+   "license": "MIT",
+   "licenselink": "https://github.com/fuegowolf/cocoa-eh-hugo-theme/blob/master/LICENSE.md",
+   "description": "Cocoa Enhanced is a clean, fast and responsive theme with cool typography.",
+   "homepage": "https://github.com/fuegowolf/cocoa-eh-hugo-theme",
+   "tags": [
+    "clean",
+    "fast",
+    "responsive",
+    "typography"
+   ],
+   "features": [
+    "flexible",
+    "fast",
+    "highlights",
+    "progressive images",
+    "disqus"
+   ],
+   "min_version": "0.20.2",
+   "author": {
+    "name": "Alexis Tacnet",
+    "homepage": "https://github.com/fuegowolf"
+   },
+   "original": {
+    "name": "Nishanth Shanmugham",
+    "homepage": "https://github.com/nishanths",
+    "repo": "https://www.github.com/nishanths/cocoa-hugo-theme"
+   },
+   "path": "cocoa-eh-hugo-theme",
+   "colors": [
+    "#1f293e",
+    "#28446f",
+    "#3c74c2",
+    "#7d8083",
+    "#c4bcb4",
+    "#9cbce4"
    ],
    "hasimage": true
   },
@@ -1271,7 +1320,7 @@
     "blog",
     "tags"
    ],
-   "min_version": 0.18,
+   "min_version": "0.18",
    "author": {
     "name": "Thomas Heller",
     "homepage": "https://github.com/thomasheller"
@@ -1301,7 +1350,7 @@
     "portfolio",
     "substitutable strings"
    ],
-   "min_version": 0.14,
+   "min_version": "0.14",
    "author": {
     "name": "digitalcraftsman",
     "homepage": "//github.com/digitalcraftsman"
@@ -1336,7 +1385,7 @@
     "",
     ""
    ],
-   "min_version": 0.14,
+   "min_version": "0.14",
    "author": {
     "name": "Thibault NORMAND",
     "homepage": "http://zenithar.org"
@@ -1370,7 +1419,7 @@
    "features": [
     "blog"
    ],
-   "min_version": 0.18,
+   "min_version": "0.18",
    "author": {
     "name": "Matt Rhone",
     "homepage": "http://matthewrhone.com"
@@ -1403,7 +1452,7 @@
     "rss",
     "sharing options"
    ],
-   "min_version": 0.14,
+   "min_version": "0.14",
    "author": {
     "name": "Andrew R. Jenkins",
     "homepage": "http://andrewrjenkins.com"
@@ -1437,7 +1486,7 @@
     "responsive",
     "multilingual"
    ],
-   "min_version": 0.18,
+   "min_version": "0.18",
    "author": {
     "name": "Seth MacLeod",
     "homepage": "https://www.sethmacleod.com/"
@@ -1476,7 +1525,7 @@
     "slide",
     "attachments"
    ],
-   "min_version": 0.32,
+   "min_version": "0.32",
    "author": {
     "name": "Valere JEANTET",
     "homepage": "http://vjeantet.fr/"
@@ -1515,7 +1564,7 @@
     "Documentation",
     "Multilingual"
    ],
-   "min_version": 0.17,
+   "min_version": "0.17",
    "author": {
     "name": "Bjørn Erik Pedersen",
     "homepage": "http://bep.is"
@@ -1640,7 +1689,7 @@
     "hugo",
     "mobile"
    ],
-   "min_version": 0.17,
+   "min_version": "0.17",
    "author": {
     "name": "Howard Colin",
     "homepage": "https://straightfwd.co.uk"
@@ -1672,7 +1721,7 @@
     "portfolio",
     "substitutable strings"
    ],
-   "min_version": 0.14,
+   "min_version": "0.14",
    "author": {
     "name": "digitalcraftsman",
     "homepage": "//github.com/digitalcraftsman"
@@ -1720,7 +1769,7 @@
     "css3",
     "responsive"
    ],
-   "min_version": 0.15,
+   "min_version": "0.15",
    "author": {
     "name": "Julio Pescador",
     "homepage": "https://jpescador.com"
@@ -1795,7 +1844,7 @@
     "renders really, really quickly",
     "super minimal"
    ],
-   "min_version": 0.13,
+   "min_version": "0.13",
    "author": {
     "name": "Conner DiPaolo",
     "homepage": "http://dipaolo.conner.sh"
@@ -1824,7 +1873,7 @@
     "github",
     "images"
    ],
-   "min_version": 0.1,
+   "min_version": "0.1",
    "author": {
     "name": "Omar Abdelhafith"
    },
@@ -1864,7 +1913,7 @@
     "seo",
     "schema"
    ],
-   "min_version": 0.17,
+   "min_version": "0.17",
    "author": {
     "name": "Raphael Wildhaber",
     "homepage": "https://github.com/wildhaber"
@@ -1874,6 +1923,41 @@
     "#fc1c54",
     "#fb7798",
     "#820122"
+   ],
+   "hasimage": true
+  },
+  {
+   "name": "Ananke Gohugo Theme",
+   "license": "MIT",
+   "licenselink": "https://github.com/budparr/gohugo-theme-ananke/blob/master/LICENSE.md",
+   "description": "A Base theme for building full featured Hugo sites",
+   "homepage": "https://github.com/budparr/gohugo-theme-ananke",
+   "tags": [
+    "website",
+    "starter",
+    "responsive",
+    "Disqus",
+    "blog",
+    "Tachyons"
+   ],
+   "features": [
+    "posts",
+    "shortcodes",
+    "related content",
+    "comments"
+   ],
+   "min_version": "0.30.2",
+   "author": {
+    "name": "Bud Parr",
+    "homepage": "https://github.com/budparr"
+   },
+   "path": "gohugo-theme-ananke",
+   "colors": [
+    "#262e49",
+    "#0a2342",
+    "#b9b8ba",
+    "#818695",
+    "#2175dd"
    ],
    "hasimage": true
   },
@@ -1890,7 +1974,7 @@
    "features": [
     "blog"
    ],
-   "min_version": 0.14,
+   "min_version": "0.14",
    "author": {
     "name": "cxfksword",
     "homepage": "http://cxfksword.github.io"
@@ -1928,7 +2012,7 @@
     "portfolio",
     "gallery"
    ],
-   "min_version": 0.21,
+   "min_version": "0.21",
    "author": {
     "name": "Chip Senkbeil",
     "homepage": "https://chipsenkbeil.com/"
@@ -1989,7 +2073,7 @@
     "html5",
     "css3"
    ],
-   "min_version": 0.16,
+   "min_version": "0.16",
    "author": {
     "name": "tanksuzuki",
     "homepage": "http://tanksuzuki.com"
@@ -2017,7 +2101,7 @@
     "css3",
     "tags"
    ],
-   "min_version": 0.16,
+   "min_version": "0.16",
    "author": {
     "name": "Malte Kiefer",
     "homepage": "https://github.com/beli3ver"
@@ -2037,7 +2121,7 @@
     "blog",
     "company"
    ],
-   "min_version": 0.2,
+   "min_version": "0.20",
    "author": {
     "name": "spf13",
     "homepage": "http://spf13.com"
@@ -2071,7 +2155,7 @@
     "",
     ""
    ],
-   "min_version": 0.18,
+   "min_version": "0.18",
    "author": {
     "name": "diwao",
     "homepage": "http://diwao.com/"
@@ -2111,7 +2195,7 @@
     "contact form",
     "google analytics"
    ],
-   "min_version": 0.15,
+   "min_version": "0.15",
    "author": {
     "name": "Manuel Schneider",
     "homepage": "//schman.at"
@@ -2147,7 +2231,7 @@
     "",
     ""
    ],
-   "min_version": 0.14,
+   "min_version": "0.14",
    "author": {
     "name": "digitalcraftsman",
     "homepage": "//github.com/digitalcraftsman"
@@ -2215,7 +2299,7 @@
     "css3",
     "tags"
    ],
-   "min_version": 0.16,
+   "min_version": "0.16",
    "author": {
     "name": "Morten G. Johansen",
     "homepage": "https://github.com/mgjohansen"
@@ -2240,7 +2324,7 @@
     "sphinx"
    ],
    "features": [],
-   "min_version": 0.2,
+   "min_version": "0.20",
    "author": {
     "name": "Digitalcraftsman",
     "homepage": "https://github.com/digitalcraftsman"
@@ -2298,7 +2382,7 @@
    "features": [
     "blog"
    ],
-   "min_version": 0.12,
+   "min_version": "0.12",
    "author": {
     "name": "crakjie"
    },
@@ -2336,7 +2420,7 @@
     "multilingual",
     "i18n"
    ],
-   "min_version": 0.15,
+   "min_version": "0.15",
    "author": {
     "name": "Mihail Cristian Dumitru",
     "homepage": "https://github.com/Xzya"
@@ -2388,7 +2472,7 @@
     "Multilingual",
     "i18n"
    ],
-   "min_version": 0.15,
+   "min_version": "0.15",
    "author": {
     "name": "Göran Svensson",
     "homepage": "https://appernetic.github.io"
@@ -2420,7 +2504,7 @@
     "bootswatch"
    ],
    "features": [],
-   "min_version": 0.13,
+   "min_version": "0.13",
    "author": {
     "name": "Nicholas Whittier",
     "homepage": "http://imperialwicket.com"
@@ -2455,7 +2539,7 @@
     "disqus",
     "google analytics"
    ],
-   "min_version": 0.31,
+   "min_version": "0.31",
    "author": {
     "name": "Eueung Mulyana",
     "homepage": "https://www.telematika.org/"
@@ -2525,7 +2609,7 @@
     "Atom",
     "Code"
    ],
-   "min_version": 0.14,
+   "min_version": "0.14",
    "author": {
     "name": "Aurélien Baumann (Aubm)",
     "homepage": "http://www.aubm.net"
@@ -2635,7 +2719,7 @@
     "responsive",
     "google analytics"
    ],
-   "min_version": 0.2,
+   "min_version": "0.20",
    "author": {
     "name": "Kishan B",
     "homepage": "https://github.com/kishaningithub"
@@ -2670,7 +2754,7 @@
     "",
     ""
    ],
-   "min_version": 0.14,
+   "min_version": "0.14",
    "author": {
     "name": "Alain Dejoux",
     "homepage": "http://djouxtech.net"
@@ -2707,7 +2791,7 @@
     "discourse",
     "twitter"
    ],
-   "min_version": 0.15,
+   "min_version": "0.15",
    "author": {
     "name": "Dgraph Labs",
     "homepage": "https://blog.dgraph.io"
@@ -2795,7 +2879,7 @@
    "features": [
     "blog"
    ],
-   "min_version": 0.28,
+   "min_version": "0.28",
    "author": {
     "name": "Gyorgy Orban",
     "homepage": "https://github.com/gyorb"
@@ -2826,7 +2910,7 @@
     "",
     ""
    ],
-   "min_version": 0.17,
+   "min_version": "0.17",
    "author": {
     "name": "Pieter Saey",
     "homepage": "http://saey55.gitlab.io/pietercv"
@@ -2859,7 +2943,7 @@
    "features": [
     "blog"
    ],
-   "min_version": 0.19,
+   "min_version": "0.19",
    "author": {
     "name": "wd",
     "homepage": "https://wdicc.com"
@@ -2893,7 +2977,7 @@
    "features": [
     "FAQ"
    ],
-   "min_version": 0.16,
+   "min_version": "0.16",
    "author": {
     "name": "Pavel Kanyshev",
     "homepage": "//github.com/aerohub"
@@ -2929,7 +3013,7 @@
     "publications",
     "social"
    ],
-   "min_version": 0.15,
+   "min_version": "0.15",
    "author": {
     "name": "Marcus Brinkmann",
     "homepage": "https://lambdafu.net/"
@@ -2962,7 +3046,7 @@
     "twitter card",
     "facebook og"
    ],
-   "min_version": 0.16,
+   "min_version": "0.16",
    "author": {
     "name": "Olivier Fredon",
     "homepage": "//github.com/the2ne"
@@ -3026,7 +3110,7 @@
     "responsive",
     "Google Analytics"
    ],
-   "min_version": 0.19,
+   "min_version": "0.19",
    "author": {
     "name": "Daisuke Konishi",
     "homepage": "https://blog.daisukekonishi.com"
@@ -3063,7 +3147,7 @@
     "responsive",
     "bootstrap"
    ],
-   "min_version": 0.14,
+   "min_version": "0.14",
    "author": {
     "name": "Alex Urquhart",
     "email": "alexurquhart@gmail.com",
@@ -3105,7 +3189,7 @@
     "disqus",
     "anlaytics"
    ],
-   "min_version": 0.16,
+   "min_version": "0.16",
    "author": {
     "name": "Rajesh Shenoy",
     "homepage": "https://github.com/shenoybr"
@@ -3139,7 +3223,7 @@
     "paging",
     "easy to monify"
    ],
-   "min_version": 0.14,
+   "min_version": "0.14",
    "author": {
     "name": "Garvin Casimir",
     "homepage": "https://github.com/garvincasimir/hugo"
@@ -3175,7 +3259,7 @@
     "simple",
     "programmer"
    ],
-   "min_version": 0.15,
+   "min_version": "0.15",
    "author": {
     "name": "DONGGEUN, BANG",
     "homepage": "http://blog.lulab.net"
@@ -3213,7 +3297,7 @@
     "widgets",
     "google analytics"
    ],
-   "min_version": 0.2,
+   "min_version": "0.20",
    "author": {
     "name": "Digitalcraftsman",
     "homepage": "//github.com/digitalcraftsman"
@@ -3290,7 +3374,7 @@
     "minimal",
     "google analytics"
    ],
-   "min_version": 0.16,
+   "min_version": "0.16",
    "author": {
     "name": "Pavel Kanyshev",
     "homepage": "https://github.com/aerohub/hugo-identity-theme"
@@ -3323,7 +3407,7 @@
    "features": [
     "blog"
    ],
-   "min_version": 0.14,
+   "min_version": "0.14",
    "author": {
     "name": "Nicholas Whittier",
     "homepage": "http://github.com/imperialwicket"
@@ -3505,7 +3589,7 @@
     "blog",
     "google analytics"
    ],
-   "min_version": 0.15,
+   "min_version": "0.15",
    "author": {
     "name": "Jonathan Rutheiser",
     "homepage": "http://jrutheiser.com/"
@@ -3656,7 +3740,7 @@
     "responsive",
     "Material Design"
    ],
-   "min_version": 0.14,
+   "min_version": "0.14",
    "author": {
     "name": "Jeremy Atkinson",
     "homepage": "http://jatkinson.me",
@@ -3687,7 +3771,7 @@
     "l10n"
    ],
    "features": [],
-   "min_version": 0.2,
+   "min_version": "0.20",
    "author": {
     "name": "Digitalcraftsman",
     "homepage": "https://github.com/digitalcraftsman"
@@ -3715,7 +3799,7 @@
     "post",
     "category"
    ],
-   "min_version": 0.14,
+   "min_version": "0.14",
    "author": {
     "name": "Marco Pas",
     "email": "marco.pasopas@gmail.com"
@@ -3748,7 +3832,7 @@
     "taxonomies",
     "privacy"
    ],
-   "min_version": 0.25,
+   "min_version": "0.25",
    "author": {
     "name": "Tim Krieger",
     "homepage": "https://blog.mobybit.de"
@@ -3787,7 +3871,7 @@
     "responsive",
     "google analytics"
    ],
-   "min_version": 0.34,
+   "min_version": "0.34",
    "author": {
     "name": "Göran Svensson",
     "homepage": "https://github.com/appernetic"
@@ -3826,7 +3910,7 @@
     "blog",
     "portfolio"
    ],
-   "min_version": 0.24,
+   "min_version": "0.24",
    "author": {
     "name": "Michael Blum",
     "homepage": "https://mblum.me"
@@ -3863,7 +3947,7 @@
    "features": [
     "blog"
    ],
-   "min_version": 0.18,
+   "min_version": "0.18",
    "author": {
     "name": "Carl Boettiger",
     "homepage": "https://carlboettiger.info/"
@@ -3930,7 +4014,7 @@
     "blog",
     ""
    ],
-   "min_version": 0.14,
+   "min_version": "0.14",
    "author": {
     "name": "Parsia Hakimian",
     "homepage": "http://parsiya.net"
@@ -3965,7 +4049,7 @@
     "responsive",
     "colour schemes"
    ],
-   "min_version": 0.16,
+   "min_version": "0.16",
    "author": {
     "name": "Pavel Kanyshev",
     "homepage": "//github.com/aerohub"
@@ -4001,7 +4085,7 @@
     "",
     ""
    ],
-   "min_version": 0.15,
+   "min_version": "0.15",
    "author": {
     "name": "coderzh",
     "homepage": "https://github.com/coderzh/hugo-pacman-theme"
@@ -4025,7 +4109,7 @@
    "name": "Paper",
    "license": "MIT",
    "licenselink": "https://github.com/nanxiaobei/hugo-paper/blob/master/LICENSE",
-   "description": "A simple & clean hugo theme",
+   "description": "A simple, clean, flexible Hugo theme",
    "homepage": "https://github.com/nanxiaobei/hugo-paper/",
    "tags": [
     "Responsive",
@@ -4052,12 +4136,12 @@
    },
    "path": "hugo-paper",
    "colors": [
-    "#e9c66e",
-    "#3f3f3f",
-    "#e5cfaf",
-    "#a18679",
-    "#c4aca4",
-    "#735711"
+    "#3f3f40",
+    "#cac4bc",
+    "#fcdc74",
+    "#848c9c",
+    "#fcc434",
+    "#825e01"
    ],
    "hasimage": true
   },
@@ -4078,7 +4162,7 @@
     "single page",
     "scientific article"
    ],
-   "min_version": 0.17,
+   "min_version": "0.17",
    "author": {
     "name": "Eueung Mulyana",
     "homepage": "https://eueung.github.io/"
@@ -4114,7 +4198,7 @@
     "responsive",
     "mobile-friendly"
    ],
-   "min_version": 0.14,
+   "min_version": "0.14",
    "author": {
     "name": "Nic Raboy",
     "homepage": "https://www.nraboy.com"
@@ -4159,7 +4243,7 @@
     "components",
     "plugins"
    ],
-   "min_version": 0.13,
+   "min_version": "0.13",
    "author": {
     "name": "Daniel Hatch",
     "homepage": "http://h4tch.github.io"
@@ -4193,7 +4277,7 @@
     "pre-made templates",
     "shortcodes"
    ],
-   "min_version": 0.18,
+   "min_version": "0.18",
    "author": {
     "name": "Eueung Mulyana",
     "homepage": "https://eueung.github.io/"
@@ -4227,7 +4311,7 @@
     "pre-made templates",
     "shortcodes"
    ],
-   "min_version": 0.18,
+   "min_version": "0.18",
    "author": {
     "name": "Eueung Mulyana",
     "homepage": "https://eueung.github.io/"
@@ -4445,7 +4529,7 @@
     "single page",
     "two styles"
    ],
-   "min_version": 0.17,
+   "min_version": "0.17",
    "author": {
     "name": "eueung",
     "homepage": "https://eueung.github.io/"
@@ -4578,7 +4662,7 @@
     "responsive",
     "syntax highlighting"
    ],
-   "min_version": 0.17,
+   "min_version": "0.17",
    "author": {
     "name": "Nurlan Su",
     "homepage": "https://github.com/nurlansu"
@@ -4613,7 +4697,7 @@
     "bootstrap",
     "talaria"
    ],
-   "min_version": 0.15,
+   "min_version": "0.15",
    "author": {
     "name": "syui",
     "homepage": "https://syui.github.io"
@@ -4641,7 +4725,7 @@
     "responsive",
     "blog"
    ],
-   "min_version": 0.25,
+   "min_version": "0.25",
    "author": {
     "name": "Alan Orth",
     "homepage": "https://englishbulgaria.net"
@@ -4683,7 +4767,7 @@
     "syntax highlighting",
     "tags"
    ],
-   "min_version": 0.2,
+   "min_version": "0.20",
    "author": {
     "name": "nodejh",
     "homepage": "https://github.com/nodejh"
@@ -4705,6 +4789,47 @@
    "hasimage": true
   },
   {
+   "name": "Clean White",
+   "license": "Apache",
+   "licenselink": "https://github.com/zhaohuabing/hugo-theme-cleanwhite/blob/master/LICENSE",
+   "description": "A clean, elegant blog theme for hugo",
+   "homepage": "https://github.com/zhaohuabing/hugo-theme-cleanwhite",
+   "tags": [
+    "minimal",
+    "responsive",
+    "blog",
+    "light",
+    "clean",
+    "search"
+   ],
+   "features": [
+    "disqus",
+    "site search",
+    "responsive",
+    "google analytics",
+    "side bar"
+   ],
+   "min_version": "0.10",
+   "author": {
+    "name": "Huabing Zhao",
+    "homepage": "https://github.com/zhaohuabing"
+   },
+   "original": {
+    "name": "huxblog",
+    "homepage": "https://github.com/Huxpro/huxpro.github.io"
+   },
+   "path": "hugo-theme-cleanwhite",
+   "colors": [
+    "#957c61",
+    "#9a6d42",
+    "#54483c",
+    "#b4c4d4",
+    "#dcc4a4",
+    "#5c4127"
+   ],
+   "hasimage": true
+  },
+  {
    "name": "Dopetrope",
    "license": "Creative Commons",
    "licenselink": "https://github.com/curttimson/hugo-theme-dopetrope/blob/master/LICENSE.md",
@@ -4717,7 +4842,7 @@
    "features": [
     "blog"
    ],
-   "min_version": 0.19,
+   "min_version": "0.19",
    "author": {
     "name": "Curtis Timson",
     "homepage": "https://curtistimson.co.uk/"
@@ -4852,7 +4977,7 @@
     "responsive",
     "blog"
    ],
-   "min_version": 0.17,
+   "min_version": "0.17",
    "author": {
     "name": "Tony Ko",
     "homepage": "http://www.htko.ca"
@@ -4885,7 +5010,7 @@
    "features": [
     "blog"
    ],
-   "min_version": 0.15,
+   "min_version": "0.15",
    "author": {
     "name": "Masashi Tsuru",
     "homepage": "http://2626.info/"
@@ -5031,7 +5156,7 @@
     "search",
     "mermaid"
    ],
-   "min_version": 0.25,
+   "min_version": "0.25",
    "author": {
     "name": "Mathieu Cornic",
     "homepage": "http://matcornic.github.io/"
@@ -5065,7 +5190,7 @@
    "features": [
     "blog"
    ],
-   "min_version": 0.2,
+   "min_version": "0.20",
    "author": {
     "name": "Curtis Timson",
     "homepage": "https://curtistimson.co.uk/"
@@ -5099,7 +5224,7 @@
     "blog",
     ""
    ],
-   "min_version": 0.2,
+   "min_version": "0.20",
    "author": {
     "name": "Carson Ip",
     "homepage": "https://github.com/carsonip"
@@ -5135,7 +5260,7 @@
    "features": [
     "blog"
    ],
-   "min_version": 0.2,
+   "min_version": "0.20",
    "author": {
     "name": "Matúš Námešný",
     "homepage": "https://namesny.com"
@@ -5273,7 +5398,7 @@
    "features": [
     "blog"
    ],
-   "min_version": 0.15,
+   "min_version": "0.15",
    "author": {
     "name": "Ivan Chou",
     "homepage": "https://yii.im"
@@ -5412,7 +5537,7 @@
     "particles.js",
     "createjs"
    ],
-   "min_version": 0.15,
+   "min_version": "0.15",
    "author": {
     "name": "syui",
     "homepage": "https://syui.gitlab.io"
@@ -5456,7 +5581,7 @@
     "matamo",
     "jsonfeed"
    ],
-   "min_version": 0.28,
+   "min_version": "0.28",
    "author": {
     "name": "Fredrik Jonsson",
     "homepage": "https://xdeb.net/"
@@ -5492,7 +5617,7 @@
     "responsive",
     "google analytics"
    ],
-   "min_version": 0.1,
+   "min_version": "0.10",
    "author": {
     "name": "Ramz Sivagurunathan",
     "homepage": "https://github.com/ageekymonk"
@@ -5536,7 +5661,7 @@
     "font awesome",
     "highlight.js"
    ],
-   "min_version": 0.2,
+   "min_version": "0.20",
    "author": {
     "name": "Thibaud Leprêtre",
     "homepage": "https://github.com/kakawait"
@@ -5581,7 +5706,7 @@
     "responsive",
     "slider"
    ],
-   "min_version": 0.15,
+   "min_version": "0.15",
    "author": {
     "name": "Dr. Bala Ramadurai",
     "homepage": "//github.com/balaramadurai"
@@ -5623,7 +5748,7 @@
     "minimal",
     "responsive"
    ],
-   "min_version": 0.15,
+   "min_version": "0.15",
    "author": {
     "name": "adrianmo",
     "homepage": "//github.com/adrianmo"
@@ -5760,7 +5885,7 @@
     "blog",
     "themes"
    ],
-   "min_version": 0.13,
+   "min_version": "0.13",
    "author": {
     "name": "OCHIISHI Koichiro",
     "homepage": "http://rakuishi.com/"
@@ -5787,7 +5912,7 @@
     "blog",
     "project"
    ],
-   "min_version": 0.17,
+   "min_version": "0.17",
    "author": {
     "name": "Leon He",
     "homepage": "http://leonhe.me"
@@ -5831,7 +5956,7 @@
    "features": [
     "blog"
    ],
-   "min_version": 0.27,
+   "min_version": "0.27",
    "path": "hugo_theme_pickles",
    "colors": [
     "#acbcd4",
@@ -5860,7 +5985,7 @@
     "ogp",
     "twitter cards"
    ],
-   "min_version": 0.16,
+   "min_version": "0.42.2",
    "author": {
     "name": "Daisuke Tsuji",
     "homepage": "https://yet.unresolved.xyz/"
@@ -5890,7 +6015,7 @@
    "features": [
     "landing page"
    ],
-   "min_version": 0.14,
+   "min_version": "0.14",
    "author": {
     "name": "Fredrik Loch",
     "homepage": "http://fredrikloch.me"
@@ -5925,7 +6050,7 @@
     "bootstrap4",
     "youtube"
    ],
-   "min_version": 0.31,
+   "min_version": "0.31",
    "author": {
     "name": "Marcelo Canina",
     "homepage": "https://marcanuy.com"
@@ -5956,7 +6081,7 @@
     "collections",
     "google analytics"
    ],
-   "min_version": 0.15,
+   "min_version": "0.15",
    "author": {
     "name": "Pavel Kanyshev",
     "homepage": "//github.com/aerohub/hugrid"
@@ -6022,7 +6147,7 @@
     "themes",
     "disqus"
    ],
-   "min_version": 0.21,
+   "min_version": "0.21",
    "author": {
     "name": "spf13",
     "homepage": "http://spf13.com"
@@ -6062,7 +6187,10 @@
     "blog",
     "theme",
     "highlight.js",
-    "font-awesome"
+    "font-awesome",
+    "responsive",
+    "disqus",
+    "graphcomment"
    ],
    "min_version": "0.33",
    "author": {
@@ -6101,7 +6229,7 @@
     "technical",
     "personal"
    ],
-   "min_version": 0.14,
+   "min_version": "0.14",
    "author": {
     "name": "Andrei Mihu",
     "homepage": "http://andreimihu.com"
@@ -6136,7 +6264,7 @@
     "technical",
     "personal"
    ],
-   "min_version": 0.14,
+   "min_version": "0.14",
    "author": {
     "name": "Steven Enten",
     "homepage": "http://enten.fr"
@@ -6181,7 +6309,7 @@
     "Link Blog",
     "Responsive"
    ],
-   "min_version": 0.14,
+   "min_version": "0.14",
    "author": {
     "name": "Josh Johnson",
     "homepage": "https://jnjosh.com"
@@ -6209,7 +6337,7 @@
    "categories": [
     "featured"
    ],
-   "min_version": 0.14,
+   "min_version": "0.14",
    "author": {
     "name": "Marco Pas",
     "email": "marco.pasopas@gmail.com"
@@ -6251,7 +6379,7 @@
     "social-menu",
     "syntax-highlighting"
    ],
-   "min_version": 0.28,
+   "min_version": "0.28",
    "author": {
     "name": "ribice",
     "homepage": "https://ribice.ba"
@@ -6333,7 +6461,7 @@
     "Table of Contents",
     "SEO Site Verification"
    ],
-   "min_version": 0.19,
+   "min_version": "0.19",
    "author": {
     "name": "jeblister",
     "homepage": "http://findme.surge.sh/"
@@ -6364,7 +6492,7 @@
     "social",
     "images"
    ],
-   "min_version": 0.14,
+   "min_version": "0.14",
    "author": {
     "name": "crakjie"
    },
@@ -6393,7 +6521,7 @@
    "features": [
     "blog"
    ],
-   "min_version": 0.14,
+   "min_version": "0.14",
    "author": {
     "name": "tummychow"
    },
@@ -6452,7 +6580,7 @@
     "",
     ""
    ],
-   "min_version": 0.2,
+   "min_version": "0.20",
    "path": "liquorice",
    "colors": [
     "#46403d",
@@ -6561,7 +6689,7 @@
     "blog post or standard content driven by frontmatter",
     "about link"
    ],
-   "min_version": 0.14,
+   "min_version": "0.14",
    "author": {
     "name": "Peter Carleton",
     "homepage": "http://pedrodude.com"
@@ -6597,7 +6725,7 @@
     "Cover image",
     "Social links"
    ],
-   "min_version": 0.14,
+   "min_version": "0.14",
    "author": {
     "name": "pdevty",
     "homepage": "http://pdevty.github.io/blog/"
@@ -6627,7 +6755,7 @@
     "responsive"
    ],
    "features": [],
-   "min_version": 0.2,
+   "min_version": "0.20",
    "author": {
     "name": "Digitalcraftsman",
     "homepage": "https://github.com/digitalcraftsman"
@@ -6660,7 +6788,7 @@
     "lite",
     "google"
    ],
-   "min_version": 0.14,
+   "min_version": "0.14",
    "author": {
     "name": "Samuel Debruyn",
     "homepage": "http://sa.muel.be"
@@ -6760,16 +6888,20 @@
    ],
    "features": [
     "accessibility",
+    "algolia",
     "analytics",
     "comments",
     "cover-image",
     "disqus",
     "entry-navigation",
     "favicon",
+    "fuse.js",
+    "lunr.js",
     "multilingual",
     "multi-author",
     "opengraph",
     "pagination",
+    "search",
     "shortcodes",
     "sidebar",
     "single-column",
@@ -6777,9 +6909,10 @@
     "staticman",
     "syntax-highlighting",
     "table-of-contents",
+    "utterances",
     "widgets"
    ],
-   "min_version": 0.32,
+   "min_version": "0.40",
    "author": {
     "name": "Munif Tanjim",
     "homepage": "https://muniftanjim.com"
@@ -6792,6 +6925,41 @@
     "#75797b",
     "#4b5357",
     "#836901"
+   ],
+   "hasimage": true
+  },
+  {
+   "name": "Navigator Hugo",
+   "license": "CC BY 3.0",
+   "licenselink": "https://creativecommons.org/licenses/by/3.0/",
+   "description": "Hugo port of the Themefisher’s Navigator Template",
+   "homepage": "http://demo.themefisher.com/themefisher/navigator/",
+   "tags": [
+    "landing-page",
+    "business",
+    "agency-template",
+    "themefisher",
+    "hugo-theme",
+    "hugo-templates",
+    "bootstrap"
+   ],
+   "features": [
+    "bootstrap4",
+    "responsive"
+   ],
+   "min_version": "0.41",
+   "author": {
+    "name": "Themefisher",
+    "homepage": "https://themefisher.com/"
+   },
+   "path": "navigator-hugo",
+   "colors": [
+    "#1c2434",
+    "#ef0550",
+    "#a50437",
+    "#74787f",
+    "#b7babe",
+    "#fc7c7c"
    ],
    "hasimage": true
   },
@@ -6834,7 +7002,7 @@
     "google analytics",
     "disqus"
    ],
-   "min_version": 0.14,
+   "min_version": "0.14",
    "author": {
     "name": "leopku",
     "homepage": "http://www.himysql.com"
@@ -6863,7 +7031,7 @@
     "nice"
    ],
    "features": [],
-   "min_version": 0.17,
+   "min_version": "0.17",
    "author": {
     "name": "mdhender",
     "homepage": "https://github.com/mdhender/"
@@ -6901,7 +7069,7 @@
     "distraction-free",
     "black-and-white"
    ],
-   "min_version": 0.14,
+   "min_version": "0.14",
    "author": {
     "name": "Zack Guo",
     "homepage": "http://gizak.github.io"
@@ -6949,6 +7117,39 @@
    "hasimage": true
   },
   {
+   "name": "Osprey",
+   "license": "GNU3.0",
+   "licenselink": "https://github.com/tomanistor/osprey/blob/master/LICENSE.md",
+   "description": "Clean, responsive one-page portfolio accompanied by a minimalist blog.",
+   "homepage": "https://github.com/tomanistor/osprey",
+   "tags": [
+    "blog",
+    "portfolio",
+    "gallery",
+    "minimalist",
+    "responsive",
+    "flexbox"
+   ],
+   "features": [
+    "blog",
+    "portfolio",
+    "google analytics"
+   ],
+   "min_version": "0.24.1",
+   "author": {
+    "name": "Toma Nistor",
+    "homepage": "https://tomanistor.com"
+   },
+   "path": "osprey",
+   "colors": [
+    "#818182",
+    "#3a4848",
+    "#ecf2f6",
+    "#ccbcb4"
+   ],
+   "hasimage": true
+  },
+  {
    "name": "Paperback",
    "license": "MIT",
    "licenselink": "https://github.com/damiencaselli/paperback/blob/master/LICENSE.md",
@@ -6963,7 +7164,7 @@
    "features": [
     "blog"
    ],
-   "min_version": 0.15,
+   "min_version": "0.15",
    "author": {
     "name": "Damien Caselli",
     "homepage": "https://github.com/damiencaselli"
@@ -7024,7 +7225,7 @@
     "breadcrumbs",
     "GA"
    ],
-   "min_version": 0.18,
+   "min_version": "0.18",
    "author": {
     "name": "Pavel Kanyshev",
     "homepage": "//github.com/aerohub"
@@ -7057,7 +7258,7 @@
     "responsive",
     "minimal"
    ],
-   "min_version": 0.25,
+   "min_version": "0.25",
    "path": "pixyll",
    "colors": [
     "#797979",
@@ -7082,7 +7283,7 @@
     "responsive",
     "google analytics"
    ],
-   "min_version": 0.18,
+   "min_version": "0.18",
    "author": {
     "name": "Li-aung Yip",
     "homepage": "https://www.penwatch.net/"
@@ -7121,7 +7322,7 @@
     "Cover image",
     "Social links"
    ],
-   "min_version": 0.13,
+   "min_version": "0.13",
    "author": {
     "name": "pdevty",
     "homepage": "http://pdevty.github.io/blog/"
@@ -7159,7 +7360,7 @@
    "features": [
     "blog"
    ],
-   "min_version": 0.27,
+   "min_version": "0.27",
    "author": {
     "name": "Potato Dark",
     "homepage": "https://surajmandalcell.github.com/potato-dark"
@@ -7189,7 +7390,7 @@
     "",
     ""
    ],
-   "min_version": 0.13,
+   "min_version": "0.13",
    "author": {
     "name": "Valere JEANTET",
     "homepage": "http://vjeantet.fr"
@@ -7223,7 +7424,7 @@
     "responsive",
     "sticky sidebar"
    ],
-   "min_version": 0.18,
+   "min_version": "0.18",
    "author": {
     "name": "Seth MacLeod",
     "homepage": "https://www.sethmacleod.com/"
@@ -7253,7 +7454,7 @@
     "blog",
     "purecss"
    ],
-   "min_version": 0.14,
+   "min_version": "0.14",
    "author": {
     "name": "dplesca",
     "twitter": "http://twitter.com/dragos_plesca",
@@ -7287,7 +7488,7 @@
     "blog",
     "gallery"
    ],
-   "min_version": 0.14,
+   "min_version": "0.14",
    "author": {
     "name": "Tom Maiaroto",
     "homepage": "http://www.shift8creative.com"
@@ -7327,7 +7528,7 @@
     "retro",
     "neon"
    ],
-   "min_version": 0.15,
+   "min_version": "0.15",
    "author": {
     "name": "srm",
     "homepage": "http://srm.re",
@@ -7382,6 +7583,40 @@
    "hasimage": true
   },
   {
+   "name": "Robust",
+   "license": "MIT",
+   "licenselink": "https://github.com/dim0627/hugo_theme_robust/blob/master/LICENSE.md",
+   "description": "Grid based theme for Hugo.",
+   "homepage": "https://github.com/dim0627/hugo_theme_robust",
+   "tags": [
+    "blog"
+   ],
+   "features": [
+    "responsive",
+    "thumbnail",
+    "grid",
+    "syntax highlight",
+    "structured data",
+    "ogp",
+    "twitter cards"
+   ],
+   "min_version": "0.42.2",
+   "author": {
+    "name": "Daisuke Tsuji",
+    "homepage": "https://yet.unresolved.xyz/"
+   },
+   "path": "robust",
+   "colors": [
+    "#193e4b",
+    "#2c5058",
+    "#acc4cc",
+    "#8c7c64",
+    "#dcb48c",
+    "#34747c"
+   ],
+   "hasimage": true
+  },
+  {
    "name": "rocktopus",
    "description": "A clean and simple theme for Hugo",
    "license": "MIT",
@@ -7394,7 +7629,7 @@
    "features": [
     "blog"
    ],
-   "min_version": 0.15,
+   "min_version": "0.15",
    "author": {
     "name": "esell",
     "homepage": "http://github.com/esell/"
@@ -7452,7 +7687,7 @@
    "features": [
     "blog"
    ],
-   "min_version": 0.13,
+   "min_version": "0.13",
    "author": {
     "name": "Shusaku Uesugi",
     "homepage": "http://chibicode.com/"
@@ -7477,7 +7712,7 @@
    "license": "MIT",
    "licenselink": "https://github.com/AlexFinn/simple-a/blob/master/LICENSE.md",
    "description": "Minimalistic Hugo theme",
-   "min_version": 0.14,
+   "min_version": "0.14",
    "tags": [
     "AlexFinn"
    ],
@@ -7512,7 +7747,7 @@
     "blog",
     "dev"
    ],
-   "min_version": 0.14,
+   "min_version": "0.14",
    "author": {
     "name": "Daniel Ruzza",
     "homepage": "https://github.com/druzza/simple-hugo",
@@ -7603,7 +7838,7 @@
    "features": [
     "blog"
    ],
-   "min_version": 0.13,
+   "min_version": "0.13",
    "author": {
     "name": "Zhe Zhang",
     "homepage": "http://zhezhang.co"
@@ -7633,7 +7868,7 @@
     "menu",
     "icons"
    ],
-   "min_version": 0.13,
+   "min_version": "0.13",
    "author": {
     "name": "Jonathon Dilworth",
     "homepage": "http://dilworth.me/"
@@ -7661,7 +7896,7 @@
     "blog",
     "bootstrap"
    ],
-   "min_version": 0.18,
+   "min_version": "0.18",
    "author": {
     "name": "Benoît Benedetti",
     "homepage": "http://www.humboldtux.com"
@@ -7694,7 +7929,7 @@
     "minimal"
    ],
    "features": [],
-   "min_version": 0.2,
+   "min_version": "0.20",
    "author": {
     "name": "Digitalcraftsman",
     "homepage": "//github.com/digitalcraftsman/"
@@ -7734,7 +7969,7 @@
     "",
     ""
    ],
-   "min_version": 0.15,
+   "min_version": "0.15",
    "author": {
     "name": "ExchangeRate-API",
     "homepage": "https://www.exchangerate-api.com"
@@ -7771,7 +8006,7 @@
     "",
     ""
    ],
-   "min_version": 0.16,
+   "min_version": "0.16",
    "author": {
     "name": "digitalcraftsman",
     "homepage": "//github.com/digitalcraftsman"
@@ -7805,7 +8040,7 @@
     "",
     ""
    ],
-   "min_version": 0.17,
+   "min_version": "0.17",
    "original": {
     "name": "Mathieu Mayer-Mazzoli",
     "homepage": "//mx3m.github.io",
@@ -7858,7 +8093,7 @@
     "responsive",
     "black-and-white"
    ],
-   "min_version": 0.13,
+   "min_version": "0.13",
    "author": {
     "name": "Aos Dabbagh",
     "homepage": "http://aos.github.io"
@@ -7869,6 +8104,38 @@
     "#8195af",
     "#a8bad4",
     "#c1d4e4"
+   ],
+   "hasimage": true
+  },
+  {
+   "name": "Theer",
+   "license": "MIT",
+   "licenselink": "https://github.com/qiugits/theer/blob/master/LICENSE.md",
+   "description": "A simple and beautiful Hugo theme based on Primer css",
+   "homepage": "https://www.gitshell.net/",
+   "tags": [
+    "blog",
+    "simple"
+   ],
+   "features": [
+    "blog"
+   ],
+   "min_version": "0.40",
+   "author": {
+    "name": "Qiushi Pan",
+    "homepage": "https://www.gitshell.net"
+   },
+   "original": {
+    "name": "",
+    "homepage": "",
+    "repo": ""
+   },
+   "path": "theer",
+   "colors": [
+    "#b8b9ba",
+    "#666665",
+    "#7c7c84",
+    "#9cbcec"
    ],
    "hasimage": true
   },
@@ -7892,7 +8159,7 @@
     "flat",
     "blog"
    ],
-   "min_version": 0.14,
+   "min_version": "0.14",
    "author": {
     "name": "roperzh",
     "homepage": "http://roperzh.com/",
@@ -7920,7 +8187,7 @@
    "features": [
     "blog"
    ],
-   "min_version": 0.14,
+   "min_version": "0.14",
    "author": {
     "name": "Dan Hersam",
     "homepage": "http://dan.hersam.com"
@@ -7957,7 +8224,7 @@
     "",
     ""
    ],
-   "min_version": 0.19,
+   "min_version": "0.19",
    "author": {
     "name": "Digitalcraftsman",
     "homepage": "https://github.com/digitalcraftsman"
@@ -7993,7 +8260,7 @@
     "onepage",
     "product"
    ],
-   "min_version": 0.16,
+   "min_version": "0.16",
    "author": {
     "name": "Giacomo Mariani (@karjudev) for Themefisher",
     "homepage": "https://themefisher.com/"
@@ -8085,7 +8352,7 @@
     "blog post or standard content driven by frontmatter",
     "about link"
    ],
-   "min_version": 0.14,
+   "min_version": "0.14",
    "author": {
     "name": "Peter Carleton",
     "homepage": "http://pedrodude.com"

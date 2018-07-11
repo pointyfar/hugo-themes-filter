@@ -23,12 +23,10 @@ var themePromises = [];
 
 var exclude_dirs = [
   '_script',
+  '.github',
   '.git',
-  'cocoa-eh-hugo-theme', // min_version value
-  'html5', // theme.json instead of .toml
-  'osprey', // min_version value
-  'robust', // min_version value
-  'gohugo-theme-ananke' // min_version value
+  'html5' // theme.json instead of .toml
+
   
 ];
 
@@ -40,7 +38,10 @@ function getFolders(dir) {
 }
 
 function getToml(str) {
-  return toml.parse(str)
+  var regex = /min_version *= *(\d\S*)/g;
+  var mv = str.replace(regex, 'min_version = "$1"');
+  return toml.parse(mv)
+
 }
 
 function checkIncluded(fname) {
@@ -68,11 +69,18 @@ gulp.task('themes:assemble', function(done) {
     }
     if ( checkIncluded(folder) ) {
       // gutil.log(folder);
-      var themePath = themesPath + '/' + folder + '/theme.toml';
+      var themePath = themesPath + '/' + folder + '/theme.';
       var imgPath = themesPath + '/' + folder + '/images/tn.png';
       
-      var themetoml = fs.readFileSync( themePath , 'utf8');
-      var themejson = getToml(themetoml);
+      var themetoml, themejson;
+      if (fs.existsSync(`${themePath}toml`)) {
+        themetoml = fs.readFileSync( `${themePath}toml` , 'utf8');
+        themejson = getToml(themetoml);
+      } else if (fs.existsSync(`${themePath}json`)) {
+        console.log('json')
+        themejson = JSON.parse(fs.readFileSync( `${themePath}json` , 'utf8'));
+      }
+      
       themejson['path'] = folder;
       var color = []
       themejson['colors'] = []
