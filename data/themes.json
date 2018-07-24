@@ -183,9 +183,9 @@
   },
   {
    "name": "After Dark",
-   "license": "BTC",
+   "license": "WTFPL",
    "licenselink": "https://git.habd.as/comfusion/after-dark/src/branch/master/COPYING",
-   "description": "A retro dark theme for Hugo.",
+   "description": "A deceptively simple dark theme for Hugo.",
    "homepage": "https://git.habd.as/comfusion/after-dark/",
    "tags": [
     "personal",
@@ -226,7 +226,7 @@
     "Inclusive Design",
     "Theme Variants"
    ],
-   "min_version": "0.27",
+   "min_version": "0.44",
    "author": {
     "name": "Josh Habdas",
     "homepage": "https://habd.as"
@@ -422,7 +422,7 @@
     "fontawesome",
     "podcast"
    ],
-   "min_version": "0.38",
+   "min_version": "0.43",
    "author": {
     "name": "Daniel Saunders",
     "homepage": "https://github.com/funkydan2"
@@ -803,7 +803,13 @@
    "licenselink": "https://github.com/davidhampgonsalves/hugo-black-and-light-theme/blob/master/LICENSE",
    "description": "",
    "homepage": "https://github.com/davidhampgonsalves/hugo-black-and-light-theme",
-   "tags": [],
+   "tags": [
+    "responsive",
+    "minimal",
+    "simple",
+    "personal",
+    "white"
+   ],
    "features": [],
    "min_version": "0.17",
    "author": {
@@ -2398,6 +2404,44 @@
     "#58b5ae",
     "#7bc6ee",
     "#24547c"
+   ],
+   "hasimage": true
+  },
+  {
+   "name": "Bingo",
+   "license": "MIT",
+   "licenselink": "https://github.com/gundamew/hugo-bingo/blob/master/LICENSE",
+   "description": "Nothing but texts.",
+   "homepage": "https://github.com/gundamew/hugo-bingo",
+   "tags": [
+    "minimalist",
+    "simple",
+    "clean",
+    "blog",
+    "starter",
+    "responsive"
+   ],
+   "features": [
+    "blog"
+   ],
+   "min_version": "0.42.2",
+   "author": {
+    "name": "Bing-Sheng Chen",
+    "homepage": "https://bschen.tw/"
+   },
+   "original": {
+    "name": "Kellen Evan Person",
+    "homepage": "https://goodroot.ca/",
+    "repo": "https://github.com/goodroot/hugo-classic"
+   },
+   "path": "hugo-bingo",
+   "colors": [
+    "#0c4c9c",
+    "#abb2c8",
+    "#1c549b",
+    "#4c4c4c",
+    "#4e74b1",
+    "#84a4cc"
    ],
    "hasimage": true
   },
@@ -4512,6 +4556,49 @@
    "hasimage": true
   },
   {
+   "name": "Sodium",
+   "license": "MIT",
+   "licenselink": "https://github.com/uicardiodev/hugo-sodium-theme/blob/master/LICENSE.md",
+   "description": "Hugo Sodium Theme is minial, clean and responsive component theme",
+   "homepage": "https://uicard.io/products/hugo-sodium",
+   "tags": [
+    "minimal",
+    "responsive",
+    "clean",
+    "modern",
+    "gradients",
+    "portfolio",
+    "blog"
+   ],
+   "features": [
+    "blog",
+    "features",
+    "services",
+    "portfolio",
+    "contact",
+    "team"
+   ],
+   "min_version": "0.31.1",
+   "author": {
+    "name": "UICardio",
+    "homepage": "https://uicard.io/products/hugo-sodium"
+   },
+   "developer": {
+    "name": "Arvind",
+    "homepage": "https://heyarviind.com"
+   },
+   "path": "hugo-sodium-theme",
+   "colors": [
+    "#8f735a",
+    "#3f5432",
+    "#6b130f",
+    "#c2ac8f",
+    "#f15b81",
+    "#fc9f53"
+   ],
+   "hasimage": true
+  },
+  {
    "name": "SP-Minimal",
    "license": "MIT",
    "licenselink": "https://github.com/eueung/hugo-sp-minimal/blob/master/LICENSE.md",
@@ -5579,7 +5666,8 @@
     "gulp",
     "search",
     "matamo",
-    "jsonfeed"
+    "jsonfeed",
+    "subtheme"
    ],
    "min_version": "0.28",
    "author": {
@@ -6190,7 +6278,8 @@
     "font-awesome",
     "responsive",
     "disqus",
-    "graphcomment"
+    "graphcomment",
+    "portfolio"
    ],
    "min_version": "0.33",
    "author": {
@@ -6204,12 +6293,12 @@
    },
    "path": "hyde-hyde",
    "colors": [
-    "#e02f98",
-    "#bcbbbb",
-    "#887f81",
-    "#75134d",
-    "#4c2b4c",
-    "#fce4f4"
+    "#2c042c",
+    "#bcbbbc",
+    "#bd3c8d",
+    "#e484cc",
+    "#649888",
+    "#344c2c"
    ],
    "hasimage": true
   },
@@ -6941,7 +7030,21 @@
     "themefisher",
     "hugo-theme",
     "hugo-templates",
-    "bootstrap"
+    "bootstrap",
+    "blog",
+    "responsive",
+    "clean",
+    "simple",
+    "company",
+    "projects",
+    "dark",
+    "creative",
+    "contact-form",
+    "custom-themes",
+    "mobile",
+    "flexbox",
+    "minimalistic",
+    "pages"
    ],
    "features": [
     "bootstrap4",
@@ -7554,7 +7657,7 @@
    "name": "reveal-hugo",
    "license": "MIT",
    "licenselink": "https://github.com/dzello/reveal-hugo/blob/master/LICENSE",
-   "homepage": "https://dzello.com/reveal-hugo/",
+   "homepage": "https://reveal-hugo.dzello.com/",
    "tags": [
     "presentation",
     "revealjs"
@@ -8321,8 +8424,8 @@
    ],
    "min_version": "0.30",
    "author": {
-    "name": "Taiki IKEGAME",
-    "homepage": "http://taikii.github.io/"
+    "name": "taikii",
+    "homepage": "https://taikii.net/"
    },
    "path": "whiteplain",
    "colors": [

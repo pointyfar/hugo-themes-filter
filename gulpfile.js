@@ -68,7 +68,7 @@ gulp.task('themes:assemble', function(done) {
       return done(); 
     }
     if ( checkIncluded(folder) ) {
-      // gutil.log(folder);
+      //console.log(folder);
       var themePath = themesPath + '/' + folder + '/theme.';
       var imgPath = themesPath + '/' + folder + '/images/tn.png';
       
