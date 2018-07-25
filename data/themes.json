@@ -198,33 +198,26 @@
     "blog"
    ],
    "features": [
-    "Mobile-optimized",
-    "SEO-optimized",
-    "Responsive Design",
-    "Flexbox Layouts",
-    "Google Analytics",
-    "Disqus",
-    "BPG Image Support",
-    "Fuzzy Search",
+    "Module System",
     "Lazy Loading",
-    "Responsive Images",
-    "Low-Quality Image Placeholders",
-    "OpenGraph Data",
-    "Schema Structured Data",
+    "BPG Image Support",
+    "Social Engagement",
+    "Search Optimization",
+    "Post Images",
+    "Fuzzy Search",
+    "Personalization",
+    "Content Reuse",
+    "Related Content",
+    "Table of Contents",
+    "Section Menu",
+    "Comments",
+    "Modification Dating",
+    "Syntax Highlighting",
+    "Taxonomy Pages",
+    "Error Page",
     "Pagination",
     "Reading time",
-    "Related content",
-    "Modification dating",
-    "Author byline",
-    "Word Count",
-    "Related Posts",
-    "Section Menu",
-    "Block Templates",
-    "Table of Contents",
-    "Custom Shortcodes",
-    "Keyboard Accessibility",
-    "Inclusive Design",
-    "Theme Variants"
+    "Post Bylines"
    ],
    "min_version": "0.44",
    "author": {
@@ -5112,6 +5105,44 @@
    "hasimage": true
   },
   {
+   "name": "hello-friend",
+   "license": "MIT",
+   "licenselink": "https://gitlab.com/panr/hugo-theme-hello-friend/blob/master/LICENSE.md",
+   "description": "A simple theme for Hugo. That's it.",
+   "tags": [
+    "minimal",
+    "clean",
+    "monochromatic",
+    "simple",
+    "light",
+    "dark",
+    "blog",
+    "personal site",
+    "responsive",
+    "highlighting"
+   ],
+   "features": [
+    "blog",
+    "shortcode"
+   ],
+   "min_version": "0.30",
+   "author": {
+    "name": "panr",
+    "homepage": "http://radoslawkoziel.pl",
+    "twitter": "https://twitter.com/panr"
+   },
+   "path": "hugo-theme-hello-friend",
+   "colors": [
+    "#ab8764",
+    "#d4c4b4",
+    "#e3ba8f",
+    "#a5784c",
+    "#404046",
+    "#9c643c"
+   ],
+   "hasimage": true
+  },
+  {
    "name": "Introduction",
    "license": "GNU Affero General Public License version 3",
    "licenselink": "https://github.com/vickylai/hugo-theme-introduction/blob/master/LICENSE",
@@ -7001,7 +7032,7 @@
     "utterances",
     "widgets"
    ],
-   "min_version": "0.40",
+   "min_version": "0.45",
    "author": {
     "name": "Munif Tanjim",
     "homepage": "https://muniftanjim.com"
