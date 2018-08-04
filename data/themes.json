@@ -184,39 +184,35 @@
   {
    "name": "After Dark",
    "license": "WTFPL",
-   "licenselink": "https://git.habd.as/comfusion/after-dark/src/branch/master/COPYING",
+   "licenselink": "https://choosealicense.com/licenses/wtfpl/",
    "description": "A deceptively simple dark theme for Hugo.",
    "homepage": "https://git.habd.as/comfusion/after-dark/",
    "tags": [
     "personal",
-    "simple",
     "minimal",
     "responsive",
     "accessible",
-    "search",
     "dark",
+    "search",
     "blog"
    ],
    "features": [
+    "Quick Installer",
     "Module System",
+    "Theme Variants",
     "Lazy Loading",
-    "BPG Image Support",
     "Social Engagement",
     "Search Optimization",
     "Post Images",
     "Fuzzy Search",
     "Personalization",
-    "Content Reuse",
+    "Snippets",
     "Related Content",
     "Table of Contents",
-    "Section Menu",
-    "Comments",
     "Modification Dating",
     "Syntax Highlighting",
     "Taxonomy Pages",
     "Error Page",
-    "Pagination",
-    "Reading time",
     "Post Bylines"
    ],
    "min_version": "0.44",
@@ -1666,6 +1662,68 @@
    "hasimage": true
   },
   {
+   "name": "Engimo",
+   "license": "MIT",
+   "licenselink": "https://github.com/achary/engimo/blob/master/LICENSE",
+   "description": "Minimalist theme for Engineers",
+   "homepage": "https://engimo.netlify.com",
+   "tags": [
+    "blog",
+    "minimal",
+    "minimalist",
+    "responsive",
+    "engineering"
+   ],
+   "features": [
+    "accessibility",
+    "algolia",
+    "analytics",
+    "comments",
+    "cover-image",
+    "disqus",
+    "entry-navigation",
+    "favicon",
+    "fuse.js",
+    "lunr.js",
+    "multilingual",
+    "multi-author",
+    "opengraph",
+    "pagination",
+    "search",
+    "shortcodes",
+    "sidebar",
+    "single-column",
+    "social-menu",
+    "staticman",
+    "syntax-highlighting",
+    "table-of-contents",
+    "utterances",
+    "widgets",
+    "graphviz",
+    "wavedrom",
+    "deprecated-pages",
+    "mathjax"
+   ],
+   "min_version": "0.45",
+   "author": {
+    "name": "Adam Charytoniuk",
+    "homepage": "https://github.com/achary/engimo"
+   },
+   "original": {
+    "name": "Munif Tanjim",
+    "homepage": "https://muniftanjim.com",
+    "repo": "https://github.com/MunifTanjim/minimo"
+   },
+   "path": "engimo",
+   "colors": [
+    "#879199",
+    "#4a525a",
+    "#b4ecfc",
+    "#acc4cc"
+   ],
+   "hasimage": true
+  },
+  {
    "name": "Er",
    "license": "MIT",
    "licenselink": "https://github.com/lingxz/er/blob/master/LICENSE.md",
@@ -2747,10 +2805,10 @@
    },
    "path": "hugo-coder",
    "colors": [
-    "#bebaba",
-    "#ecf4f8",
-    "#4c443c",
-    "#647494"
+    "#808182",
+    "#f4fafc",
+    "#c5bcb7",
+    "#3c4c5c"
    ],
    "hasimage": true
   },
@@ -6381,7 +6439,7 @@
    "name": "hyde-hyde",
    "license": "MIT",
    "licenselink": "https://github.com/htr3n/hyde-hyde/blob/master/LICENSE.md",
-   "description": "A forked/derived version of Hyde",
+   "description": "A simply cool Hyde inspired theme",
    "tags": [
     "blog",
     "theme",
@@ -6405,6 +6463,7 @@
     "graphcomment",
     "portfolio"
    ],
+   "homepage": "https://github.com/htr3n/hyde-hyde",
    "min_version": "0.33",
    "author": {
     "name": "htr3n",
@@ -6826,7 +6885,7 @@
     "disqus",
     "wordpress"
    ],
-   "min_version": "0.36",
+   "min_version": "0.38",
    "author": {
     "name": "Vimux",
     "homepage": "https://github.com/vimux"
@@ -7057,6 +7116,42 @@
    "hasimage": true
   },
   {
+   "name": "Minimage",
+   "license": "MIT",
+   "licenselink": "https://github.com/d-kusk/minimage/blob/master/LICENSE.md",
+   "description": "It is simple, thumbnail can be set theme.",
+   "homepage": "https://github.com/d-kusk/minimage/",
+   "tags": [
+    "responsive",
+    "simple"
+   ],
+   "features": [
+    "Responsive",
+    "Thumbnail",
+    "JSON-LD"
+   ],
+   "min_version": "0.26",
+   "author": {
+    "name": "Daisuke KONISHI",
+    "homepage": "https://dasiukekonishi.com"
+   },
+   "original": {
+    "name": "",
+    "homepage": "",
+    "repo": ""
+   },
+   "path": "minimage",
+   "colors": [
+    "#aac2df",
+    "#33415e",
+    "#687992",
+    "#d4bcac",
+    "#94803c",
+    "#848434"
+   ],
+   "hasimage": true
+  },
+  {
    "name": "Minimal",
    "license": "MIT",
    "licenselink": "https://github.com/calintat/minimal/blob/master/LICENSE.md",
@@ -7084,6 +7179,50 @@
     "#888282",
     "#c4bcc4",
     "#7a130a"
+   ],
+   "hasimage": true
+  },
+  {
+   "name": "Minimal Academic",
+   "license": "MIT",
+   "licenselink": "https://github.com/jhu724/minimal-academic/blob/master/LICENSE",
+   "description": "A two-column Hugo theme for personal sites inspired by Hugo Academic & Minimal Mistakes.",
+   "homepage": "https://joshuahu.io/",
+   "tags": [
+    "blog",
+    "responsive",
+    "minimal",
+    "personal",
+    "clean",
+    "simple",
+    "portfolio",
+    "minimalist",
+    "projects"
+   ],
+   "features": [
+    "two column",
+    "hero",
+    "sticky sidebar",
+    "minimal mistakes"
+   ],
+   "min_version": "0.41",
+   "author": {
+    "name": "Joshua Hu",
+    "homepage": "https://joshuahu.io"
+   },
+   "original": {
+    "name": "",
+    "homepage": "",
+    "repo": ""
+   },
+   "path": "minimal-academic",
+   "colors": [
+    "#b7642a",
+    "#8ba8b9",
+    "#583a2c",
+    "#875e48",
+    "#78360b",
+    "#ee9451"
    ],
    "hasimage": true
   },
@@ -8330,6 +8469,45 @@
     "#6d6b6b",
     "#8f6ab1",
     "#fcf4f2"
+   ],
+   "hasimage": true
+  },
+  {
+   "name": "Tale",
+   "license": "MIT",
+   "licenselink": "https://github.com/EmielH/tale-hugo/blob/master/LICENSE",
+   "description": "A port of the Tale theme for Hugo. Tale is a minimal Jekyll theme curated for storytellers.",
+   "homepage": "https://github.com/EmielH/tale-hugo",
+   "tags": [
+    "minimal",
+    "clean",
+    "responsive",
+    "simple",
+    "personal",
+    "blog",
+    "starter",
+    "light",
+    "typography"
+   ],
+   "features": [
+    "pagination"
+   ],
+   "min_version": "0.43",
+   "author": {
+    "name": "Emiel Hollander",
+    "homepage": "https://www.emielhollander.nl"
+   },
+   "original": {
+    "name": "Chester How",
+    "homepage": "https://github.com/chesterhow/tale",
+    "repo": "https://github.com/chesterhow/tale"
+   },
+   "path": "tale-hugo",
+   "colors": [
+    "#c7c4bc",
+    "#68696c",
+    "#7c7d81",
+    "#cce4f4"
    ],
    "hasimage": true
   },
