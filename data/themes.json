@@ -182,55 +182,6 @@
    "hasimage": true
   },
   {
-   "name": "After Dark",
-   "license": "WTFPL",
-   "licenselink": "https://choosealicense.com/licenses/wtfpl/",
-   "description": "A deceptively simple dark theme for Hugo.",
-   "homepage": "https://git.habd.as/comfusion/after-dark/",
-   "tags": [
-    "personal",
-    "minimal",
-    "responsive",
-    "accessible",
-    "dark",
-    "search",
-    "blog"
-   ],
-   "features": [
-    "Quick Installer",
-    "Module System",
-    "Theme Variants",
-    "Lazy Loading",
-    "Social Engagement",
-    "Search Optimization",
-    "Post Images",
-    "Fuzzy Search",
-    "Personalization",
-    "Snippets",
-    "Related Content",
-    "Table of Contents",
-    "Modification Dating",
-    "Syntax Highlighting",
-    "Taxonomy Pages",
-    "Error Page",
-    "Post Bylines"
-   ],
-   "min_version": "0.44",
-   "author": {
-    "name": "Josh Habdas",
-    "homepage": "https://habd.as"
-   },
-   "path": "after-dark",
-   "colors": [
-    "#474644",
-    "#818181",
-    "#8a1949",
-    "#895104",
-    "#b4b4b4"
-   ],
-   "hasimage": true
-  },
-  {
    "name": "Agency",
    "license": "Apache License 2.0",
    "licenselink": "//github.com/digitalcraftsman/hugo-agency-theme/blob/master/LICENSE",
@@ -1173,7 +1124,7 @@
     "subscribe buttons"
    ],
    "min_version": "0.36",
-   "theme_version": "0.9.1",
+   "theme_version": "0.10.0",
    "author": {
     "name": "Matt Stratton",
     "homepage": "https://www.mattstratton.io"
@@ -2470,7 +2421,7 @@
     "development"
    ],
    "features": [],
-   "min_version": "0.42",
+   "min_version": "0.45",
    "author": {
     "name": "Kaushal Modi",
     "homepage": "https://scripter.co"
@@ -2553,6 +2504,43 @@
    "hasimage": true
   },
   {
+   "name": "Jeffprod",
+   "license": "MIT",
+   "licenselink": "https://github.com/Tazeg/hugo-blog-jeffprod/blob/master/LICENSE",
+   "description": "A new theme blog for HUGO built with Bulma CSS. Including archives and tags widgets.",
+   "homepage": "https://github.com/Tazeg/hugo-blog-jeffprod",
+   "tags": [
+    "simple",
+    "blog",
+    "theme",
+    "pagination",
+    "archives",
+    "tags",
+    "bulma",
+    "personal"
+   ],
+   "features": [
+    "pagination",
+    "archives",
+    "tags"
+   ],
+   "min_version": "0.41",
+   "author": {
+    "name": "@JeffProd",
+    "homepage": "https://jeffprod.com"
+   },
+   "path": "hugo-blog-jeffprod",
+   "colors": [
+    "#77797c",
+    "#bcbdbf",
+    "#3c4144",
+    "#4b82de",
+    "#84a4e8",
+    "#143670"
+   ],
+   "hasimage": true
+  },
+  {
    "name": "Hugo Bootstrap",
    "license": "MIT",
    "licenselink": "https://github.com/Xzya/hugo-bootstrap/blob/master/LICENSE.md",
@@ -2595,7 +2583,7 @@
    "name": "Hugo Bootstrap Premium",
    "license": "MIT",
    "licenselink": "https://github.com/appernetic/hugo-bootstrap-premium/LICENSE.md",
-   "description": "A hugo theme using bootstrap, bootswatch, font-awesome, highlight.js, a popover email opt-in form and i18n",
+   "description": "A hugo theme using bootstrap 3.3, bootswatch, mathjax, font-awesome, highlight.js, a popover email opt-in form, i18n and assets pipeline",
    "homepage": "https://github.com/appernetic/hugo-bootstrap-premium",
    "tags": [
     "Blog",
@@ -2614,7 +2602,9 @@
     "Corporate",
     "Responsive",
     "Google Analytics",
-    "Bootstrap",
+    "Assets Pipeline",
+    "Bootstrap3",
+    "MathJax",
     "Bootswatch",
     "font-awesome",
     "Opt-in form",
@@ -2623,7 +2613,7 @@
     "Multilingual",
     "i18n"
    ],
-   "min_version": "0.15",
+   "min_version": "0.44",
    "author": {
     "name": "Göran Svensson",
     "homepage": "https://appernetic.github.io"
@@ -2798,17 +2788,17 @@
     "single-column",
     "syntax-highlighting"
    ],
-   "min_version": "0.32",
+   "min_version": "0.43",
    "author": {
     "name": "Luiz F. A. de Prá",
     "homepage": "https://luizdepra.com"
    },
    "path": "hugo-coder",
    "colors": [
-    "#808182",
-    "#f4fafc",
-    "#c5bcb7",
-    "#3c4c5c"
+    "#828181",
+    "#3d3d3e",
+    "#f4fcfc",
+    "#d2cec2"
    ],
    "hasimage": true
   },
@@ -3217,7 +3207,7 @@
    "name": "Hugo Fresh",
    "license": "MIT",
    "licenselink": "https://github.com/lucperkins/hugo-fresh/blob/master/LICENSE.md",
-   "description": "",
+   "description": "A Hugo adaptation of the Fresh theme from CSS Ninja",
    "homepage": "https://github.com/lucperkins/hugo-fresh",
    "tags": [
     "responsive",
@@ -3229,19 +3219,19 @@
     "landing page"
    ],
    "features": [],
-   "min_version": "0.38",
+   "min_version": "0.45",
    "author": {
     "name": "Luc Perkins",
     "homepage": "https://github.com/lucperkins"
    },
    "path": "hugo-fresh",
    "colors": [
-    "#e6973b",
-    "#445060",
-    "#edbc7d",
-    "#a6bcce",
-    "#b4946c",
-    "#75460f"
+    "#f4940c",
+    "#e1d0cb",
+    "#374558",
+    "#7d7b8c",
+    "#f4bc5c",
+    "#905a0a"
    ],
    "hasimage": true
   },
@@ -4287,12 +4277,12 @@
    },
    "path": "hugo-paper",
    "colors": [
-    "#3f3f40",
-    "#cac4bc",
-    "#fcdc74",
-    "#848c9c",
-    "#fcc434",
-    "#825e01"
+    "#4d4d4d",
+    "#7f7f7f",
+    "#fad470",
+    "#ecbe6e",
+    "#bcc4c4",
+    "#75500f"
    ],
    "hasimage": true
   },
@@ -5355,7 +5345,7 @@
     "highlight",
     "multilingual"
    ],
-   "min_version": "0.35",
+   "min_version": "0.45",
    "author": {
     "name": "xianmin",
     "homepage": "http://xianmin.org"
@@ -5566,10 +5556,10 @@
     "google analytics",
     "syntax highlighting"
    ],
-   "min_version": "0.31.1",
+   "min_version": "0.31",
    "author": {
     "name": "resugary",
-    "homepage": "https://resugary.github.io/"
+    "homepage": "https://github.com/resugary"
    },
    "original": {
     "name": "Zack Scholl",
@@ -5578,9 +5568,10 @@
    },
    "path": "hugo-theme-one",
    "colors": [
-    "#bcbdc2",
-    "#828384",
-    "#fcb4b6"
+    "#cfa1a2",
+    "#727174",
+    "#fcd5d3",
+    "#8d8c84"
    ],
    "hasimage": true
   },
@@ -5824,6 +5815,33 @@
     "#e1eacf",
     "#566c80",
     "#3c642c"
+   ],
+   "hasimage": true
+  },
+  {
+   "name": "Winning",
+   "license": "MIT",
+   "licenselink": "https://github.com/cssandstuff/winning/blob/master/LICENSE.md",
+   "description": "A theme for creating a simple CV with pdf generation through node-html-pdf",
+   "homepage": "https://github.com/cssandstuff/hugo-theme-winning/",
+   "tags": [
+    "cv",
+    "one page"
+   ],
+   "features": [
+    "simple"
+   ],
+   "min_version": "0.32.4",
+   "author": {
+    "name": "Tim Clulow",
+    "homepage": "http://cssandstuff.com/"
+   },
+   "path": "hugo-theme-winning",
+   "colors": [
+    "#484747",
+    "#c4bcbf",
+    "#7c7474",
+    "#f4f4fc"
    ],
    "hasimage": true
   },
@@ -6199,6 +6217,43 @@
     "#7a8c98",
     "#eea280",
     "#1c4567"
+   ],
+   "hasimage": true
+  },
+  {
+   "name": "Adam & Eve",
+   "license": "MIT",
+   "licenselink": "https://github.com/blankoworld/hugo_theme_adam_eve/blob/master/LICENSE.md",
+   "description": "A simple wiki in its original formal state",
+   "homepage": "https://github.com/blankoworld/hugo_theme_adam_eve",
+   "tags": [
+    "minimal",
+    "wiki-like",
+    "documentation"
+   ],
+   "features": [
+    "wiki-like",
+    "responsive",
+    "minimal",
+    "shortcode",
+    "clean",
+    "boxes",
+    "i18n"
+   ],
+   "min_version": "0.43",
+   "author": {
+    "name": "Olivier DOSSMANN",
+    "homepage": "https://olivier.dossmann.net/",
+    "repo": "https://github.com/blankoworld/hugo_theme_adam_eve"
+   },
+   "path": "hugo_theme_adam_eve",
+   "colors": [
+    "#fcfccc",
+    "#d3c8ae",
+    "#ac6460",
+    "#8e4e1e",
+    "#f4b83c",
+    "#847c54"
    ],
    "hasimage": true
   },
@@ -6682,7 +6737,7 @@
     "minimalistic"
    ],
    "features": [],
-   "min_version": "0.33",
+   "min_version": "0.45",
    "author": {
     "name": "Yauhen Shulitski",
     "homepage": "https://github.com/jsnjack"
@@ -7185,7 +7240,7 @@
   {
    "name": "Minimal Academic",
    "license": "MIT",
-   "licenselink": "https://github.com/jhu724/minimal-academic/blob/master/LICENSE",
+   "licenselink": "https://github.com/jhu247/minimal-academic/blob/master/LICENSE",
    "description": "A two-column Hugo theme for personal sites inspired by Hugo Academic & Minimal Mistakes.",
    "homepage": "https://joshuahu.io/",
    "tags": [
@@ -8042,6 +8097,46 @@
    "hasimage": true
   },
   {
+   "name": "Saito Boilerplate",
+   "license": "MIT",
+   "licenselink": "https://github.com/hakuoku/hugo-saito-boilerplate/blob/master/LICENSE",
+   "description": "Static website boilerplate for designers & everyone",
+   "homepage": "https://github.com/hakuoku/hugo-saito-boilerplate",
+   "tags": [
+    "boilerplate",
+    "personal",
+    "portfolio",
+    "documentation"
+   ],
+   "features": [
+    "disqus",
+    "Font Awesome",
+    "favicon",
+    "Twitter card",
+    "opengraph"
+   ],
+   "min_version": "0.41",
+   "author": {
+    "name": "Isaribi Saitoh",
+    "homepage": "https://hakuoku.github.io/agakuTeX/"
+   },
+   "original": {
+    "name": "Coder",
+    "homepage": "https://luizdepra.com",
+    "repo": "https://github.com/luizdepra/hugo-coder/"
+   },
+   "path": "saito-boilerplate",
+   "colors": [
+    "#c5aed5",
+    "#7c54a4",
+    "#9c9cfc",
+    "#642894",
+    "#444c54",
+    "#461c68"
+   ],
+   "hasimage": true
+  },
+  {
    "name": "Seminyak",
    "license": "WTFPL",
    "licenselink": "https://github.com/comfusion/seminyak/blob/master/COPYING",
@@ -8157,6 +8252,37 @@
     "#645c54",
     "#7c8484",
     "#25425f"
+   ],
+   "hasimage": true
+  },
+  {
+   "name": "SimpleIT",
+   "license": "MIT",
+   "licenselink": "https://github.com/marcanuy/simpleit-hugo-theme/blob/master/LICENSE",
+   "description": "Responsive Hugo theme displaying articles by directory",
+   "homepage": "https://marcanuy.github.io/simpleit-hugo-theme/",
+   "tags": [
+    "responsive",
+    "bootstrap",
+    "font awesome"
+   ],
+   "features": [
+    "mobile first design",
+    "tree like displaying of articles and directory contents"
+   ],
+   "min_version": "0.41",
+   "author": {
+    "name": "Marcelo Canina",
+    "homepage": "https://marcanuy.com"
+   },
+   "path": "simpleit-hugo-theme",
+   "colors": [
+    "#dc3444",
+    "#818385",
+    "#4c4f52",
+    "#bfc0c1",
+    "#69b4fc",
+    "#94242c"
    ],
    "hasimage": true
   },
