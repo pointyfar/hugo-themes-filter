@@ -15,9 +15,12 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^4.0.1",
     "gulp-util": "^3.0.8",
+    "minimist": "^1.2.0",
     "node-sass": "^4.8.3",
     "splashy": "^2.0.1",
     "toml": "^2.3.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "request": "^2.88.0"
+  }
 }

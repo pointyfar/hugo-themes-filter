@@ -11,9 +11,20 @@ var rename = require("gulp-rename");
 var splashy = require('splashy')();
 var spawn = require('child_process').spawn;
 
+var request = require("request");
+var minimist = require("minimist");
+var https = require("https");
+
 var themesPath = 'all-themes';
 var themesImgPath = './static/theme-images';
 var themesJsonPath = './data/themes.json';
+
+var args = minimist(process.argv.slice(2),{
+  string: 'token',
+  default: {
+    token: ''
+  }
+});
 
 var THEMEBUNDLE = {
   themes : []
@@ -26,9 +37,11 @@ var exclude_dirs = [
   '.github',
   '.git',
   'html5' // theme.json instead of .toml
-
-  
 ];
+
+var exclude_stars = [
+  "Shapez Theme"
+]
 
 function getFolders(dir) {
     return fs.readdirSync(dir)
@@ -67,12 +80,14 @@ gulp.task('themes:assemble', function(done) {
     if (folder.length === 0) {
       return done(); 
     }
-    if ( checkIncluded(folder) ) {
+    if ( checkIncluded(folder) /*&& counter < 5*/ ) {
+      
       //console.log(folder);
       var themePath = themesPath + '/' + folder + '/theme.';
       var imgPath = themesPath + '/' + folder + '/images/tn.png';
       
       var themetoml, themejson;
+      
       if (fs.existsSync(`${themePath}toml`)) {
         themetoml = fs.readFileSync( `${themePath}toml` , 'utf8');
         themejson = getToml(themetoml);
@@ -87,17 +102,43 @@ gulp.task('themes:assemble', function(done) {
         
       if (fs.existsSync(imgPath)) {
         themejson['hasimage'] = true;
-        themePromises.push(getColor(imgPath, themejson));
+        themePromises.push(getPromises(imgPath, themejson));
       } else {
         themePromises.push(Promise.resolve(themejson))
       }
       // copyImage(imgPath, folder);
         
+    counter++;
     }
   });
 
   done();
 });
+
+function getPromises(imgPath, themejson) {
+  return getColor(imgPath, themejson)
+        .then(function(colres){
+          return getGHinit(colres)
+        })
+}
+
+function parseRepo(url){
+  var p = url.split('/')
+  var ghidx = p.indexOf('github.com')
+ 
+  var apiUrl = 'https://api.' 
+      + p[ghidx] + '/repos/'
+      + p[ghidx+1] + '/'
+      + p[ghidx+2] ;
+  var repo = 'https://' + p[ghidx] + '/' + p[ghidx+1] + '/' + p[ghidx+2];
+  var urls = {
+    api: apiUrl,
+    gh: repo
+  }
+  //console.log(urls)
+  return urls
+
+}
 
 function getColor(imgPath, tj){
     return splashy.fromFile(imgPath)
@@ -106,6 +147,43 @@ function getColor(imgPath, tj){
                     return tj
                   });
 }
+
+function getGHinit(themejson) {
+  if(themejson['licenselink']) {
+    if( (themejson['licenselink'].indexOf('github.com')>-1) 
+    && (exclude_stars.indexOf(themejson['name']) < 0 )) {
+      var repo_urls = "";
+      if(themejson['licenselink'].indexOf('yourname/yourtheme') > -1 ) {
+        repo_urls = parseRepo(themejson['homepage'])
+      } else {
+        repo_urls = parseRepo(themejson['licenselink'])
+      }
+      
+      return getGHinfo(themejson, repo_urls)
+    } else {
+      return themejson;
+    }
+    
+  } else {
+    return themejson;
+  }
+}
+
+function getGHinfo(themejson, urls) {
+  var t = args['token'] ? args['token'] : '';
+
+  return getData(urls.api, t)
+      .then(function(result){
+        let jres = JSON.parse(result)
+        themejson['repo_stars'] = jres.stargazers_count;
+        themejson['repo_updated'] = jres.updated_at;
+        themejson['repo_gh'] = urls.gh;
+        
+        return themejson;
+      })
+        
+}
+
 
 gulp.task("site:styles", function(done){
   
@@ -194,6 +272,67 @@ gulp.task("site", function(done){
   
   done();
 })
+
+/*function getStars(useragent, path, token) {
+  console.log("================== GET STARS ==================");
+  let options = {
+    host: 'api.github.com',
+    path: path,
+    method: 'GET',
+    headers: { 
+      'user-agent':  useragent,
+      'Authorization': 'token ' + token
+    }
+  };
+  let json;
+  let request = https.request(options, (response) => {
+    let body = '';
+    response.on('data', (out) => {
+      body += out;
+    });
+    
+    response.on('end', (out) => {
+      json = JSON.parse(body);
+      // console.log(json);
+    });
+  });
+  
+  request.on('error', (e)=>{
+    console.log(e);
+  });
+  
+  request.end();
+  return json;
+}
+
+
+*/
+
+
+
+
+function getData(url, token) {
+    var options = {
+        url: url,
+        headers: {
+            'User-Agent': 'nodejs'
+        }
+    };
+    
+    if(token) {
+      options['headers']['Authorization'] = 'token ' + token;
+    }
+    
+    return new Promise(function(resolve, reject) {
+        request.get(options, function(err, resp, body) {
+            if (err) {
+                reject(err);
+            } else {
+                resolve(body);
+            }
+        })
+    })
+}
 
 gulp.task("watch", function(done){
   gulp.watch("src/**/*.js", gulp.series("site:scripts"));

@@ -52,6 +52,13 @@
                 <div class="theme-box">
                   <h6 class="uk-card-title">{{.name}}</h6>
                   {{with .description}}<p>{{ . }}</p>{{ end }}
+                  {{if isset . "repo_updated"}}
+                  <span class="uk-label uk-background-muted tag-label">
+                    <span>Updated {{ .repo_updated | dateFormat "Jan 2006"}}</span> 
+                    <span class="gxhstar">★</span>{{.repo_stars}}
+                  </span><br/>
+                  {{end}}
+                  
                   <span class="uk-label uk-background-muted tag-label"><a href="https://themes.gohugo.io/{{.path | urlize}}">Hugo Theme Page</a></span>
                   {{with .homepage}}<span class="uk-label uk-background-muted tag-label"><a href="{{.}}">Theme Homepage</a></span>{{ end }}
                   

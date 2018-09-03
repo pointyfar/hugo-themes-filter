@@ -21,6 +21,12 @@ See my other project here:
 
 **PFHT: PointyFar's Filterable Hugo Themes** lets you filter through Hugo themes by tags, license, and Hugo version. 
   
+- **NEW:** (03 Sep 2018) GitHub stars added!
+  - Also last updated date (GitHub hosted repos only)
+  - Soon (/someday): sort by stars
+  
+---
+
 - **NEW:** Search Bar added!
   - Tags search
   - Main search: searches the contents of the theme 'boxes'. 
