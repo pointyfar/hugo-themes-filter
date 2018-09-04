@@ -4,7 +4,7 @@
   "license": "MIT",
   "author": "PointyFar",
   "scripts": {
-    "build": "gulp site && hugo"
+    "build": "gulp themes --token $GH_STARS && gulp site && hugo"
   },
   "devDependencies": {
     "del": "^3.0.0",
@@ -17,10 +17,10 @@
     "gulp-util": "^3.0.8",
     "minimist": "^1.2.0",
     "node-sass": "^4.8.3",
+    "request": "^2.88.0",
     "splashy": "^2.0.1",
     "toml": "^2.3.3"
   },
   "dependencies": {
-    "request": "^2.88.0"
   }
 }
