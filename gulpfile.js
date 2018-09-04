@@ -19,7 +19,13 @@ var themesPath = 'all-themes';
 var themesImgPath = './static/theme-images';
 var themesJsonPath = './data/themes.json';
 
-var GH_STARS = fs.readFileSync("tokens/GH_STARS", "utf8");
+var GH_STARS = function() {
+  try {
+    return fs.readFileSync("tokens/GH_STARS", "utf8")
+  } catch {
+    return ''
+  }
+}
 
 var args = minimist(process.argv.slice(2),{
   string: 'token',
