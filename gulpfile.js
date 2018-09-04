@@ -19,6 +19,8 @@ var themesPath = 'all-themes';
 var themesImgPath = './static/theme-images';
 var themesJsonPath = './data/themes.json';
 
+var GH_STARS = fs.readFileSync("tokens/GH_STARS", "utf8");
+
 var args = minimist(process.argv.slice(2),{
   string: 'token',
   default: {
@@ -170,7 +172,8 @@ function getGHinit(themejson) {
 }
 
 function getGHinfo(themejson, urls) {
-  var t = args['token'] ? args['token'] : '';
+  var t = args['token'] ? args['token'] : 
+          (GH_STARS ? GH_STARS : '' );
 
   return getData(urls.api, t)
       .then(function(result){

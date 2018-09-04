@@ -67,6 +67,7 @@ typings/
 # dotenv environment variables file
 .env
 
+tokens/
 
 static/css/
 static/js/
