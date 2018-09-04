@@ -4,7 +4,7 @@
   "license": "MIT",
   "author": "PointyFar",
   "scripts": {
-    "build": "gulp themes && gulp site && hugo"
+    "build": "gulp site && hugo"
   },
   "devDependencies": {
     "del": "^3.0.0",
