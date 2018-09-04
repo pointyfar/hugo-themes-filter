@@ -22,7 +22,8 @@ var themesJsonPath = './data/themes.json';
 var GH_STARS = function() {
   try {
     return fs.readFileSync("tokens/GH_STARS", "utf8")
-  } catch {
+  } catch(e) {
+    console.log(e)
     return ''
   }
 }
