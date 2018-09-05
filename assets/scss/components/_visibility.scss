@@ -1,0 +1,24 @@
+
+.item {
+  display: none;
+  width: 100%;
+  height:auto;
+}
+
+.filterDiv {
+    float: left;
+    min-height: 100px;
+    display: none; /* Hidden by default */
+}
+
+.show {
+    display: block;
+}
+.hide {
+  display: none;
+}
+
+
+.hideBtn {
+  display: none;
+}

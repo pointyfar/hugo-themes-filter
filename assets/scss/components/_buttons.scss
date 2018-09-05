@@ -4,3 +4,14 @@
   text-overflow: ellipsis;
   display: block;
 }
+
+
+.tag-btn, .license-btn {
+  margin: 0.2em;
+  flex: 1 1 auto;
+}
+
+#selectAllTags, #selectAllLicenses {
+  width: 100%;
+}
+

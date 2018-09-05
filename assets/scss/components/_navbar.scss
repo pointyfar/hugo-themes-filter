@@ -1,0 +1,27 @@
+.navbar-item {
+  padding: 0 1rem;
+}
+
+.navbar-burger {
+  color: #aaa;
+  transition: color 0.5s ease;
+}
+.navbar-burger:hover {
+  color: #fff;
+  transition: color 0.5s ease;
+}
+
+.navbar-menu {
+  z-index: 900;
+  position: relative;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.navbar-menu.is-active {
+  display: flex;
+}
+.navbar-notes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
