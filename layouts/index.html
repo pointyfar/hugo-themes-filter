@@ -52,7 +52,7 @@
                 {{.name}}
               </div>
               <div class="tags">
-                <div class="tag">{{with .min_version}}Hugo Version {{.}}{{else}}No Hugo Version Specified{{end}}</div>
+                <div class="tag">{{with .min_version}}Hugo v{{.}}{{else}}No Hugo Version Specified{{end}}</div>
                 <div class="tag">{{with .license}}{{.}}{{else}}No License Specified{{end}}</div>
               {{if isset . "repo_updated"}}
                   <div class="tag">★ {{.repo_stars}}</div>
