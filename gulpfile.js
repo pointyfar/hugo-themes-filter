@@ -307,43 +307,6 @@ gulp.task("site", function(done){
   done();
 })
 
-/*function getStars(useragent, path, token) {
-  console.log("================== GET STARS ==================");
-  let options = {
-    host: 'api.github.com',
-    path: path,
-    method: 'GET',
-    headers: { 
-      'user-agent':  useragent,
-      'Authorization': 'token ' + token
-    }
-  };
-  let json;
-  let request = https.request(options, (response) => {
-    let body = '';
-    response.on('data', (out) => {
-      body += out;
-    });
-    
-    response.on('end', (out) => {
-      json = JSON.parse(body);
-      // console.log(json);
-    });
-  });
-  
-  request.on('error', (e)=>{
-    console.log(e);
-  });
-  
-  request.end();
-  return json;
-}
-
-
-*/
-
-
-
 
 function getData(url, token) {
     var options = {
