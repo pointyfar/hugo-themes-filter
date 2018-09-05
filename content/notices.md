@@ -16,8 +16,8 @@ Open Source is awesome! Many thanks to the teams behind the resources which I us
 [Hugo](http://www.gohugo.io)
 : The world’s fastest framework for building websites
 
-[Kube](https://imperavi.com/kube/)
-: Minimal CSS framework
+[Bulma](https://bulma.io/)
+: CSS framework
 
 [Font Awesome](https://fontawesome.com/)
 : Awesome icon fonts
@@ -27,7 +27,7 @@ Open Source is awesome! Many thanks to the teams behind the resources which I us
 
 #### Disclaimer
 
-Product names, company names, and theme names referenced in this website are either registered trademarks or trademarks of their respective owners. 
+Product names, company names, and theme names referenced in this website are properties and either registered trademarks or trademarks of their respective owners. 
 
 
 #### License 

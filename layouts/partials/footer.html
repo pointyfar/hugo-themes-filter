@@ -1,7 +1,10 @@
-<script src="{{"/vendor/uikit/js/uikit.min.js" | relURL}}"></script>
-<script src="{{"/vendor/uikit/js/uikit-icons.min.js" | relURL}}"></script>
+{{- if .Site.IsServer -}}
+{{- $js := resources.Get "js/filter.js" | fingerprint -}}
+<script src="{{- $js.Permalink -}}" integrity="{{- $js.Data.Integrity -}}">
+</script>
+{{ else }}
+{{- $js := resources.Get "js/filter.js" | minify | fingerprint -}}
+<script src="{{- $js.Permalink -}}" integrity="{{- $js.Data.Integrity -}}">
+</script>
 
-</body>
-
-
-</html>
+{{ end }}

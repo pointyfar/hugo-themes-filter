@@ -1,0 +1,112 @@
+  <div class="tabs is-centered is-small sticky has-background-white">
+    <ul>
+      <li class="is-active"><a class="sidebar-tabs" data-target="tab-tags">Tags</a></li>
+      <li><a class="sidebar-tabs" data-target="tab-licenses">Licenses</a></li>
+      <li><a class="sidebar-tabs" data-target="tab-versions">Version</a></li>
+    </ul>
+  </div>
+  
+<div class="tab-pane tab-pane-show" id="tab-tags">
+      <div class="search-container">
+        <form>
+          <div class="field has-addons ">
+            <div class="control is-expanded">
+              <input class="input is-small" type="text" placeholder="Search Tags" 
+                    id="tagSearch" onkeyup="searchTermFilter('tagSearch', 'tag-btn', 'span', 'hideBtn' )">
+            </div>
+            <div class="control">
+              <button class="button is-small"   onclick="document.getElementById('tagSearch').value = '';searchFilter('tag', 'tagSearch')">&#x274c;</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <hr>
+      <div class="tab_pane_container buttons tab-buttons-container">
+        <button class="button is-small is-outlined " id="selectAllTags" onclick="showAll()">Show all</button>
+        {{- range sort ( $.Scratch.Get "tags" ) "value" "asc" -}}
+        <button class="button is-small is-outlined tag-btn {{.}}" 
+                id="t-{{. | replaceRE "[.]" "_" | urlize }}" 
+                onclick="tagsCheck('{{ . | replaceRE "[.]" "_"| urlize }}', 't-')"><span>{{- . | humanize | upper -}}</span></button>
+        {{ end }}
+      </div>
+</div>
+
+<div class="tab-pane" id="tab-licenses">
+      <div class="tab_pane_container uk-padding-small buttons tab-buttons-container" >
+        <button class="button is-small is-outlined is-fullwidth" id="selectAllLicenses" onclick="licenseCheck('')">
+          All Licenses
+        </button>
+        {{ range sort ( $.Scratch.Get "licenses" ) "value" "asc" }}
+        <button class="button is-small is-outlined is-fullwidth license-btn" id="l-{{ . | urlize }}" onclick="tagsCheck('{{ . | replaceRE "[.]" "_" | urlize}}', 'l-')">
+          {{ . | replaceRE "[_]" "." | humanize | upper }}
+        </button>
+        {{ end }}
+      </div>
+      </div>
+
+      <div class="tab-pane" id="tab-versions">
+
+      <div class="tab_pane_container uk-padding-small" >
+        <form class="form">
+          
+          <div class="field">
+            <div class="control">
+              <label>Match Hugo Versions</label>
+              <div class="select is-small">
+                <select  id="versionSelect" onchange="versionSelected()">
+                  <option>Select All</option>
+                  {{range sort ($.Scratch.Get "hugoversion") "value" "desc" }}<option>{{.}}</option>{{end}}
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="control">
+            <label class="radio"><input name="versionMatch" value="e" type="radio" onchange="versionSelected()" checked> Exactly</label>
+            <label class="radio"><input name="versionMatch" value="gte" onchange="versionSelected()" type="radio"> Greater than or equal</label>
+            <label class="radio"><input name="versionMatch" value="lte" onchange="versionSelected()" type="radio"> Less than or equal</label>
+          </div>
+        </form>
+      </div>
+      </div>
+
+
+  <script>
+
+  var gt = document.getElementsByClassName('sidebar-tabs');
+  for(let i=0; i<gt.length; i++){
+    gt[i].addEventListener("click",show_tab_pane);
+    gt[i].addEventListener("click",toggle_active);
+    
+  }
+  function toggle_active(){
+
+    for(let i=0; i<gt.length; i++){
+      gt[i].parentElement.classList.remove('is-active')
+    }
+    if(!this.parentElement.classList.contains('is-active')) {
+      this.parentElement.classList.add('is-active')
+      
+    }
+    
+  }
+  function show_tab_pane() {
+    event = event || window.event;
+    var source = event.target || event.srcElement;
+    var gc = document.getElementsByClassName('tab-pane');
+    var show_class="tab-pane-show";
+    var target = this.dataset.target;
+    
+    
+    for(let i=0; i<gc.length; i++){
+      if(gc[i].id == target) {
+        if(!(gc[i].classList).contains(show_class)) {
+          gc[i].classList.add(show_class)
+        }
+      } else {
+        if(gc[i].classList.contains(show_class)) {
+          gc[i].classList.remove(show_class);
+        }
+      }
+    }
+  }
+  </script>

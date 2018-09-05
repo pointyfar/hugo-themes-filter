@@ -1,14 +1,12 @@
-{{ partial "header.html" . }}
-<div class="outer-wrapper">
-
-{{ partial "nav.html" . }}
-
-{{ block "main" . }}
-
-{{ end }}
-</div>
-
-{{ partial "footer.html" . }}
-
-
-    
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body  class="has-navbar-fixed-top">
+        {{- partial "header.html" . -}}
+        {{ partial "navbar.html" . }}
+        <div>
+        {{- block "main" . }}{{- end }}
+        </div>
+        {{- partial "footer.html" . -}}
+    </body>
+</html>

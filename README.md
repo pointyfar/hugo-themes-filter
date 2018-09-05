@@ -1,14 +1,3 @@
----
-title: "About"
-date: 2018-04-14T15:57:33+10:00
-draft: false
-menu:
-  main:
-    title: "about pointyfar"
-    identifier: "about"
-    weight: 110
----
-
 #### Who 
 
 Hello! I am PointyFar and I like cats. And filtering things.
@@ -20,7 +9,7 @@ See my other project here:
 #### What 
 
 **PFHT: PointyFar's Filterable Hugo Themes** lets you filter through Hugo themes by tags, license, and Hugo version. 
-
+  
 - **NEW:** (05 Sep 2018) Moved to Bulma!
   - Also now using Hugo Pipes
 

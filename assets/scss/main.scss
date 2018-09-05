@@ -1,0 +1,42 @@
+
+@import "bulma/sass/utilities/initial-variables";
+@import "bulma/sass/utilities/functions";
+
+$family-primary: $family-sans-serif!default;
+
+{{ with .Site.Params.scss.customFontBody }} 
+$custom-font-body: {{.}};
+$family-primary: {{.}};
+{{ end }}
+
+{{ with .Site.Params.scss.primary }} 
+$primary: {{.}};
+$link: $primary;
+{{ end }}
+
+{{ with .Site.Params.scss.primaryInvert }} 
+$primary-invert: {{.}};
+{{ end }}
+
+{{ with .Site.Params.scss.brandFont }} 
+$brand-font: {{.}};
+{{ else }}
+$brand-font: $family-primary;
+{{ end }}
+
+{{ with .Site.Params.scss.footnote }} 
+$foot-note: "{{.}}";
+{{ else }}
+$foot-note: "Notes:";
+{{ end }}
+
+$navbar-height: 2.5rem;
+@import "variables";
+
+
+@import "bulma/bulma";
+@import "components/wrapper";
+@import "components/card";
+@import "components/tags";
+@import "components/buttons";
+@import "components/side";

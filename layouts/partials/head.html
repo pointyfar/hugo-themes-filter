@@ -1,0 +1,11 @@
+<link href="{{"/vendor/fontawesome/css/fontawesome-all.css" | relURL }}" rel="stylesheet">
+
+{{- if .Site.IsServer -}}
+  {{- $cssOpts := (dict "targetPath" "styles/main.css" "enableSourceMap" true ) -}}
+  {{- $styles := resources.Get "scss/main.scss" | resources.ExecuteAsTemplate "style.main.scss" . | toCSS $cssOpts -}}
+  <link rel="stylesheet" href="{{- $styles.Permalink -}}" media="screen">
+{{- else -}}
+  {{- $cssOpts := (dict "targetPath" "styles/main.css" ) -}}
+  {{- $styles := resources.Get "scss/main.scss" | resources.ExecuteAsTemplate "style.main.scss" . | toCSS $cssOpts | minify | fingerprint -}}
+  <link rel="stylesheet" href="{{- $styles.Permalink -}}" integrity="{{- $styles.Data.Integrity -}}" media="screen">
+{{- end -}}

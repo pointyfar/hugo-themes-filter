@@ -1,4 +1,4 @@
-{{ define "main" }}
+{{ define "main"}}
 
 {{- $.Scratch.Set "tags" (slice ) -}}
 {{- $.Scratch.Set "licenses" (slice ) -}}
@@ -25,135 +25,88 @@
   {{- end -}}
 {{- end -}}
 
-<div class="uk-background-muted status-bar uk-text-small">
-  <div class="status"><div class="status-inner"><span id="selectedThemeCount"></span> of {{ len .Site.Data.themes.themes }} </div><div class="status-inner">&nbsp;themes</div></div>
-  <div class="status-separator">|</div>
-  <div class="status"><div class="status-inner"><span id="selectedTagsCount"></span> {{ len ($.Scratch.Get "tags") }} </div><div class="status-inner">&nbsp;tags</div></div>
-  <div class="status-separator">|</div>
-  <div class="status"><div class="status-inner"><span id="selectedLicCount"></span> {{ len ($.Scratch.Get "licenses") }} </div><div class="status-inner">&nbsp;licenses</div></div>
-  <div class="status-separator">|</div>
-  <div class="status"><div class="status-inner"><span id="selectedVerStatus">All</span></div><div class="status-inner">&nbsp;Hugo Version</div></div>
-  <div class="status-separator">|</div>
-  <div class="status"><div class="status-inner">Last Updated </div><div class="status-inner">&nbsp;{{ now.Format "2 Jan 2006" }}</div></div>
-  
-</div>
-    <div class="uk-container uk-container-expand wrapper">
-      <div class="content-wrapper">
-        <main class="main">
-          <div class="wall">
-            {{ range .Site.Data.themes.themes }}
-            <div class="item">
-              <div id="theme-{{.name|urlize}}"
-                  class="filterDiv box"
-                  data-tags="{{ range .tags }}{{ . | replaceRE "[.]" "_" | urlize }} {{ end }}"
-                  data-license="{{ .license | replaceRE "[.]" "_" |urlize}}"
-                  data-minver="{{.min_version}}"
-                >
-                <div class="theme-box">
-                  <h6 class="uk-card-title">{{.name}}</h6>
-                  {{with .description}}<p>{{ . }}</p>{{ end }}
-                  {{if isset . "repo_updated"}}
-                  <span class="uk-label uk-background-muted tag-label">
-                    <span>Updated {{ .repo_updated | dateFormat "Jan 2006"}}</span> 
-                    <span class="gxhstar">★</span>{{.repo_stars}}
-                  </span><br/>
-                  {{end}}
-                  
-                  <span class="uk-label uk-background-muted tag-label"><a href="https://themes.gohugo.io/{{.path | urlize}}">Hugo Theme Page</a></span>
-                  {{with .homepage}}<span class="uk-label uk-background-muted tag-label"><a href="{{.}}">Theme Homepage</a></span>{{ end }}
-                  
-                  <br />{{with .min_version}}{{.}}{{else}}No Version Specified{{end}} | {{with .license}}{{.}}{{else}}No License Specified{{end}}
-                  {{with .colors}}
-                  <br />{{ range . }}<span class="dot" style="background-color:{{.}}">&nbsp;</span>{{ end }}
-                  {{ end }}
-                  {{with .tags}}
-                  <div class="uk-margin item-tags-container">
-                    {{ range . }}{{ if gt ( len . ) 0 }}
-                    <button class="uk-button uk-button-small uk-button-text item-tags-button" onclick="tagsCheck('{{ . | replaceRE "[.]" "_"| urlize }}', 't-')">
-                      {{- . | humanize -}}
-                    </button> 
-                    {{ end }}{{ end }}
+
+<div class="container-fluid main-container">
+  <div class="columns is-mobile">
+    <div class="column is-two-thirds card-wrapper">
+      <div class="tabs is-small has-background-white sticky status-tabs">
+        <ul>
+          <li><a><span id="selectedThemeCount"></span>&nbsp; of {{ len .Site.Data.themes.themes }} themes</a></li>
+          <li><a><span id="selectedTagsCount"></span>&nbsp;  {{ len ($.Scratch.Get "tags") }} tags</a></li>
+          <li><a><span id="selectedLicCount"></span>&nbsp;  {{ len ($.Scratch.Get "licenses") }} licenses</a></li>
+          <li><a><span id="selectedVerStatus">All</span>&nbsp; Hugo Version</a></li>
+        </ul>
+      </div>
+      {{partial "notif.html" . }}
+      
+        {{ range .Site.Data.themes.themes | shuffle }}
+          <div 
+              id="theme-{{.name|urlize}}"
+              class="filterDiv card"
+              data-tags="{{ range .tags }}{{ . | replaceRE "[.]" "_" | urlize }} {{ end }}"
+              data-license="{{ .license | replaceRE "[.]" "_" |urlize}}"
+              data-minver="{{.min_version}}"
+          >
+            <header class="card-header">
+              <div class="card-header-title">
+                {{.name}}
+              </div>
+              <div class="tags">
+                <div class="tag">{{with .min_version}}Hugo Version {{.}}{{else}}No Hugo Version Specified{{end}}</div>
+                <div class="tag">{{with .license}}{{.}}{{else}}No License Specified{{end}}</div>
+              {{if isset . "repo_updated"}}
+                  <div class="tag">★ {{.repo_stars}}</div>
+                  <div class="tag is-white">{{ .repo_updated | dateFormat "Jan 2006"}}</div> 
+              {{end}}
+            </div>
+            </header>
+            {{- with .colors}}
+            <div class="colors">
+              {{ range . }}<span class="color" style="background-color:{{.}}">&nbsp;</span>{{ end }}
+            </div>
+            {{ end }}
+            <div class="card-content is-size-7">
+
+              <div class="content">
+                {{with .description}}<p>{{ . }}</p>{{ end }}
+                {{- with .tags}}
+                  <div class="buttons">
+                  {{ range . }}{{ if gt ( len . ) 0 }}
+                  <button class="button is-small item-tags-button" onclick="tagsCheck('{{ . | replaceRE "[.]" "_"| urlize }}', 't-')">
+                    {{- . | humanize -}}
+                  </button> 
+                  {{ end }}{{ end }}
                   </div>
-                  {{ end }}
-                  {{with .features }}
-                    <button class="uk-button uk-button-default uk-button-small uk-width-1-1" type="button">Features</button>
-                    <div uk-drop="pos: top-left; boundary: .wall; mode:click">
-                        <div class="uk-card uk-card-body uk-card-default">
-                          {{- if eq ( printf "%T" . ) "[]interface {}" }}
-                          {{ if gt ( len . ) 0 }}<span>{{delimit . " | "}}</span>{{ end }}
-                          {{ else }}{{ . }}
-                          {{ end }}
-                        </div>
-                    </div>
-                  {{end}}
-                </div>
+                {{ end }}
+                
+                {{- with .features }}
+                  
+                  <div class="tags">
+                    {{- if eq ( printf "%T" . ) "[]interface {}" }}
+                      {{ if gt ( len . ) 0 }}
+                        {{range .}}{{ if gt ( len . ) 0 }}<div class="tag is-small">{{.}}</div>{{ end }}{{ end }}
+                      {{ end }}
+                    {{ else }}<div class="tag is-small">{{ . }}</div>
+                    {{ end }}
+                  </div>
+                {{end}}
+                
               </div>
             </div>
-
-            {{ end }}
+            <footer class="card-footer is-size-7">
+              <span class="card-footer-item"><a href="https://themes.gohugo.io/{{.path | urlize}}">Hugo Theme Page</a></span>
+              {{with .homepage}}<span class="card-footer-item"><a href="{{.}}">Theme Homepage</a></span>{{ end }}
+              
+            </footer>
           </div>
-        </main>
-        
-        <aside class="">
-          <ul class="" uk-tab uk-switcher>
-            <li class="active"><a class="uk-width-1-1 uk-text-truncate" href="#">Tags</a></li>
-            <li><a class="uk-width-1-1 uk-text-truncate" href="#">Licenses</a></li>
-            <li><a class="uk-width-1-1 uk-text-truncate" href="#">Version</a></li>
-          </ul>
-          <ul class="uk-switcher">
-            <li>
-              <div class="uk-width-1-1 uk-padding-small">
-                <form class="uk-search uk-search-default">
-                  <span class="uk-form-icon" uk-icon="icon: search"></span>
-                  <input class="uk-input" type="text" id="tagSearch" onkeyup="searchTermFilter('tagSearch', 'tag-btn', 'span', 'hideBtn' )">
-                  <a class="uk-form-icon uk-form-icon-flip" href="#" uk-icon="icon: close" onclick="document.getElementById('tagSearch').value = '';searchFilter('tag', 'tagSearch')"></a>
-                </form>
-              </div>
-              <div class="tab_pane_container uk-padding-small uk-margin tab-buttons-container">
-                <button class="uk-button uk-button-default uk-button-small" id="selectAllTags" onclick="showAll()">Show all</button>
-                {{- range sort ( $.Scratch.Get "tags" ) "value" "asc" -}}
-                <button class="uk-button uk-button-default uk-button-small tag-btn {{.}}" 
-                        id="t-{{. | replaceRE "[.]" "_" | urlize }}" 
-                        onclick="tagsCheck('{{ . | replaceRE "[.]" "_"| urlize }}', 't-')"><span>{{- . | humanize | upper -}}</span></button>
-                {{ end }}
-              </div>
-            </li>
-            <li>
-              <div class="tab_pane_container uk-padding-small  tab-buttons-container">
-                <button class="uk-button uk-button-default uk-button-small uk-width-1-1" id="selectAllLicenses" onclick="licenseCheck('')">
-                  All Licenses
-                </button>
-                {{ range sort ( $.Scratch.Get "licenses" ) "value" "asc" }}
-                <button class="uk-button uk-button-default uk-button-small  license-btn" id="l-{{ . | urlize }}" onclick="tagsCheck('{{ . | replaceRE "[.]" "_" | urlize}}', 'l-')">
-                  {{ . | replaceRE "[_]" "." | humanize | upper }}
-                </button>
-                {{ end }}
-              </div>
 
-            <li style="min-height: calc(100vh - 165px);">
-              <div class="tab_pane_container uk-padding-small">
-                <form class="form">
-                  <label>Match Hugo Versions</label>
-                  <div class="form-item">
-                      <select class="uk-select" id="versionSelect" onchange="versionSelected()">
-                        <option>Select All</option>
-                        {{range sort ($.Scratch.Get "hugoversion") "value" "desc" }}<option>{{.}}</option>{{end}}
-                      </select>
-                  </div>
-                  <div class="form-item">
-                    <label class="checkbox"><input name="versionMatch" class="uk-radio" value="e" type="radio" onchange="versionSelected()" checked> Exactly</label>
-                    <label class="checkbox"><input name="versionMatch" class="uk-radio" value="gte" onchange="versionSelected()" type="radio"> Greater than or equal</label>
-                    <label class="checkbox"><input name="versionMatch" class="uk-radio" value="lte" onchange="versionSelected()" type="radio"> Less than or equal</label>
-                  </div>
-                </form>
-              </div>
-            </li>
-          </ul>
+        {{ end }}
 
-
-        </aside>
-      </div>
+    </div>
+    <div class="column is-one-third side">
+      {{ partial "sidebar.html" . }}
     </div>
 
-<script src="/js/{{index .Site.Data.hash "filter.js"}}"></script>
+  </div>
+</div>
 {{ end }}

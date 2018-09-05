@@ -1,9 +1,10 @@
 {{ define "main" }}
-  <main class="single uk-padding">
+<div class="container-fluid single-container">
+  <div class="section content container">
     <h2>{{.Title}}</h2>
     <h6>List Updated {{now | dateFormat "02 Jan 2006"}}</h6>
     {{ .Content }}
-    <hr>
+    <br><br>
     {{ $sorted := (sort .Site.Data.themes.themes "repo_stars" "desc") }}
     {{ $starred := where .Site.Data.themes.themes "repo_stars" "!=" nil }}
     
@@ -15,24 +16,25 @@
         {{ end }}
      {{ end }}
      
-   <table class="uk-table uk-table-hover">
-    <tr>
+   <table class="table is-striped is-hoverable">
+    <thead><tr>
       <th></th>
       <th>Theme</th>
-      <th>★</th>
-      <th>Repository</th>
-    </tr>
+      <th class="number-column">★</th>
+      <th>Description</th>
+    </tr></thead>
+    <tbody>
     {{range $i, $e := sort ($.Scratch.Get "repos") "repo_stars" "desc"}}
     <tr>
-      <td>{{add 1 $i}}</td>
-      <td>{{$e.name}}</td>
-      <td>{{$e.repo_stars}}</td>
-      <td><a href="{{$e.repo_gh}}">{{$e.repo_gh}}</a></td>
+      <td class="number-column">{{add 1 $i}}</td>
+      <td><a href="{{$e.repo_gh}}">{{$e.name}}</a></td>
+      <td class="number-column">{{$e.repo_stars}}</td>
+      <td>{{$e.description}}</td>
       
     </tr>
     {{ end }}
-  </ul>
-</main>
-
-
+  </tbody>
+  </table>
+  </div>
+</div>
 {{ end }}

@@ -1,0 +1,73 @@
+{{ $currentPage := . }}
+<nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="{{.Site.BaseURL}}">{{.Site.Params.brand}}</a>
+    {{ range .Site.Menus.main }}
+    <a class="navbar-item" href="{{ .URL }}">
+      {{ .Name }}
+    </a>
+    {{ end}}
+    <a role="button" class="navbar-burger"  aria-label="menu" aria-expanded="false" data-target="navMenu">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu has-background-dark" id="navMenu">
+    <div class="navbar-start">
+    </div>
+    <div class="navbar-end">
+      {{ if .IsHome }} 
+      <div class="navbar-item">
+        <form>
+          <div class="field has-addons">
+            <div class="control">
+              <input 
+              class="input is-small" 
+              type="text" 
+              placeholder="Search themes..." 
+              id="mainSearch" 
+              onkeyup="searchTermFilter('mainSearch', 'filterDiv', 'div', 'hide' )" 
+              autofocus>
+            </div>
+            <div class="control">
+              <a class="button is-small"  onclick="document.getElementById('tagSearch').value = '';searchFilter('tag', 'tagSearch')">Search</a>
+            </div>
+          </div>
+        </form>
+      </div>
+      {{ end }}
+
+      <div class="navbar-item navbar-notes">
+        {{ range .Site.Params.social }}
+        <a class="button is-dark" href="{{ .url }}"><i class="{{.icon}}"></i></a>
+        {{ end }}
+        {{with .Site.Params.version}}
+        <div class="tag is-dark is-small">v{{.}}</div>
+        {{end}}
+        <div class="tag is-dark is-small">Last Updated {{ now.Format "2 Jan 2006" }}</div>
+      </div>
+      
+    </div>
+  </div>
+
+
+</nav>
+
+
+<script>
+  /* From Bulma */
+  document.addEventListener('DOMContentLoaded', function () {
+    var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+    if ($navbarBurgers.length > 0) {
+      $navbarBurgers.forEach(function ($el) {
+        $el.addEventListener('click', function () {
+          var target = $el.dataset.target;
+          var $target = document.getElementById(target);
+          $el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+        });
+      });
+    }
+  });
+</script>

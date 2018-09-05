@@ -1,0 +1,76 @@
+html {
+  overflow: hidden;
+}
+.main-container {
+  overflow: hidden;
+  height: calc(100vh - 2.5rem);
+} 
+.single-container {
+  border: 0px solid orange;
+  overflow: auto;
+  height: calc(100vh - 2.5rem);
+}
+
+.wall{
+}
+
+.card-wrapper {
+  height: calc(100vh - 2.5rem);
+
+  overflow: auto;
+  border: 0px dashed red;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.number-column {
+  text-align: right;
+}
+
+
+
+.columns {
+  margin: 0;
+}
+
+.column {
+  padding: 0;
+}
+.search-container {
+  margin: 1rem 0;
+}
+
+.navbar-item {
+  padding: 0 1rem;
+}
+
+.navbar-burger {
+  color: #aaa;
+  transition: color 0.5s ease;
+}
+.navbar-burger:hover {
+  color: #fff;
+  transition: color 0.5s ease;
+}
+
+.navbar-menu {
+  z-index: 900;
+  position: relative;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.navbar-menu.is-active {
+  display: flex;
+}
+.navbar-notes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.notification {
+  margin: 1rem;
+}

@@ -19,14 +19,17 @@ var themesPath = 'all-themes';
 var themesImgPath = './static/theme-images';
 var themesJsonPath = './data/themes.json';
 
-var GH_STARS = function() {
+var getToken = function() {
+  var gh_token = "";
   try {
-    return fs.readFileSync("tokens/GH_STARS", "utf8")
+    gh_token = fs.readFileSync("tokens/GH_STARS", "utf8")
   } catch(e) {
     console.log(e)
-    return ''
   }
+  return gh_token
 }
+
+var GH_STARS = getToken();
 
 var args = minimist(process.argv.slice(2),{
   string: 'token',
@@ -89,7 +92,7 @@ gulp.task('themes:assemble', function(done) {
     if (folder.length === 0) {
       return done(); 
     }
-    if ( checkIncluded(folder) /*&& counter < 5*/ ) {
+    if ( checkIncluded(folder) /*&& counter < 20*/ ) {
       
       //console.log(folder);
       var themePath = themesPath + '/' + folder + '/theme.';
@@ -158,23 +161,44 @@ function getColor(imgPath, tj){
 }
 
 function getGHinit(themejson) {
-  if(themejson['licenselink']) {
-    if( (themejson['licenselink'].indexOf('github.com')>-1) 
-    && (exclude_stars.indexOf(themejson['name']) < 0 )) {
-      var repo_urls = "";
-      if(themejson['licenselink'].indexOf('yourname/yourtheme') > -1 ) {
-        repo_urls = parseRepo(themejson['homepage'])
-      } else {
-        repo_urls = parseRepo(themejson['licenselink'])
+  var use_lic = false;
+  var use_home = false;
+  var repo_urls = {};
+  
+  if(exclude_stars.indexOf(themejson['name']) < 0 ) {
+    if(themejson['licenselink']) {
+      if( themejson['licenselink'].indexOf('github.com') > -1 ) {
+        use_lic = true;
       }
-      
-      return getGHinfo(themejson, repo_urls)
-    } else {
-      return themejson;
+      if( themejson['licenselink'].indexOf('yourname/yourtheme') > -1 ) {
+        use_lic = false;
+      }
     }
     
+    if (themejson['homepage']) {
+      if (themejson['homepage'].indexOf('github.com') > -1 ) {
+        use_home = true;
+      }
+    }
+
+    if(use_lic) {
+      repo_urls = parseRepo(themejson['licenselink']);
+      console.log('lic ', themejson['name'])
+      return getGHinfo(themejson, repo_urls)
+    } else if(use_home) {
+      repo_urls = parseRepo(themejson['homepage']);
+      console.log('home ', themejson['name'])
+      return getGHinfo(themejson, repo_urls)
+    } 
+    else {
+      console.log('not gh ', themejson['name'])
+      return themejson
+    }
+
+
   } else {
-    return themejson;
+    return themejson
+    
   }
 }
 
