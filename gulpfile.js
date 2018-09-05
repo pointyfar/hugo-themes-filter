@@ -2,18 +2,14 @@ var fs = require('fs');
 var path = require('path');
 var gulp = require('gulp');
 var gutil = require('gulp-util');
-var sass = require("gulp-sass");
 var autoprefixer = require("gulp-autoprefixer");
-var hash = require("gulp-hash");
 var toml = require('toml');
 var del = require("del");
 var rename = require("gulp-rename");
 var splashy = require('splashy')();
 var spawn = require('child_process').spawn;
-
 var request = require("request");
 var minimist = require("minimist");
-var https = require("https");
 
 var themesPath = 'all-themes';
 var themesImgPath = './static/theme-images';
@@ -218,42 +214,6 @@ function getGHinfo(themejson, urls) {
         
 }
 
-
-gulp.task("site:styles", function(done){
-  
-  del(["static/css/**/*"]);
-  gulp.src("src/**/*.scss")
-      .pipe(sass({
-          outputStyle : "compressed"
-      }))
-      .pipe(autoprefixer({
-          browsers : ["last 20 versions"]
-      }))
-      .pipe(hash())
-      .pipe(gulp.dest("static/css"))
-      .pipe(hash.manifest("hash.json"))
-      .pipe(gulp.dest("data"))
-      ;
-      
-  done();
-  
-});
-
-gulp.task("site:scripts", function(done){
-  
-  del(["static/js/**/*"])
-  
-  gulp.src("src/**/*.js")
-      .pipe(hash())
-      .pipe(gulp.dest("static/js"))
-      .pipe(hash.manifest("hash.json"))
-      .pipe(gulp.dest("data"))
-      ;
-      
-  done();
-})
-
-
 gulp.task('themes:write', function(done){
   
   Promise.all(themePromises)
@@ -292,21 +252,6 @@ gulp.task("themes", function(done){
   done();
 });
 
-gulp.task("site", function(done){
-  gutil.log('---------- BUILDING ----------');
-  
-  CLEAN("./public")
-  
-  var build_tasks = gulp.series(
-    "site:scripts",
-    "site:styles"
-  );
-
-  build_tasks();
-  
-  done();
-})
-
 
 function getData(url, token) {
     var options = {
@@ -331,8 +276,3 @@ function getData(url, token) {
     })
 }
 
-gulp.task("watch", function(done){
-  gulp.watch("src/**/*.js", gulp.series("site:scripts"));
-  gulp.watch("src/**/*.scss", gulp.series("site:styles"));
-
-})
