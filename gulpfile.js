@@ -179,15 +179,12 @@ function getGHinit(themejson) {
 
     if(use_lic) {
       repo_urls = parseRepo(themejson['licenselink']);
-      console.log('lic ', themejson['name'])
       return getGHinfo(themejson, repo_urls)
     } else if(use_home) {
       repo_urls = parseRepo(themejson['homepage']);
-      console.log('home ', themejson['name'])
       return getGHinfo(themejson, repo_urls)
     } 
     else {
-      console.log('not gh ', themejson['name'])
       return themejson
     }
 
@@ -206,7 +203,7 @@ function getGHinfo(themejson, urls) {
       .then(function(result){
         let jres = JSON.parse(result)
         themejson['repo_stars'] = jres.stargazers_count;
-        themejson['repo_updated'] = jres.updated_at;
+        themejson['repo_updated'] = jres.pushed_at;
         themejson['repo_gh'] = urls.gh;
         
         return themejson;
