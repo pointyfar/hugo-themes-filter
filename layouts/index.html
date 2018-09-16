@@ -61,7 +61,7 @@
             </div>
             </header>
             {{- with .colors}}
-            <div class="colors">
+              <div class="colors">
               {{ range . }}<span class="color" style="background-color:{{.}}">&nbsp;</span>{{ end }}
             </div>
             {{ end }}
@@ -71,11 +71,13 @@
                 {{with .description}}<p>{{ . }}</p>{{ end }}
                 {{- with .tags}}
                   <div class="buttons">
-                  {{ range . }}{{ if gt ( len . ) 0 }}
-                  <button class="button is-small item-tags-button" onclick="tagsCheck('{{ . | replaceRE "[.]" "_"| urlize }}', 't-')">
-                    {{- . | humanize -}}
-                  </button> 
-                  {{ end }}{{ end }}
+                    {{ range . }}
+                      {{ if gt ( len . ) 0 }}
+                      <button class="button is-small item-tags-button" onclick="tagsCheck('{{ . | replaceRE "[.]" "_"| urlize }}', 't-')">
+                        {{- . -}}
+                      </button> 
+                      {{ end }}
+                    {{ end }}
                   </div>
                 {{ end }}
                 
