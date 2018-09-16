@@ -9,10 +9,25 @@ var licenseBtns = document.getElementsByClassName('license-btn')
 var tagBtns  = document.getElementsByClassName('tag-btn')
 var versionSelector  = document.getElementById("versionSelect")
 
+var starIntervals = [
+  {pre: 0, post: 10, count: 0},
+  {pre: 11, post: 20, count: 0},
+  {pre: 21, post: 30, count: 0},
+  {pre: 31, post: 40, count: 0},
+  {pre: 41, post: 50, count: 0},
+  {pre: 51, post: 100, count: 0},
+  {pre: 101, post: 200, count: 0},
+  {pre: 201, post: 300, count: 0},
+  {pre: 301, post: 400, count: 0},
+  {pre: 400, post: 2000, count: 0}
+];
+var allStars = [];
+
 var selectedThemeCount = 0;
 var selectedTags = [];
 var selectedLicense = [];
 var selectedVersions = [];
+var selectedStars = [];
 
 var totalLicenses = document.getElementsByClassName('license-btn').length;
 var totalTags  = document.getElementsByClassName('tag-btn').length;
@@ -158,7 +173,9 @@ function showCheck() {
       /* Then check if "show" class should be applied */
       if (checkVisibility(selectedTags, tiles[i].getAttribute('data-tags')) &&
           checkVisibility(selectedLicense, tiles[i].getAttribute('data-license')) &&
-          checkVisibility(selectedVersions, tiles[i].getAttribute('data-minver')) 
+          checkVisibility(selectedVersions, tiles[i].getAttribute('data-minver')) &&
+          checkVisibility(selectedStars, tiles[i].getAttribute('data-starinterval')) 
+          
       ) {
         if( !tiles[i].classList.contains("show") ){
           selectedThemeCount++;
@@ -334,3 +351,54 @@ function searchTermFilter(searchTermInput, target, innerEl, hideClass ) {
   
 
 }
+
+assignStarIntervals()
+getStarButtons()
+function getStarButtons() {
+  var steps = starIntervals.length;
+  var sc = document.getElementById("starsContainer");
+  for ( var i = 0; i < steps; i++ ){
+    var pre = starIntervals[i]['pre'];
+    var post = starIntervals[i]['post'];
+    var count = starIntervals[i]['count'];
+    var btn = document.createElement("BUTTON");
+    var btnLabel = document.createTextNode(`★ ${pre} - ${post} (${count})`);
+    btn.className = "button is-fullwidth is-small star-button";
+    btn.setAttribute('data-target', pre);
+    btn.appendChild(btnLabel);
+    sc.appendChild(btn);
+  }
+  
+  var sb = document.getElementsByClassName("star-button");
+  for(var i=0; i <sb.length; i++) {
+    sb[i].addEventListener("click", selectStar)
+  }
+}
+
+function selectStar() {
+  var target = this.getAttribute('data-target');
+  if(selectedStars.indexOf(target)>=0) {
+    var idx = selectedStars.indexOf(target);
+    selectedStars.splice(idx, 1);
+  } else {
+    selectedStars.push(target);
+  }
+
+  toggleClass(this,activeClass);
+  showCheck()
+}
+
+function assignStarIntervals() {
+  for ( var i = 0; i < tiles.length; i++ ) {
+    var interval = 0;
+    var stars = parseInt(tiles[i].getAttribute('data-stars'));
+    for( var j=0; j< starIntervals.length; j++){
+      if( stars >= starIntervals[j]['pre'] && stars <= starIntervals[j]['post'] ) {
+        interval = starIntervals[j]['pre'];
+        starIntervals[j]['count']++;
+      }
+    }
+    tiles[i].setAttribute('data-starinterval', interval)
+  }
+}
+

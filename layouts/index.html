@@ -46,6 +46,7 @@
               data-tags="{{ range .tags }}{{ . | replaceRE "[.]" "_" | urlize }} {{ end }}"
               data-license="{{ .license | replaceRE "[.]" "_" |urlize}}"
               data-minver="{{.min_version}}"
+              data-stars="{{with .repo_stars}}{{.}}{{else}}0{{end}}"
           >
             <header class="card-header">
               <div class="card-header-title">
@@ -54,11 +55,11 @@
               <div class="tags">
                 <div class="tag">{{with .min_version}}Hugo v{{.}}{{else}}No Hugo Version Specified{{end}}</div>
                 <div class="tag">{{with .license}}{{.}}{{else}}No License Specified{{end}}</div>
-              {{if isset . "repo_updated"}}
-                  <div class="tag">★ {{.repo_stars}}</div>
-                  <div class="tag is-white">{{ .repo_updated | dateFormat "Jan 2006"}}</div> 
-              {{end}}
-            </div>
+                {{if isset . "repo_updated"}}
+                    <div class="tag">★ {{.repo_stars}}</div>
+                    <div class="tag is-white">{{ .repo_updated | dateFormat "Jan 2006"}}</div> 
+                {{end}}
+              </div>
             </header>
             {{- with .colors}}
               <div class="colors">
