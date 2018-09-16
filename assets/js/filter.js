@@ -18,8 +18,7 @@ var starIntervals = [
   {pre: 51, post: 100, count: 0},
   {pre: 101, post: 200, count: 0},
   {pre: 201, post: 300, count: 0},
-  {pre: 301, post: 400, count: 0},
-  {pre: 400, post: 2000, count: 0}
+  {pre: 301, count: 0}
 ];
 var allStars = [];
 
@@ -359,10 +358,10 @@ function getStarButtons() {
   var sc = document.getElementById("starsContainer");
   for ( var i = 0; i < steps; i++ ){
     var pre = starIntervals[i]['pre'];
-    var post = starIntervals[i]['post'];
+    var post = starIntervals[i]['post'] ? " - " + starIntervals[i]['post'] : " + ";
     var count = starIntervals[i]['count'];
     var btn = document.createElement("BUTTON");
-    var btnLabel = document.createTextNode(`★ ${pre} - ${post} (${count})`);
+    var btnLabel = document.createTextNode(`${pre}${post} (${count})`);
     btn.className = "button is-fullwidth is-small star-button";
     btn.setAttribute('data-target', pre);
     btn.appendChild(btnLabel);
@@ -393,7 +392,8 @@ function assignStarIntervals() {
     var interval = 0;
     var stars = parseInt(tiles[i].getAttribute('data-stars'));
     for( var j=0; j< starIntervals.length; j++){
-      if( stars >= starIntervals[j]['pre'] && stars <= starIntervals[j]['post'] ) {
+      var post = starIntervals[j]['post'] ? starIntervals[j]['post'] : 100000;
+      if( stars >= starIntervals[j]['pre'] && stars <= post ) {
         interval = starIntervals[j]['pre'];
         starIntervals[j]['count']++;
       }
