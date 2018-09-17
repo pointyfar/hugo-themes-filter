@@ -15,3 +15,32 @@
   width: 100%;
 }
 
+div.stars-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  
+  flex-wrap: wrap;
+  .buttons {
+    margin: .25rem .5rem;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+    
+    .button.star-label {
+      flex: 1 1 auto;
+    }
+    
+    &:last-child {
+      flex-grow: 0;
+      .button.star-label {
+        flex: 1 1 initial;
+        padding: 0 1.5rem;
+      }
+    }
+  }
+}
+
+.button.is-warning:active, .button.is-warning.is-active {
+  border: 1px solid rgba(0,0,0,.25)
+}

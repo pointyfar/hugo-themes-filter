@@ -21,7 +21,7 @@ var starIntervals = [
   {pre: 201, post: 300, count: 0},
   {pre: 301, count: 0}
 ];
-var allStars = [];
+
 
 var selectedThemeCount = 0;
 var selectedTags = [];
@@ -369,11 +369,32 @@ function getStarButtons() {
     var post = starIntervals[i]['post'] ? " - " + starIntervals[i]['post'] : " + ";
     var count = starIntervals[i]['count'];
     var btn = document.createElement("BUTTON");
-    var btnLabel = document.createTextNode(`${pre}${post} (${count})`);
-    btn.className = "button is-fullwidth is-small star-button";
-    btn.setAttribute('data-target', pre);
-    btn.appendChild(btnLabel);
-    sc.appendChild(btn);
+    btn.className = "button is-small is-warning star-button";
+    
+    var btnsgroup = document.createElement("DIV");
+    
+    var btn1 = document.createElement("BUTTON");
+    var btnLabel = document.createTextNode(`${pre}${post}`);
+        
+    var btn2 = document.createElement("BUTTON");
+    var btnCount = document.createTextNode(`${count}`);
+    
+    btnsgroup.className = "buttons has-addons star-buttons-group";
+    btn1.className = "button is-small is-warning is-selected star-button star-label";
+    btn1.setAttribute('data-target', pre);
+    
+    btn1.appendChild(btnLabel);
+    btn2.className = "button is-small is-light is-static star-count";
+    btn2.appendChild(btnCount);
+    
+    btnsgroup.appendChild(btn1)
+    btnsgroup.appendChild(btn2)
+    
+    sc.appendChild(btnsgroup)
+
+    //btn.setAttribute('data-target', pre);
+    //btn.appendChild(btnLabel);
+    //sc.appendChild(btn);
   }
   
   var sb = document.getElementsByClassName("star-button");

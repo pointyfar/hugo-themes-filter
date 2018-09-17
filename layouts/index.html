@@ -39,7 +39,7 @@
       </div>
       {{partial "notif.html" . }}
       
-        {{ range first 10 .Site.Data.themes.themes }}
+        {{ range .Site.Data.themes.themes | shuffle }}
           <div 
               id="theme-{{.name|urlize}}"
               class="filterDiv card"

@@ -1,3 +1,10 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{{ if eq .Kind "home" }}
+  <title>{{ .Site.Params.brand }}</title>
+{{ else }}
+  <title>{{ .Title }}{{if .Site.Params.brand}} – {{ .Site.Params.brand }} {{ end }}</title>
+{{ end }}
+
 <link href="{{"/vendor/fontawesome/css/fontawesome-all.css" | relURL }}" rel="stylesheet">
 
 {{- if .Site.IsServer -}}
