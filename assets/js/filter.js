@@ -10,7 +10,8 @@ var tagBtns  = document.getElementsByClassName('tag-btn')
 var versionSelector  = document.getElementById("versionSelect")
 
 var starIntervals = [
-  {pre: 0, post: 10, count: 0},
+  {pre: 0, post: 5, count: 0},
+  {pre: 6, post: 10, count: 0},
   {pre: 11, post: 20, count: 0},
   {pre: 21, post: 30, count: 0},
   {pre: 31, post: 40, count: 0},
@@ -164,6 +165,7 @@ function showCheck() {
   
   selectedThemeCount=0;
   
+
   for ( var i = 0; i < tiles.length; i++ ) {
       /* First remove "show" class */
       delClassIfPresent(tiles[i], 'show');
@@ -173,7 +175,7 @@ function showCheck() {
       if (checkVisibility(selectedTags, tiles[i].getAttribute('data-tags')) &&
           checkVisibility(selectedLicense, tiles[i].getAttribute('data-license')) &&
           checkVisibility(selectedVersions, tiles[i].getAttribute('data-minver')) &&
-          checkVisibility(selectedStars, tiles[i].getAttribute('data-starinterval')) 
+          checkVisibility(selectedStars, tiles[i].getAttribute('data-starinterval'), 'int') 
           
       ) {
         if( !tiles[i].classList.contains("show") ){
@@ -209,18 +211,24 @@ function showCheck() {
  * @param  {type} dataAttr to check 
  * @return {boolean}          description 
  */ 
-function checkVisibility(list, dataAttr) {
+function checkVisibility(list, dataAttr, attrtype) {
   
   /**  
    * Returns TRUE if list is empty or attribute is in list
    */   
   if (list.length > 0) {
-    for(var v = 0; v < list.length; v++){
-      if(dataAttr.indexOf(list[v]) >=0 ) {
+    if(attrtype == 'int') {
+      if (list.indexOf(parseInt(dataAttr)) >= 0) {
         return true
       }
+    } else {
+      for(var v = 0; v < list.length; v++){
+        if(dataAttr.indexOf(list[v]) >=0 ) {
+          return true
+        }
+      }
+      return false
     }
-    return false
   } else {
     return true 
   }
@@ -375,7 +383,7 @@ function getStarButtons() {
 }
 
 function selectStar() {
-  var target = this.getAttribute('data-target');
+  var target = parseInt(this.getAttribute('data-target'));
   if(selectedStars.indexOf(target)>=0) {
     var idx = selectedStars.indexOf(target);
     selectedStars.splice(idx, 1);

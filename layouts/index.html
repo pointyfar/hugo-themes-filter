@@ -39,7 +39,7 @@
       </div>
       {{partial "notif.html" . }}
       
-        {{ range .Site.Data.themes.themes | shuffle }}
+        {{ range first 10 .Site.Data.themes.themes }}
           <div 
               id="theme-{{.name|urlize}}"
               class="filterDiv card"
@@ -47,6 +47,7 @@
               data-license="{{ .license | replaceRE "[.]" "_" |urlize}}"
               data-minver="{{.min_version}}"
               data-stars="{{with .repo_stars}}{{.}}{{else}}0{{end}}"
+              data-updated="{{ with .repo_updated }}{{ $ageMonths := div (sub now.Unix (time .).Unix) 2592000 }}{{$ageMonths}}{{else}}x{{ end }}"
           >
             <header class="card-header">
               <div class="card-header-title">
