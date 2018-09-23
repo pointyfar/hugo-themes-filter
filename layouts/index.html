@@ -38,16 +38,18 @@
         </ul>
       </div>
       {{partial "notif.html" . }}
-      
-        {{ range .Site.Data.themes.themes | shuffle }}
+
+      <div id="themes-container">
+        {{ range first 50 .Site.Data.themes.themes  }}
           <div 
               id="theme-{{.name|urlize}}"
               class="filterDiv card"
+              data-name="{{.name|urlize}}"
               data-tags="{{ range .tags }}{{ . | replaceRE "[.]" "_" | urlize }} {{ end }}"
               data-license="{{ .license | replaceRE "[.]" "_" |urlize}}"
               data-minver="{{.min_version}}"
               data-stars="{{with .repo_stars}}{{.}}{{else}}0{{end}}"
-              data-updated="{{ with .repo_updated }}{{ $ageMonths := div (sub now.Unix (time .).Unix) 2592000 }}{{$ageMonths}}{{else}}x{{ end }}"
+              data-updated="{{ with .repo_updated }}{{ $age := (sub now.Unix (time .).Unix) }}{{$age}}{{else}}0{{ end }}"
           >
             <header class="card-header">
               <div class="card-header-title">
@@ -59,6 +61,8 @@
                 {{if isset . "repo_updated"}}
                     <div class="tag">★ {{.repo_stars}}</div>
                     <div class="tag is-white">{{ .repo_updated | dateFormat "Jan 2006"}}</div> 
+                {{ else }}
+                <div class="tag is-white">-</div> 
                 {{end}}
               </div>
             </header>
@@ -106,6 +110,7 @@
 
         {{ end }}
 
+      </div>
     </div>
     <div class="column is-one-third side">
       {{ partial "sidebar.html" . }}
