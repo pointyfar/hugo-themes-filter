@@ -188,7 +188,7 @@
     "#044c84"
    ],
    "hasimage": true,
-   "repo_stars": 1763,
+   "repo_stars": 1762,
    "repo_updated": "2018-09-22T23:53:02Z",
    "repo_gh": "https://github.com/gcushen/hugo-academic"
   },
@@ -582,6 +582,40 @@
    "repo_stars": 2,
    "repo_updated": "2018-09-07T00:39:53Z",
    "repo_gh": "https://github.com/otterpro/apricot-hugo-theme"
+  },
+  {
+   "name": "Arabica",
+   "license": "MIT",
+   "licenselink": "https://github.com/nirocfz/arabica/blob/master/LICENSE",
+   "description": "A port of the Ghost arabica theme for Hugo",
+   "homepage": "https://github.com/nirocfz/arabica",
+   "tags": [
+    "blog"
+   ],
+   "features": [
+    "smooth",
+    "minimal"
+   ],
+   "min_version": "0.41",
+   "author": {
+    "name": "Chen Fangzhou",
+    "homepage": "https://fixatom.com"
+   },
+   "original": {
+    "name": "Arabica",
+    "homepage": "https://thedarkroast.com/",
+    "repo": "https://github.com/slunsford/arabica"
+   },
+   "path": "arabica",
+   "colors": [
+    "#fcf4f1",
+    "#c4c1bc",
+    "#848c94"
+   ],
+   "hasimage": true,
+   "repo_stars": 0,
+   "repo_updated": "2018-09-15T08:12:21Z",
+   "repo_gh": "https://github.com/nirocfz/arabica"
   },
   {
    "name": "Artists",
@@ -1489,7 +1523,7 @@
    ],
    "hasimage": true,
    "repo_stars": 159,
-   "repo_updated": "2018-09-17T13:02:50Z",
+   "repo_updated": "2018-09-23T08:27:17Z",
    "repo_gh": "https://github.com/fuegowolf/cocoa-eh-hugo-theme"
   },
   {
@@ -1657,7 +1691,7 @@
    ],
    "hasimage": true,
    "repo_stars": 81,
-   "repo_updated": "2018-09-09T08:41:08Z",
+   "repo_updated": "2018-09-23T08:18:52Z",
    "repo_gh": "https://github.com/cstate/cstate"
   },
   {
@@ -2014,7 +2048,7 @@
     "#245160"
    ],
    "hasimage": true,
-   "repo_stars": 47,
+   "repo_stars": 48,
    "repo_updated": "2018-09-18T01:56:59Z",
    "repo_gh": "https://github.com/MarcusVirg/forty"
   },
@@ -3287,7 +3321,7 @@
     "#681e07"
    ],
    "hasimage": true,
-   "repo_stars": 8,
+   "repo_stars": 9,
    "repo_updated": "2018-03-25T10:44:00Z",
    "repo_gh": "https://github.com/jweslley/hugo-conference"
   },
@@ -3498,6 +3532,53 @@
    "repo_stars": 27,
    "repo_updated": "2018-09-18T09:42:04Z",
    "repo_gh": "https://github.com/gyorb/hugo-dusk"
+  },
+  {
+   "name": "Dusky Neon Potato",
+   "license": "MIT",
+   "licenselink": "https://raw.githubusercontent.com/VVelox/hugo-dusky-neon-potato/master/LICENSE.md",
+   "description": "Outrun with the power of a potato.",
+   "source_repo": "https://github.com/VVelox/hugo-dusky-neon-potato.git",
+   "tags": [
+    "Responsive",
+    "Blog",
+    "Google analytics",
+    "Disqus",
+    "Clean",
+    "Tags",
+    "Minimal",
+    "Custom Themes",
+    "Minimalist",
+    "Simple",
+    "Pink",
+    "Green",
+    "Starter",
+    "Dark",
+    "Sortable Tables"
+   ],
+   "features": [
+    "blog",
+    "sortable tables",
+    "image zoom",
+    "optional pagination"
+   ],
+   "min_version": "0.27",
+   "author": {
+    "name": "Dusky Neon Potato",
+    "homepage": "https://github.com/VVelox/hugo-dusky-neon-potato"
+   },
+   "original": {
+    "author": "Suraj Mandal",
+    "homepage": "https://github.com/surajmandalcell/potato-dark",
+    "repo": "https://github.com/surajmandalcell/potato-dark.git"
+   },
+   "path": "hugo-dusky-neon-potato",
+   "colors": [
+    "#32770b",
+    "#96145e",
+    "#1c1424"
+   ],
+   "hasimage": true
   },
   {
    "name": "Elate",
@@ -4191,7 +4272,7 @@
     "#947c4c"
    ],
    "hasimage": true,
-   "repo_stars": 53,
+   "repo_stars": 54,
    "repo_updated": "2018-08-03T03:29:12Z",
    "repo_gh": "https://github.com/avianto/hugo-kiera"
   },
@@ -4230,6 +4311,60 @@
    "repo_stars": 8,
    "repo_updated": "2018-07-13T01:50:13Z",
    "repo_gh": "https://github.com/huyb1991/hugo-lamp"
+  },
+  {
+   "name": "Hugo Lime",
+   "license": "MIT",
+   "licenselink": "https://github.com/uicardiodev/hugo-lime/blob/master/LICENSE.md",
+   "description": "",
+   "homepage": "http://uicard.io/products/green-paper",
+   "tags": [
+    "minimal",
+    "blog",
+    "services",
+    "responsive",
+    "bootstrap",
+    "uicardio",
+    "illustrations"
+   ],
+   "features": [
+    "cover",
+    "pricing",
+    "faq",
+    "parteners",
+    "blog",
+    "work",
+    "portfolio",
+    "contact",
+    "illustrations"
+   ],
+   "min_version": "0.47.1",
+   "author": {
+    "name": "UICardio",
+    "homepage": "https://uicard.io/products/sodium-hugo-theme"
+   },
+   "developer": {
+    "name": "Arvind",
+    "homepage": "https://heyarviind.com"
+   },
+   "original": {
+    "name": "",
+    "homepage": "",
+    "repo": ""
+   },
+   "path": "hugo-lime",
+   "colors": [
+    "#2e3c44",
+    "#fab448",
+    "#a9cbd3",
+    "#8f9d7a",
+    "#15153d",
+    "#fc68b4"
+   ],
+   "hasimage": true,
+   "repo_stars": 1,
+   "repo_updated": "2018-09-16T13:49:21Z",
+   "repo_gh": "https://github.com/uicardiodev/hugo-lime"
   },
   {
    "name": "Lithium",
@@ -4565,7 +4700,7 @@
    ],
    "hasimage": true,
    "repo_stars": 45,
-   "repo_updated": "2018-09-23T03:19:26Z",
+   "repo_updated": "2018-09-23T13:01:22Z",
    "repo_gh": "https://github.com/appernetic/hugo-nederburg-theme"
   },
   {
@@ -7048,6 +7183,40 @@
    "repo_gh": "https://github.com/dim0627/hugo_theme_solit"
   },
   {
+   "name": "Grayscale",
+   "license": "MIT",
+   "licenselink": "https://github.com/runningstream/hugograyscale/blob/master/LICENSE",
+   "description": "Grayscale is a multi-section single page theme intended as a landing page.",
+   "homepage": "https://github.com/runningstream/hugograyscale/",
+   "tags": [
+    "minimal",
+    "simple",
+    "landing-page",
+    "one-page"
+   ],
+   "features": [],
+   "min_version": "0.41",
+   "author": {
+    "name": "RunningStream",
+    "homepage": "https://runningstream.net/"
+   },
+   "original": {
+    "name": "startbootstrap-grayscale",
+    "homepage": "https://blackrockdigital.github.io/startbootstrap-grayscale/",
+    "repo": "https://github.com/BlackrockDigital/startbootstrap-grayscale.git"
+   },
+   "path": "hugograyscale",
+   "colors": [
+    "#7c7c7c",
+    "#3c3c3c",
+    "#acb4b4"
+   ],
+   "hasimage": true,
+   "repo_stars": 1,
+   "repo_updated": "2018-09-16T19:40:56Z",
+   "repo_gh": "https://github.com/runningstream/hugograyscale"
+  },
+  {
    "name": "Hugo-scroll",
    "license": "Creative Commons Attribution 4.0 International",
    "licenselink": "https://creativecommons.org/licenses/by/4.0/",
@@ -7883,7 +8052,7 @@
     "#f48c74"
    ],
    "hasimage": true,
-   "repo_stars": 550,
+   "repo_stars": 551,
    "repo_updated": "2018-05-24T15:06:55Z",
    "repo_gh": "https://github.com/digitalcraftsman/hugo-material-docs"
   },
@@ -8134,7 +8303,7 @@
     "#836901"
    ],
    "hasimage": true,
-   "repo_stars": 251,
+   "repo_stars": 250,
    "repo_updated": "2018-09-01T07:42:40Z",
    "repo_gh": "https://github.com/MunifTanjim/minimo"
   },
