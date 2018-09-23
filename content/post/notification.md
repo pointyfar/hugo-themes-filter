@@ -14,6 +14,31 @@ This site is **NOT** official may not be up to date. Please refer to the officia
 - The themes are listed randomly. You may get a different theme list order next time you visit.
 - See Top Starred Themes [here](/post/top-starred/).
 
-<div class="box">
-<button class="button is-small item-tags-button">This is a TAG</button> <div class="tag is-small">This is a FEATURE</div>
+<div class="card">
+  <header class="card-header">
+    <div class="card-header-title">
+      Theme Name
+    </div>
+    <div class="tags">
+      <div class="tag">Hugo Version #</div>
+      <div class="tag">License</div>
+      <div class="tag">★ # GitHub Stars</div>
+      <div class="tag is-white">Theme Last Update</div> 
+    </div>
+  </header>
+  <div class="card-content is-size-7">
+    <div class="content">
+      <p>Theme Description</p>
+      <div class="buttons">
+        <button class="button is-small item-tags-button">tag</button> 
+      </div>
+      <div class="tags">
+        <div class="tag is-small">feature</div>
+      </div>
+    </div>
+  </div>
+  <footer class="card-footer is-size-7">
+    <span class="card-footer-item"><a href="#">Hugo Theme Page</a></span>
+    <span class="card-footer-item"><a href="#">Theme Homepage</a></span>
+  </footer>
 </div>

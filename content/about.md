@@ -21,6 +21,13 @@ See my other project here:
 
 **PFHT: PointyFar's Filterable Hugo Themes** lets you filter through Hugo themes by tags, license, and Hugo version. 
 
+- **NEW:** (23 Sep 2018) Added sort functionality! You can now sort by:
+  - Name
+  - Stars
+  - Update Date
+
+---
+
 - **NEW:** (05 Sep 2018) Moved to Bulma!
   - Also now using Hugo Pipes
 
