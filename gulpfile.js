@@ -131,7 +131,12 @@ function getPromises(imgPath, themejson) {
 }
 
 function parseRepo(url){
-  var p = url.split('/')
+  var nurl = url;
+  if(url.indexOf('github.com:')>=0) {
+    nurl = url.replace('git@','').replace('.com:','.com/').replace('.git','')
+  } 
+  
+  var p = nurl.split('/')
   var ghidx = p.indexOf('github.com')
  
   var apiUrl = 'https://api.' 
@@ -143,7 +148,9 @@ function parseRepo(url){
     api: apiUrl,
     gh: repo
   }
-  //console.log(urls)
+  if(url.indexOf('allegiant')>=0) {
+    console.log(urls)
+  }
   return urls
 
 }
@@ -159,6 +166,7 @@ function getColor(imgPath, tj){
 function getGHinit(themejson) {
   var use_lic = false;
   var use_home = false;
+  var use_sr = false;
   var repo_urls = {};
   
   if(exclude_stars.indexOf(themejson['name']) < 0 ) {
@@ -176,6 +184,13 @@ function getGHinit(themejson) {
         use_home = true;
       }
     }
+    
+    if (themejson['source_repo']) {
+      if (themejson['source_repo'].indexOf('github.com') > -1 ) {
+        use_sr = true;
+      }
+    }
+    
 
     if(use_lic) {
       repo_urls = parseRepo(themejson['licenselink']);
@@ -183,12 +198,12 @@ function getGHinit(themejson) {
     } else if(use_home) {
       repo_urls = parseRepo(themejson['homepage']);
       return getGHinfo(themejson, repo_urls)
-    } 
-    else {
+    } else if(use_sr) {
+      repo_urls = parseRepo(themejson['source_repo']);
+      return getGHinfo(themejson, repo_urls)
+    } else {
       return themejson
     }
-
-
   } else {
     return themejson
     
@@ -207,6 +222,8 @@ function getGHinfo(themejson, urls) {
         themejson['repo_gh'] = urls.gh;
         
         return themejson;
+      }).catch(function(e) {
+        console.log('Error on', themejson['name'], e)
       })
         
 }

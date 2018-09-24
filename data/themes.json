@@ -188,8 +188,8 @@
     "#044c84"
    ],
    "hasimage": true,
-   "repo_stars": 1762,
-   "repo_updated": "2018-09-22T23:53:02Z",
+   "repo_stars": 1763,
+   "repo_updated": "2018-09-23T22:10:39Z",
    "repo_gh": "https://github.com/gcushen/hugo-academic"
   },
   {
@@ -403,7 +403,10 @@
     "#b8b4ac",
     "#7cc4e4"
    ],
-   "hasimage": true
+   "hasimage": true,
+   "repo_stars": 18,
+   "repo_updated": "2017-06-19T19:38:09Z",
+   "repo_gh": "https://github.com/brycematheson/allegiant"
   },
   {
    "name": "Alpha Church",
@@ -826,7 +829,7 @@
     "#747c81"
    ],
    "hasimage": true,
-   "repo_stars": 322,
+   "repo_stars": 323,
    "repo_updated": "2018-09-19T15:39:44Z",
    "repo_gh": "https://github.com/halogenica/Hugo-BeautifulHugo"
   },
@@ -1326,7 +1329,7 @@
     "#a46c1c"
    ],
    "hasimage": true,
-   "repo_stars": 299,
+   "repo_stars": 300,
    "repo_updated": "2018-09-20T11:43:44Z",
    "repo_gh": "https://github.com/vjeantet/hugo-theme-casper"
   },
@@ -1690,7 +1693,7 @@
     "#fcd09c"
    ],
    "hasimage": true,
-   "repo_stars": 81,
+   "repo_stars": 82,
    "repo_updated": "2018-09-23T08:18:52Z",
    "repo_gh": "https://github.com/cstate/cstate"
   },
@@ -3578,7 +3581,8 @@
     "#96145e",
     "#1c1424"
    ],
-   "hasimage": true
+   "hasimage": true,
+   "repo_gh": "https://github.com/VVelox/hugo-dusky-neon-potato.git"
   },
   {
    "name": "Elate",
@@ -6446,7 +6450,7 @@
    ],
    "hasimage": true,
    "repo_stars": 111,
-   "repo_updated": "2018-08-21T19:35:02Z",
+   "repo_updated": "2018-09-23T14:53:39Z",
    "repo_gh": "https://github.com/vickylai/hugo-theme-sam"
   },
   {
@@ -6477,7 +6481,7 @@
     "#3c3c44"
    ],
    "hasimage": true,
-   "repo_stars": 28,
+   "repo_stars": 27,
    "repo_updated": "2018-08-24T07:49:03Z",
    "repo_gh": "https://github.com/IvanChou/hugo-theme-vec"
   },
@@ -6885,7 +6889,7 @@
    ],
    "hasimage": true,
    "repo_stars": 280,
-   "repo_updated": "2018-09-17T12:23:10Z",
+   "repo_updated": "2018-09-23T16:46:03Z",
    "repo_gh": "https://github.com/devcows/hugo-universal-theme"
   },
   {
@@ -7212,7 +7216,7 @@
     "#acb4b4"
    ],
    "hasimage": true,
-   "repo_stars": 1,
+   "repo_stars": 2,
    "repo_updated": "2018-09-16T19:40:56Z",
    "repo_gh": "https://github.com/runningstream/hugograyscale"
   },
@@ -7726,7 +7730,7 @@
     "#06407e"
    ],
    "hasimage": true,
-   "repo_stars": 208,
+   "repo_stars": 209,
    "repo_updated": "2018-08-30T14:53:46Z",
    "repo_gh": "https://github.com/jeblister/kube"
   },
@@ -8682,7 +8686,10 @@
     "#a5c9e4",
     "#bcc8cc"
    ],
-   "hasimage": true
+   "hasimage": true,
+   "repo_stars": 83,
+   "repo_updated": "2018-09-22T19:26:53Z",
+   "repo_gh": "https://github.com/azmelanar/hugo-theme-pixyll"
   },
   {
    "name": "Plain Blog",
@@ -8931,7 +8938,10 @@
     "#aacbe4",
     "#b1bcc4"
    ],
-   "hasimage": true
+   "hasimage": true,
+   "repo_stars": 73,
+   "repo_updated": "2018-01-20T15:59:03Z",
+   "repo_gh": "https://github.com/dplesca/purehugo"
   },
   {
    "name": "Red Lounge",
@@ -9016,7 +9026,7 @@
     "#6a808e"
    ],
    "hasimage": true,
-   "repo_stars": 6,
+   "repo_stars": 7,
    "repo_updated": "2018-09-04T18:13:59Z",
    "repo_gh": "https://github.com/5armale/retrofulhugo"
   },
@@ -9572,7 +9582,7 @@
    ],
    "hasimage": true,
    "repo_stars": 10,
-   "repo_updated": "2018-09-23T01:03:20Z",
+   "repo_updated": "2018-09-23T21:43:02Z",
    "repo_gh": "https://github.com/xaprb/story"
   },
   {
@@ -9703,7 +9713,8 @@
     "#8f6ab1",
     "#fcf4f2"
    ],
-   "hasimage": true
+   "hasimage": true,
+   "repo_gh": "https://github.com/marloncabrera/tachyons.git"
   },
   {
    "name": "Tale",
@@ -10034,7 +10045,10 @@
     "#677c9c",
     "#4c442c"
    ],
-   "hasimage": true
+   "hasimage": true,
+   "repo_stars": 33,
+   "repo_updated": "2017-11-26T05:30:54Z",
+   "repo_gh": "https://github.com/keichi/vienna"
   },
   {
    "name": "Whiteplain",
