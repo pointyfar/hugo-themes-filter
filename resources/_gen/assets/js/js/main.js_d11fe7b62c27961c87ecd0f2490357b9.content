@@ -50,4 +50,7 @@ function sortEl(){var attribute=this.getAttribute('data-attr');var direction=thi
 var sorted=itemsArr.sort(function(a,b){var c=a;if(direction=="desc"){a=b;b=c;}
 a=a.getAttribute(`data-${attribute}`);b=b.getAttribute(`data-${attribute}`);if(isNaN(a)||isNaN(b)){return a.localeCompare(b);}else{return a-b;}});for(i=0;i<sorted.length;++i){parent.appendChild(sorted[i]);}
 for(var i=0;i<sortBtns.length;i++){if(sortBtns[i].classList.contains("is-dark")){sortBtns[i].classList.remove("is-dark")}}
-if(!this.classList.contains("is-dark")){this.classList.add("is-dark")}}
+if(!this.classList.contains("is-dark")){this.classList.add("is-dark")}
+sortedStatus()}
+function sortedStatus(){var sorted=false;var stat="Unsorted";for(var i=0;i<sortBtns.length;i++){if(sortBtns[i].classList.contains("is-dark")){sorted=true;stat=`sort ${sortBtns[i].getAttribute("data-attr")} ${sortBtns[i].getAttribute("data-direction")}`}}
+var sortStat=document.getElementById("sortedStatus");sortStat.textContent=stat;}

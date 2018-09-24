@@ -31,10 +31,11 @@
     <div class="column is-two-thirds card-wrapper">
       <div class="tabs is-small has-background-white sticky status-tabs">
         <ul>
-          <li><a><span id="selectedThemeCount"></span>&nbsp; of {{ len .Site.Data.themes.themes }} themes</a></li>
-          <li><a><span id="selectedTagsCount"></span>&nbsp;  {{ len ($.Scratch.Get "tags") }} tags</a></li>
-          <li><a><span id="selectedLicCount"></span>&nbsp;  {{ len ($.Scratch.Get "licenses") }} licenses</a></li>
-          <li><a><span id="selectedVerStatus">All</span>&nbsp; Hugo Version</a></li>
+          <li><a><span id="selectedThemeCount"></span>&ensp;of {{ len .Site.Data.themes.themes }} themes</a></li>
+          <li><a><span id="selectedTagsCount"></span>{{ len ($.Scratch.Get "tags") }} tags</a></li>
+          <li><a><span id="selectedLicCount"></span>{{ len ($.Scratch.Get "licenses") }} licenses</a></li>
+          <li><a><span id="selectedVerStatus">All</span>&ensp;Hugo Version</a></li>
+          <li><a><span id="sortedStatus">Unsorted</span></a></li>
         </ul>
       </div>
       {{partial "notif.html" . }}

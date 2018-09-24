@@ -53,5 +53,20 @@ function sortEl() {
     this.classList.add("is-dark")
   }
   
-  
+  sortedStatus()
+
+}
+
+function sortedStatus() {
+  var sorted = false;
+  var stat = "Unsorted";
+  for( var i = 0; i < sortBtns.length; i++) {
+    if (sortBtns[i].classList.contains("is-dark")) {
+      sorted = true;
+      stat = `sort ${sortBtns[i].getAttribute("data-attr")} ${sortBtns[i].getAttribute("data-direction")}`
+    }
+  }
+  var sortStat = document.getElementById("sortedStatus");
+  sortStat.textContent = stat;
+
 }
