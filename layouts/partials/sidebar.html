@@ -1,12 +1,17 @@
-  <div class="tabs is-centered is-small sticky has-background-white">
-    <ul>
-      <li class="is-active"><a class="sidebar-tabs" data-target="tab-tags">Tags</a></li>
-      <li><a class="sidebar-tabs" data-target="tab-licenses">Licenses</a></li>
-      <li><a class="sidebar-tabs" data-target="tab-versions">Version</a></li>
-      <li><a class="sidebar-tabs" data-target="tab-stars">★</a></li>
-      <li><a class="sidebar-tabs" data-target="tab-sort">Sort</a></li>
-    </ul>
-  </div>
+{{ $tags := .tags }}
+{{ $licenses := .licenses }}
+{{ $hugoversion := .hugoversion }}
+{{ $untagged := .untagged}}
+
+<div class="tabs is-centered is-small sticky has-background-white">
+  <ul>
+    <li class="is-active"><a class="sidebar-tabs" data-target="tab-tags">Tags</a></li>
+    <li><a class="sidebar-tabs" data-target="tab-licenses">Licenses</a></li>
+    <li><a class="sidebar-tabs" data-target="tab-versions">Version</a></li>
+    <li><a class="sidebar-tabs" data-target="tab-stars">★</a></li>
+    <li><a class="sidebar-tabs" data-target="tab-sort">Sort</a></li>
+  </ul>
+</div>
   
 <div class="tab-pane tab-pane-show" id="tab-tags">
       <div class="search-container">
@@ -25,10 +30,11 @@
       <hr>
       <div class="tab_pane_container buttons tab-buttons-container">
         <button class="button is-small is-outlined " id="selectAllTags" onclick="showAll()">Show all</button>
-        {{- range sort ( $.Scratch.Get "tags" ) "value" "asc" -}}
-        <button class="button is-small is-outlined tag-btn {{.}}" 
-                id="t-{{. | replaceRE "[.]" "_" | urlize }}" 
-                onclick="tagsCheck('{{ . | replaceRE "[.]" "_"| urlize }}', 't-')"><span>{{- . | humanize | upper -}}</span></button>
+        {{- range sort ( $tags ) "value" "asc" -}}
+          <button class="button is-small is-outlined tag-btn {{.}}" 
+                  id="t-{{ . | replaceRE "[.]" "_" | urlize }}" 
+                  onclick="tagsCheck('{{ . | replaceRE "[.]" "_"| urlize }}', 't-')"><span>{{- . | humanize | upper -}}</span></button>
+          <br>
         {{ end }}
       </div>
 </div>
@@ -38,10 +44,11 @@
         <button class="button is-small is-outlined is-fullwidth" id="selectAllLicenses" onclick="licenseCheck('')">
           All Licenses
         </button>
-        {{ range sort ( $.Scratch.Get "licenses" ) "value" "asc" }}
+        {{ range sort ( $licenses ) "value" "asc" }}
         <button class="button is-small is-outlined is-fullwidth license-btn" id="l-{{ . | urlize }}" onclick="tagsCheck('{{ . | replaceRE "[.]" "_" | urlize}}', 'l-')">
           {{ . | replaceRE "[_]" "." | humanize | upper }}
         </button>
+
         {{ end }}
       </div>
 </div>
@@ -57,7 +64,7 @@
           <div class="select is-small">
             <select  id="versionSelect" onchange="versionSelected()">
               <option>Select All</option>
-              {{range sort ($.Scratch.Get "hugoversion") "value" "desc" }}<option>{{.}}</option>{{end}}
+              {{range sort ( $hugoversion ) "value" "desc" }}<option>{{.}}</option>{{end}}
             </select>
           </div>
         </div>

@@ -1,26 +1,28 @@
 {{ define "main"}}
 
-{{- $.Scratch.Set "tags" (slice ) -}}
-{{- $.Scratch.Set "licenses" (slice ) -}}
-{{- $.Scratch.Set "hugoversion" (slice ) -}}
+{{ $tags := slice }}
+{{ $licenses := slice }}
+{{ $hugoversion := slice }}
+{{ $untagged := slice }}
 
-{{- $.Scratch.Set "untagged" (slice ) -}}
 
-{{- range .Site.Data.themes.themes -}}
+{{- range first 50 .Site.Data.themes.themes -}}
   {{- with .tags -}}
     {{- range . -}}
-      {{- if and ( not ( in ( $.Scratch.Get "tags" ) ( . | urlize ) ) ) ( gt ( len . ) 0 ) -}}
-        {{- $.Scratch.Add "tags" ( slice ( . | urlize ) ) -}}
+      {{- if and ( not ( in ( $tags ) ( . | urlize ) ) ) ( gt ( len . ) 0 ) -}}
+        {{- $tags = $tags | append  ( . | urlize ) -}}
       {{- end -}}
     {{- end -}}
   {{- end -}}
-  {{- if and ( not ( in ( $.Scratch.Get "licenses" ) ( .license | replaceRE "[.]" "_" | urlize ) ) ) ( gt ( len .license ) 0 ) -}}
-    {{- $.Scratch.Add "licenses" ( slice ( .license | replaceRE "[.]" "_" | urlize ) ) -}}
+
+  {{ $lic := ( string .license | replaceRE "[.]" "_" | urlize )}}
+  {{- if and ( not ( in $licenses $lic ) ) ( gt ( len .license ) 0 ) -}}
+    {{- $licenses = $licenses | append  $lic -}}
   {{- end -}}
   
   {{- with .min_version -}}
-      {{- if ( not ( in ( $.Scratch.Get "hugoversion" ) ( string . ) ) ) -}}
-        {{- $.Scratch.Add "hugoversion" ( slice ( string . ) ) -}}
+      {{- if ( not ( in ( $hugoversion ) ( string . ) ) ) -}}
+      {{- $hugoversion = $hugoversion | append ( string . ) -}}
       {{- end -}}
   {{- end -}}
 {{- end -}}
@@ -32,8 +34,8 @@
       <div class="tabs is-small has-background-white sticky status-tabs">
         <ul>
           <li><a><span id="selectedThemeCount"></span>&ensp;of {{ len .Site.Data.themes.themes }} themes</a></li>
-          <li><a><span id="selectedTagsCount"></span>{{ len ($.Scratch.Get "tags") }} tags</a></li>
-          <li><a><span id="selectedLicCount"></span>{{ len ($.Scratch.Get "licenses") }} licenses</a></li>
+          <li><a><span id="selectedTagsCount"></span>{{ len $tags }} tags</a></li>
+          <li><a><span id="selectedLicCount"></span>{{ len $licenses }} licenses</a></li>
           <li><a><span id="selectedVerStatus">All</span>&ensp;Hugo Version</a></li>
           <li><a><span id="sortedStatus">Unsorted</span></a></li>
         </ul>
@@ -114,8 +116,10 @@
       </div>
     </div>
     <div class="column is-one-third side">
-      {{ partial "sidebar.html" . }}
+    {{ partial "sidebar.html" (dict "tags" $tags "licenses" $licenses "hugoversion" $hugoversion "untagged" $untagged) }}
     </div>
+
+
 
   </div>
 </div>

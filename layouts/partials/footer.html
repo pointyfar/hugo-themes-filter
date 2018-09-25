@@ -1,10 +1,8 @@
-{{ $.Scratch.Set "jslibs" slice }}
-{{ $libs := slice "js/filter.js" "js/sort.js"}}
-{{ range $libs }}
-  {{ $.Scratch.Add "jslibs" (resources.Get . ) }}
-{{ end }}
+{{ $libs := slice ( resources.Get "js/filter.js") ( resources.Get "js/sort.js")}}
 
-{{ $js := .Scratch.Get "jslibs" | resources.Concat "js/main.js" }}
+
+
+{{ $js := $libs | resources.Concat "js/main.js" }}
 {{ if .Site.IsServer }}
 <script src="{{ $js.Permalink }}"></script>
 {{ else }}
