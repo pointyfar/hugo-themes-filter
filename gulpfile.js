@@ -148,9 +148,7 @@ function parseRepo(url){
     api: apiUrl,
     gh: repo
   }
-  if(url.indexOf('allegiant')>=0) {
-    console.log(urls)
-  }
+
   return urls
 
 }
