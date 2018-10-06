@@ -52,7 +52,7 @@
               data-license="{{ .license | replaceRE "[.]" "_" |urlize}}"
               data-minver="{{.min_version}}"
               data-stars="{{with .repo_stars}}{{.}}{{else}}0{{end}}"
-              data-updated="{{ with .repo_updated }}{{ $age := (sub now.Unix (time .).Unix) }}{{$age}}{{else}}0{{ end }}"
+              data-updated="{{ with .repo_updated }}{{ $age := (sub now.Unix (time .).Unix) }}{{$age}}{{else}}{{ sub now.Unix (time (now.AddDate -5 0 0 )).Unix }}{{ end }}"
           >
             <header class="card-header">
               <div class="card-header-title">
@@ -65,7 +65,8 @@
                     <div class="tag">★ {{.repo_stars}}</div>
                     <div class="tag is-white">{{ .repo_updated | dateFormat "Jan 2006"}}</div> 
                 {{ else }}
-                <div class="tag is-white">-</div> 
+                <div class="tag is-white">-
+                </div> 
                 {{end}}
               </div>
             </header>
