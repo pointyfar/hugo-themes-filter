@@ -31,8 +31,8 @@
     "#5f8e9f"
    ],
    "hasimage": true,
-   "repo_stars": 7,
-   "repo_updated": "2018-09-30T17:39:20Z",
+   "repo_stars": 13,
+   "repo_updated": "2018-10-10T20:06:21Z",
    "repo_gh": "https://github.com/orianna-zzo/AllinOne"
   },
   {
@@ -147,8 +147,8 @@
     "#7d7568"
    ],
    "hasimage": true,
-   "repo_stars": 27,
-   "repo_updated": "2018-09-27T03:24:11Z",
+   "repo_stars": 30,
+   "repo_updated": "2018-10-11T09:24:49Z",
    "repo_gh": "https://github.com/liuzc/LeaveIt"
   },
   {
@@ -223,8 +223,8 @@
     "#044c84"
    ],
    "hasimage": true,
-   "repo_stars": 1809,
-   "repo_updated": "2018-10-04T20:40:21Z",
+   "repo_stars": 1830,
+   "repo_updated": "2018-10-14T01:08:34Z",
    "repo_gh": "https://github.com/gcushen/hugo-academic"
   },
   {
@@ -297,7 +297,7 @@
     "#6a591a"
    ],
    "hasimage": true,
-   "repo_stars": 135,
+   "repo_stars": 137,
    "repo_updated": "2018-04-13T11:39:57Z",
    "repo_gh": "https://github.com/digitalcraftsman/hugo-agency-theme"
   },
@@ -415,8 +415,8 @@
     "#b4a4ac"
    ],
    "hasimage": true,
-   "repo_stars": 47,
-   "repo_updated": "2018-10-06T01:01:02Z",
+   "repo_stars": 50,
+   "repo_updated": "2018-10-06T19:49:12Z",
    "repo_gh": "https://github.com/themefisher/airspace-hugo"
   },
   {
@@ -481,7 +481,7 @@
    ],
    "hasimage": true,
    "repo_stars": 6,
-   "repo_updated": "2018-10-03T05:00:49Z",
+   "repo_updated": "2018-10-13T00:00:48Z",
    "repo_gh": "https://github.com/funkydan2/alpha-church"
   },
   {
@@ -610,13 +610,16 @@
    },
    "path": "arabica",
    "colors": [
-    "#fcf4f1",
-    "#c4c1bc",
-    "#848c94"
+    "#a5c2d2",
+    "#a4dced",
+    "#134d4c",
+    "#588c96",
+    "#30b3d6",
+    "#564c2c"
    ],
    "hasimage": true,
-   "repo_stars": 0,
-   "repo_updated": "2018-10-06T06:24:01Z",
+   "repo_stars": 3,
+   "repo_updated": "2018-10-08T09:22:24Z",
    "repo_gh": "https://github.com/nirocfz/arabica"
   },
   {
@@ -658,7 +661,7 @@
     "#9c5c3c"
    ],
    "hasimage": true,
-   "repo_stars": 48,
+   "repo_stars": 47,
    "repo_updated": "2017-04-08T16:28:25Z",
    "repo_gh": "https://github.com/digitalcraftsman/hugo-artists-theme"
   },
@@ -785,7 +788,7 @@
     "#84bcfc"
    ],
    "hasimage": true,
-   "repo_stars": 7,
+   "repo_stars": 9,
    "repo_updated": "2018-09-15T04:11:32Z",
    "repo_gh": "https://github.com/arjunkrishnababu96/basics"
   },
@@ -828,8 +831,8 @@
     "#747c81"
    ],
    "hasimage": true,
-   "repo_stars": 330,
-   "repo_updated": "2018-10-05T13:07:51Z",
+   "repo_stars": 332,
+   "repo_updated": "2018-10-12T07:00:44Z",
    "repo_gh": "https://github.com/halogenica/Hugo-BeautifulHugo"
   },
   {
@@ -926,8 +929,8 @@
     "#4474ac"
    ],
    "hasimage": true,
-   "repo_stars": 75,
-   "repo_updated": "2018-10-04T19:51:02Z",
+   "repo_stars": 77,
+   "repo_updated": "2018-10-13T19:53:55Z",
    "repo_gh": "https://github.com/Lednerb/bilberry-hugo-theme"
   },
   {
@@ -956,7 +959,7 @@
     "#7c7c7c"
    ],
    "hasimage": true,
-   "repo_stars": 79,
+   "repo_stars": 81,
    "repo_updated": "2018-08-06T15:45:12Z",
    "repo_gh": "https://github.com/davidhampgonsalves/hugo-black-and-light-theme"
   },
@@ -996,7 +999,7 @@
     "#dcccbc"
    ],
    "hasimage": true,
-   "repo_stars": 183,
+   "repo_stars": 185,
    "repo_updated": "2018-09-09T13:15:47Z",
    "repo_gh": "https://github.com/yoshiharuyamashita/blackburn"
   },
@@ -1292,7 +1295,7 @@
    ],
    "hasimage": true,
    "repo_stars": 5,
-   "repo_updated": "2018-08-02T06:17:49Z",
+   "repo_updated": "2018-10-14T06:36:15Z",
    "repo_gh": "https://github.com/sudorook/capsule"
   },
   {
@@ -1399,13 +1402,14 @@
    "path": "charaka-hugo-theme",
    "colors": [
     "#fcf4e4",
-    "#c4beb5",
-    "#954b4a",
-    "#ac6e67"
+    "#a05256",
+    "#d4acac",
+    "#7d101b",
+    "#86242c"
    ],
    "hasimage": true,
-   "repo_stars": 3,
-   "repo_updated": "2018-10-06T11:12:36Z",
+   "repo_stars": 4,
+   "repo_updated": "2018-10-08T12:23:22Z",
    "repo_gh": "https://github.com/natarajmb/charaka-hugo-theme"
   },
   {
@@ -1481,8 +1485,8 @@
     "#593f2a"
    ],
    "hasimage": true,
-   "repo_stars": 267,
-   "repo_updated": "2018-10-04T17:00:18Z",
+   "repo_stars": 271,
+   "repo_updated": "2018-10-13T19:16:51Z",
    "repo_gh": "https://github.com/nishanths/cocoa-hugo-theme"
   },
   {
@@ -1524,8 +1528,8 @@
     "#9cbce4"
    ],
    "hasimage": true,
-   "repo_stars": 158,
-   "repo_updated": "2018-09-23T08:27:17Z",
+   "repo_stars": 159,
+   "repo_updated": "2018-10-10T20:04:52Z",
    "repo_gh": "https://github.com/fuegowolf/cocoa-eh-hugo-theme"
   },
   {
@@ -1692,8 +1696,8 @@
     "#fcd09c"
    ],
    "hasimage": true,
-   "repo_stars": 89,
-   "repo_updated": "2018-10-05T16:30:03Z",
+   "repo_stars": 97,
+   "repo_updated": "2018-10-13T11:52:53Z",
    "repo_gh": "https://github.com/cstate/cstate"
   },
   {
@@ -1763,7 +1767,7 @@
     "#bcbcbc"
    ],
    "hasimage": true,
-   "repo_stars": 43,
+   "repo_stars": 44,
    "repo_updated": "2017-01-29T01:06:23Z",
    "repo_gh": "https://github.com/allnightgrocery/hugo-theme-blueberry-detox"
   },
@@ -1800,7 +1804,7 @@
     "#b6b5b8"
    ],
    "hasimage": true,
-   "repo_stars": 79,
+   "repo_stars": 80,
    "repo_updated": "2018-08-28T21:53:28Z",
    "repo_gh": "https://github.com/sethmacleod/dimension"
   },
@@ -1846,7 +1850,7 @@
     "#74a474"
    ],
    "hasimage": true,
-   "repo_stars": 226,
+   "repo_stars": 228,
    "repo_updated": "2018-09-28T02:02:57Z",
    "repo_gh": "https://github.com/vjeantet/hugo-theme-docdock"
   },
@@ -1887,7 +1891,7 @@
     "#8eafd6"
    ],
    "hasimage": true,
-   "repo_stars": 199,
+   "repo_stars": 201,
    "repo_updated": "2018-02-14T12:58:55Z",
    "repo_gh": "https://github.com/bep/docuapi"
   },
@@ -2051,7 +2055,7 @@
    ],
    "hasimage": true,
    "repo_stars": 49,
-   "repo_updated": "2018-10-04T09:18:02Z",
+   "repo_updated": "2018-10-09T17:40:06Z",
    "repo_gh": "https://github.com/MarcusVirg/forty"
   },
   {
@@ -2175,8 +2179,8 @@
     "#74bcf4"
    ],
    "hasimage": true,
-   "repo_stars": 199,
-   "repo_updated": "2018-08-08T07:24:19Z",
+   "repo_stars": 200,
+   "repo_updated": "2018-10-13T09:11:04Z",
    "repo_gh": "https://github.com/jpescador/hugo-future-imperfect"
   },
   {
@@ -2323,7 +2327,7 @@
     "#820122"
    ],
    "hasimage": true,
-   "repo_stars": 140,
+   "repo_stars": 142,
    "repo_updated": "2018-07-04T20:38:41Z",
    "repo_gh": "https://github.com/wildhaber/gohugo-amp"
   },
@@ -2361,8 +2365,8 @@
     "#2175dd"
    ],
    "hasimage": true,
-   "repo_stars": 160,
-   "repo_updated": "2018-09-28T12:19:34Z",
+   "repo_stars": 165,
+   "repo_updated": "2018-10-13T19:18:03Z",
    "repo_gh": "https://github.com/budparr/gohugo-theme-ananke"
   },
   {
@@ -2843,8 +2847,8 @@
     "#fcc4cc"
    ],
    "hasimage": true,
-   "repo_stars": 32,
-   "repo_updated": "2018-09-25T20:35:14Z",
+   "repo_stars": 31,
+   "repo_updated": "2018-10-09T14:47:05Z",
    "repo_gh": "https://github.com/kaushalmodi/hugo-bare-min-theme"
   },
   {
@@ -2877,7 +2881,7 @@
     "#24547c"
    ],
    "hasimage": true,
-   "repo_stars": 31,
+   "repo_stars": 32,
    "repo_updated": "2016-10-24T09:30:28Z",
    "repo_gh": "https://github.com/crakjie/hugo-base-theme"
   },
@@ -2919,7 +2923,7 @@
    ],
    "hasimage": true,
    "repo_stars": 6,
-   "repo_updated": "2018-07-26T12:19:56Z",
+   "repo_updated": "2018-10-10T08:58:37Z",
    "repo_gh": "https://github.com/gundamew/hugo-bingo"
   },
   {
@@ -2958,7 +2962,7 @@
     "#143670"
    ],
    "hasimage": true,
-   "repo_stars": 2,
+   "repo_stars": 3,
    "repo_updated": "2018-09-01T15:17:16Z",
    "repo_gh": "https://github.com/Tazeg/hugo-blog-jeffprod"
   },
@@ -3000,7 +3004,7 @@
     "#014083"
    ],
    "hasimage": true,
-   "repo_stars": 33,
+   "repo_stars": 35,
    "repo_updated": "2018-10-02T19:02:39Z",
    "repo_gh": "https://github.com/Xzya/hugo-bootstrap"
   },
@@ -3058,8 +3062,8 @@
     "#0e4175"
    ],
    "hasimage": true,
-   "repo_stars": 52,
-   "repo_updated": "2018-10-05T20:32:33Z",
+   "repo_stars": 55,
+   "repo_updated": "2018-10-11T16:05:37Z",
    "repo_gh": "https://github.com/appernetic/hugo-bootstrap-premium"
   },
   {
@@ -3130,8 +3134,8 @@
     "#64ac58"
    ],
    "hasimage": true,
-   "repo_stars": 0,
-   "repo_updated": "2018-09-30T05:29:36Z",
+   "repo_stars": 1,
+   "repo_updated": "2018-10-13T16:04:55Z",
    "repo_gh": "https://github.com/bul-ikana/hugo-cards"
   },
   {
@@ -3240,7 +3244,7 @@
     "#5068a8"
    ],
    "hasimage": true,
-   "repo_stars": 56,
+   "repo_stars": 57,
    "repo_updated": "2018-07-19T13:11:51Z",
    "repo_gh": "https://github.com/aubm/hugo-code-editor-theme"
   },
@@ -3279,8 +3283,8 @@
     "#fcf4f4"
    ],
    "hasimage": true,
-   "repo_stars": 209,
-   "repo_updated": "2018-10-05T11:47:59Z",
+   "repo_stars": 217,
+   "repo_updated": "2018-10-13T18:56:45Z",
    "repo_gh": "https://github.com/luizdepra/hugo-coder"
   },
   {
@@ -3324,7 +3328,7 @@
     "#3a3ac4"
    ],
    "hasimage": true,
-   "repo_stars": 4,
+   "repo_stars": 6,
    "repo_updated": "2018-10-03T08:39:35Z",
    "repo_gh": "https://github.com/naro143/hugo-coder-portfolio"
   },
@@ -3408,8 +3412,8 @@
     "#04a484"
    ],
    "hasimage": true,
-   "repo_stars": 163,
-   "repo_updated": "2018-08-22T19:01:19Z",
+   "repo_stars": 165,
+   "repo_updated": "2018-10-11T05:21:53Z",
    "repo_gh": "https://github.com/kishaningithub/hugo-creative-portfolio-theme"
   },
   {
@@ -3447,7 +3451,7 @@
     "#3c5c4c"
    ],
    "hasimage": true,
-   "repo_stars": 3,
+   "repo_stars": 4,
    "repo_updated": "2016-11-24T19:54:18Z",
    "repo_gh": "https://github.com/adejoux/hugo-darkdoc-theme"
   },
@@ -3535,8 +3539,8 @@
     "#5c350b"
    ],
    "hasimage": true,
-   "repo_stars": 28,
-   "repo_updated": "2018-10-04T22:50:13Z",
+   "repo_stars": 27,
+   "repo_updated": "2018-10-13T00:16:22Z",
    "repo_gh": "https://github.com/UtkarshVerma/hugo-dream-plus"
   },
   {
@@ -3574,8 +3578,8 @@
     "#3c321c"
    ],
    "hasimage": true,
-   "repo_stars": 28,
-   "repo_updated": "2018-09-18T09:42:04Z",
+   "repo_stars": 29,
+   "repo_updated": "2018-10-08T08:01:17Z",
    "repo_gh": "https://github.com/gyorb/hugo-dusk"
   },
   {
@@ -3660,7 +3664,7 @@
     "#215063"
    ],
    "hasimage": true,
-   "repo_stars": 111,
+   "repo_stars": 110,
    "repo_updated": "2018-04-29T16:19:47Z",
    "repo_gh": "https://github.com/saey55/hugo-elate-theme"
   },
@@ -3955,8 +3959,8 @@
     "#84b14d"
    ],
    "hasimage": true,
-   "repo_stars": 97,
-   "repo_updated": "2018-08-06T18:33:34Z",
+   "repo_stars": 99,
+   "repo_updated": "2018-10-13T00:50:57Z",
    "repo_gh": "https://github.com/shenoybr/hugo-goa"
   },
   {
@@ -4077,7 +4081,7 @@
     "#6c2c04"
    ],
    "hasimage": true,
-   "repo_stars": 151,
+   "repo_stars": 150,
    "repo_updated": "2018-03-24T21:52:47Z",
    "repo_gh": "https://github.com/digitalcraftsman/hugo-icarus-theme"
   },
@@ -4120,7 +4124,7 @@
     "#9cb4d4"
    ],
    "hasimage": true,
-   "repo_stars": 51,
+   "repo_stars": 52,
    "repo_updated": "2018-06-17T21:37:05Z",
    "repo_gh": "https://github.com/SteveLane/hugo-icon"
   },
@@ -4254,7 +4258,7 @@
     "#cca4e4"
    ],
    "hasimage": true,
-   "repo_stars": 21,
+   "repo_stars": 22,
    "repo_updated": "2018-08-29T22:52:45Z",
    "repo_gh": "https://github.com/miguelsimoni/hugo-initio"
   },
@@ -4284,7 +4288,7 @@
     "#373737"
    ],
    "hasimage": true,
-   "repo_stars": 19,
+   "repo_stars": 21,
    "repo_updated": "2018-10-05T22:48:26Z",
    "repo_gh": "https://github.com/damiencaselli/hugo-journal"
   },
@@ -4318,8 +4322,8 @@
     "#947c4c"
    ],
    "hasimage": true,
-   "repo_stars": 57,
-   "repo_updated": "2018-08-03T03:29:12Z",
+   "repo_stars": 58,
+   "repo_updated": "2018-10-08T20:04:25Z",
    "repo_gh": "https://github.com/avianto/hugo-kiera"
   },
   {
@@ -4354,7 +4358,7 @@
     "#34444c"
    ],
    "hasimage": true,
-   "repo_stars": 8,
+   "repo_stars": 9,
    "repo_updated": "2018-07-13T01:50:13Z",
    "repo_gh": "https://github.com/huyb1991/hugo-lamp"
   },
@@ -4408,7 +4412,7 @@
     "#fc68b4"
    ],
    "hasimage": true,
-   "repo_stars": 3,
+   "repo_stars": 8,
    "repo_updated": "2018-09-16T13:49:21Z",
    "repo_gh": "https://github.com/uicardiodev/hugo-lime"
   },
@@ -4704,7 +4708,7 @@
     "#28455b"
    ],
    "hasimage": true,
-   "repo_stars": 21,
+   "repo_stars": 23,
    "repo_updated": "2018-09-14T05:28:45Z",
    "repo_gh": "https://github.com/mobybit/hugo-natrium-theme"
   },
@@ -4863,7 +4867,7 @@
     "#d4ccbc"
    ],
    "hasimage": true,
-   "repo_stars": 223,
+   "repo_stars": 225,
    "repo_updated": "2018-08-20T16:43:47Z",
    "repo_gh": "https://github.com/laozhu/hugo-nuo"
   },
@@ -4900,7 +4904,7 @@
     "#343c40"
    ],
    "hasimage": true,
-   "repo_stars": 58,
+   "repo_stars": 60,
    "repo_updated": "2018-09-03T01:47:44Z",
    "repo_gh": "https://github.com/parsiya/Hugo-Octopress"
   },
@@ -4939,7 +4943,7 @@
     "#724812"
    ],
    "hasimage": true,
-   "repo_stars": 103,
+   "repo_stars": 104,
    "repo_updated": "2017-05-15T13:04:11Z",
    "repo_gh": "https://github.com/aerohub/hugo-orbit-theme"
   },
@@ -4977,8 +4981,8 @@
     "#77180d"
    ],
    "hasimage": true,
-   "repo_stars": 56,
-   "repo_updated": "2018-10-03T10:02:54Z",
+   "repo_stars": 57,
+   "repo_updated": "2018-10-13T08:29:01Z",
    "repo_gh": "https://github.com/coderzh/hugo-pacman-theme"
   },
   {
@@ -5020,7 +5024,7 @@
     "#75500f"
    ],
    "hasimage": true,
-   "repo_stars": 65,
+   "repo_stars": 70,
    "repo_updated": "2018-09-28T13:07:49Z",
    "repo_gh": "https://github.com/nanxiaobei/hugo-paper"
   },
@@ -5259,7 +5263,7 @@
     "#603524"
    ],
    "hasimage": true,
-   "repo_stars": 26,
+   "repo_stars": 27,
    "repo_updated": "2018-08-10T12:20:38Z",
    "repo_gh": "https://github.com/eddiewebb/hugo-resume"
   },
@@ -5463,7 +5467,7 @@
     "#fc9f53"
    ],
    "hasimage": true,
-   "repo_stars": 11,
+   "repo_stars": 12,
    "repo_updated": "2018-08-28T04:11:36Z",
    "repo_gh": "https://github.com/uicardiodev/hugo-sodium-theme"
   },
@@ -5611,7 +5615,7 @@
     "#8eccec"
    ],
    "hasimage": true,
-   "repo_stars": 9,
+   "repo_stars": 11,
    "repo_updated": "2018-09-19T07:55:40Z",
    "repo_gh": "https://github.com/antonpolishko/hugo-stellar-theme"
   },
@@ -5650,7 +5654,7 @@
     "#187014"
    ],
    "hasimage": true,
-   "repo_stars": 112,
+   "repo_stars": 113,
    "repo_updated": "2018-08-04T07:32:16Z",
    "repo_gh": "https://github.com/nurlansu/hugo-sustain"
   },
@@ -5715,7 +5719,7 @@
     "#1c4468"
    ],
    "hasimage": true,
-   "repo_stars": 123,
+   "repo_stars": 124,
    "repo_updated": "2018-09-12T10:36:27Z",
    "repo_gh": "https://github.com/alanorth/hugo-theme-bootstrap4"
   },
@@ -5761,8 +5765,8 @@
     "#dcecfc"
    ],
    "hasimage": true,
-   "repo_stars": 209,
-   "repo_updated": "2018-02-21T11:00:31Z",
+   "repo_stars": 211,
+   "repo_updated": "2018-10-12T03:03:25Z",
    "repo_gh": "https://github.com/nodejh/hugo-theme-cactus-plus"
   },
   {
@@ -5805,8 +5809,8 @@
     "#5c4127"
    ],
    "hasimage": true,
-   "repo_stars": 33,
-   "repo_updated": "2018-10-03T04:33:04Z",
+   "repo_stars": 36,
+   "repo_updated": "2018-10-10T01:02:19Z",
    "repo_gh": "https://github.com/zhaohuabing/hugo-theme-cleanwhite"
   },
   {
@@ -5988,7 +5992,7 @@
     "#5d5d26"
    ],
    "hasimage": true,
-   "repo_stars": 274,
+   "repo_stars": 280,
    "repo_updated": "2018-10-06T03:26:34Z",
    "repo_gh": "https://github.com/olOwOlo/hugo-theme-even"
   },
@@ -6185,8 +6189,8 @@
     "#89deec"
    ],
    "hasimage": true,
-   "repo_stars": 128,
-   "repo_updated": "2018-10-04T04:10:17Z",
+   "repo_stars": 134,
+   "repo_updated": "2018-10-12T09:24:19Z",
    "repo_gh": "https://github.com/vickylai/hugo-theme-introduction"
   },
   {
@@ -6230,8 +6234,8 @@
     "#dca8a4"
    ],
    "hasimage": true,
-   "repo_stars": 124,
-   "repo_updated": "2018-10-02T12:01:10Z",
+   "repo_stars": 136,
+   "repo_updated": "2018-10-11T06:17:59Z",
    "repo_gh": "https://github.com/xianmin/hugo-theme-jane"
   },
   {
@@ -6308,8 +6312,8 @@
     "#f4cc6c"
    ],
    "hasimage": true,
-   "repo_stars": 372,
-   "repo_updated": "2018-10-04T13:04:09Z",
+   "repo_stars": 376,
+   "repo_updated": "2018-10-12T08:46:20Z",
    "repo_gh": "https://github.com/matcornic/hugo-theme-learn"
   },
   {
@@ -6381,7 +6385,7 @@
     "#a5b4ca"
    ],
    "hasimage": true,
-   "repo_stars": 53,
+   "repo_stars": 55,
    "repo_updated": "2018-05-23T14:05:50Z",
    "repo_gh": "https://github.com/carsonip/hugo-theme-minos"
   },
@@ -6459,7 +6463,7 @@
     "#8d8c84"
    ],
    "hasimage": true,
-   "repo_stars": 18,
+   "repo_stars": 19,
    "repo_updated": "2018-08-18T14:43:29Z",
    "repo_gh": "https://github.com/resugary/hugo-theme-one"
   },
@@ -6532,7 +6536,7 @@
     "#777c84"
    ],
    "hasimage": true,
-   "repo_stars": 117,
+   "repo_stars": 123,
    "repo_updated": "2018-10-04T04:51:54Z",
    "repo_gh": "https://github.com/vickylai/hugo-theme-sam"
   },
@@ -6879,7 +6883,7 @@
     "#54949c"
    ],
    "hasimage": true,
-   "repo_stars": 392,
+   "repo_stars": 394,
    "repo_updated": "2018-09-26T04:21:43Z",
    "repo_gh": "https://github.com/kakawait/hugo-tranquilpeak-theme"
   },
@@ -6928,7 +6932,7 @@
    ],
    "hasimage": true,
    "repo_stars": 16,
-   "repo_updated": "2018-09-20T12:38:57Z",
+   "repo_updated": "2018-10-12T10:01:32Z",
    "repo_gh": "https://github.com/balaramadurai/hugo-travelify-theme"
   },
   {
@@ -6978,7 +6982,7 @@
     "#048474"
    ],
    "hasimage": true,
-   "repo_stars": 1,
+   "repo_stars": 2,
    "repo_updated": "2018-09-29T05:04:53Z",
    "repo_gh": "https://github.com/uicardiodev/hugo-uilite"
   },
@@ -7023,7 +7027,7 @@
    ],
    "hasimage": true,
    "repo_stars": 284,
-   "repo_updated": "2018-09-28T22:08:24Z",
+   "repo_updated": "2018-10-12T17:40:01Z",
    "repo_gh": "https://github.com/devcows/hugo-universal-theme"
   },
   {
@@ -7136,7 +7140,7 @@
     "#393436"
    ],
    "hasimage": true,
-   "repo_stars": 161,
+   "repo_stars": 164,
    "repo_updated": "2018-10-01T14:33:38Z",
    "repo_gh": "https://github.com/yihui/hugo-xmin"
   },
@@ -7201,7 +7205,7 @@
     "#1c4567"
    ],
    "hasimage": true,
-   "repo_stars": 5,
+   "repo_stars": 6,
    "repo_updated": "2018-04-13T04:41:55Z",
    "repo_gh": "https://github.com/leonhe/hugo_eiio"
   },
@@ -7277,8 +7281,8 @@
     "#b4c4dc"
    ],
    "hasimage": true,
-   "repo_stars": 98,
-   "repo_updated": "2018-10-02T18:36:54Z",
+   "repo_stars": 99,
+   "repo_updated": "2018-10-13T11:58:06Z",
    "repo_gh": "https://github.com/mismith0227/hugo_theme_pickles"
   },
   {
@@ -7529,7 +7533,7 @@
     "#c4c4bc"
    ],
    "hasimage": true,
-   "repo_stars": 217,
+   "repo_stars": 218,
    "repo_updated": "2018-08-29T17:37:51Z",
    "repo_gh": "https://github.com/spf13/hyde"
   },
@@ -7582,8 +7586,8 @@
     "#344c2c"
    ],
    "hasimage": true,
-   "repo_stars": 53,
-   "repo_updated": "2018-10-05T22:32:57Z",
+   "repo_stars": 54,
+   "repo_updated": "2018-10-11T08:11:12Z",
    "repo_gh": "https://github.com/htr3n/hyde-hyde"
   },
   {
@@ -7777,7 +7781,7 @@
     "#909091"
    ],
    "hasimage": true,
-   "repo_stars": 86,
+   "repo_stars": 88,
    "repo_updated": "2018-09-27T09:13:29Z",
    "repo_gh": "https://github.com/ribice/kiss"
   },
@@ -7810,7 +7814,7 @@
     "#144b70"
    ],
    "hasimage": true,
-   "repo_stars": 25,
+   "repo_stars": 26,
    "repo_updated": "2018-08-28T09:20:57Z",
    "repo_gh": "https://github.com/jsnjack/kraiklyn"
   },
@@ -7864,8 +7868,8 @@
     "#06407e"
    ],
    "hasimage": true,
-   "repo_stars": 242,
-   "repo_updated": "2018-08-30T14:53:46Z",
+   "repo_stars": 246,
+   "repo_updated": "2018-10-08T16:44:55Z",
    "repo_gh": "https://github.com/jeblister/kube"
   },
   {
@@ -8036,8 +8040,8 @@
     "#6d1616"
    ],
    "hasimage": true,
-   "repo_stars": 138,
-   "repo_updated": "2018-10-04T11:19:11Z",
+   "repo_stars": 145,
+   "repo_updated": "2018-10-11T11:20:00Z",
    "repo_gh": "https://github.com/vimux/mainroad"
   },
   {
@@ -8190,7 +8194,7 @@
     "#f48c74"
    ],
    "hasimage": true,
-   "repo_stars": 553,
+   "repo_stars": 555,
    "repo_updated": "2018-05-24T15:06:55Z",
    "repo_gh": "https://github.com/digitalcraftsman/hugo-material-docs"
   },
@@ -8336,7 +8340,7 @@
     "#7a130a"
    ],
    "hasimage": true,
-   "repo_stars": 167,
+   "repo_stars": 168,
    "repo_updated": "2018-08-28T00:15:34Z",
    "repo_gh": "https://github.com/calintat/minimal"
   },
@@ -8383,7 +8387,7 @@
     "#ee9451"
    ],
    "hasimage": true,
-   "repo_stars": 18,
+   "repo_stars": 40,
    "repo_updated": "2018-10-05T23:55:31Z",
    "repo_gh": "https://github.com/jhu247/minimal-academic"
   },
@@ -8441,7 +8445,7 @@
     "#836901"
    ],
    "hasimage": true,
-   "repo_stars": 254,
+   "repo_stars": 257,
    "repo_updated": "2018-09-01T07:42:40Z",
    "repo_gh": "https://github.com/MunifTanjim/minimo"
   },
@@ -8796,7 +8800,7 @@
    ],
    "hasimage": true,
    "repo_stars": 32,
-   "repo_updated": "2018-08-27T14:30:16Z",
+   "repo_updated": "2018-10-08T23:08:06Z",
    "repo_gh": "https://github.com/aerohub/phugo"
   },
   {
@@ -8822,7 +8826,7 @@
    ],
    "hasimage": true,
    "repo_stars": 84,
-   "repo_updated": "2018-09-28T18:32:01Z",
+   "repo_updated": "2018-10-07T11:47:56Z",
    "repo_gh": "https://github.com/azmelanar/hugo-theme-pixyll"
   },
   {
@@ -8971,7 +8975,7 @@
     "#5c542c"
    ],
    "hasimage": true,
-   "repo_stars": 6,
+   "repo_stars": 8,
    "repo_updated": "2018-07-28T11:32:27Z",
    "repo_gh": "https://github.com/sakibccr/pristine"
   },
@@ -9195,8 +9199,8 @@
     "#820227"
    ],
    "hasimage": true,
-   "repo_stars": 55,
-   "repo_updated": "2018-09-14T18:23:25Z",
+   "repo_stars": 57,
+   "repo_updated": "2018-10-09T01:11:59Z",
    "repo_gh": "https://github.com/dzello/reveal-hugo"
   },
   {
@@ -9506,7 +9510,7 @@
     "#166d30"
    ],
    "hasimage": true,
-   "repo_stars": 9,
+   "repo_stars": 10,
    "repo_updated": "2018-05-10T21:11:59Z",
    "repo_gh": "https://github.com/eshlox/simplicity"
   },
@@ -9640,7 +9644,7 @@
    ],
    "hasimage": true,
    "repo_stars": 58,
-   "repo_updated": "2018-10-02T05:21:38Z",
+   "repo_updated": "2018-10-08T23:54:43Z",
    "repo_gh": "https://github.com/humboldtux/startbootstrap-clean-blog"
   },
   {
@@ -9715,7 +9719,7 @@
     "#59402a"
    ],
    "hasimage": true,
-   "repo_stars": 11,
+   "repo_stars": 14,
    "repo_updated": "2018-09-27T00:55:09Z",
    "repo_gh": "https://github.com/xaprb/story"
   },
@@ -9790,7 +9794,7 @@
     "#bcb4a4"
    ],
    "hasimage": true,
-   "repo_stars": 107,
+   "repo_stars": 106,
    "repo_updated": "2018-03-24T21:52:22Z",
    "repo_gh": "https://github.com/digitalcraftsman/hugo-strata-theme"
   },
@@ -9888,8 +9892,8 @@
     "#cce4f4"
    ],
    "hasimage": true,
-   "repo_stars": 23,
-   "repo_updated": "2018-09-30T09:39:54Z",
+   "repo_stars": 26,
+   "repo_updated": "2018-10-14T08:39:24Z",
    "repo_gh": "https://github.com/EmielH/tale-hugo"
   },
   {
@@ -10156,7 +10160,7 @@
    ],
    "hasimage": true,
    "repo_stars": 11,
-   "repo_updated": "2018-09-09T09:12:07Z",
+   "repo_updated": "2018-10-11T10:10:29Z",
    "repo_gh": "https://github.com/themefisher/vex-hugo"
   },
   {
@@ -10213,8 +10217,8 @@
     "#dcd4c4"
    ],
    "hasimage": true,
-   "repo_stars": 27,
-   "repo_updated": "2018-10-04T15:52:07Z",
+   "repo_stars": 30,
+   "repo_updated": "2018-10-09T14:28:37Z",
    "repo_gh": "https://github.com/taikii/whiteplain"
   },
   {
