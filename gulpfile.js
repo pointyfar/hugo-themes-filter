@@ -1,7 +1,7 @@
 var fs = require('fs');
 var path = require('path');
 var gulp = require('gulp');
-var gutil = require('gulp-util');
+var console = require('gulp-util');
 var autoprefixer = require("gulp-autoprefixer");
 var toml = require('toml');
 var del = require("del");
@@ -66,12 +66,12 @@ function getToml(str) {
 }
 
 function checkIncluded(fname) {
-  // gutil.log(fname, exclude_dirs.indexOf(fname));
+  // console.log(fname, exclude_dirs.indexOf(fname));
   return exclude_dirs.indexOf(fname) >= 0 ? false : true ;
 }
 
 function CLEAN (target) {
-  gutil.log('---------- CLEANING ' + target + ' ----------');
+  console.log('---------- CLEANING ' + target + ' ----------');
   return del.sync(target);
 }
 
@@ -82,6 +82,7 @@ function copyImage(path, theme) {
 }
 
 gulp.task('themes:assemble', function(done) {
+  console.log('assembling themes:')
   var folders = getFolders(themesPath);
   var counter = 0;
   var tasks = folders.map(function(folder) {
@@ -90,7 +91,7 @@ gulp.task('themes:assemble', function(done) {
     }
     if ( checkIncluded(folder) /*&& counter < 20*/ ) {
       
-      //console.log(folder);
+      console.log(folder);
       var themePath = themesPath + '/' + folder + '/theme.';
       var imgPath = themesPath + '/' + folder + '/images/tn.png';
       
@@ -227,17 +228,17 @@ function getGHinfo(themejson, urls) {
 }
 
 gulp.task('themes:write', function(done){
-  
+  console.log('writing themes:')
   Promise.all(themePromises)
           .then( th => {
             THEMEBUNDLE.themes = th;
-            // gutil.log('res', th)
+            //console.log('res', th)
             return JSON.stringify(THEMEBUNDLE, null, ' ');
           })
           .then( res => {
             fs.writeFile(themesJsonPath, res, 'utf8', function (err) {
               if (err) {
-                return gutil.log(err)
+                return console.log(err)
               }
             })
           })
@@ -252,7 +253,7 @@ gulp.task("themes:clean", function(done){
 });
 
 gulp.task("themes", function(done){
-  gutil.log('---------- BUILDING themes.json ----------');
+  console.log('---------- BUILDING themes.json ----------');
   
   var theme_tasks = gulp.series(
     "themes:clean",
