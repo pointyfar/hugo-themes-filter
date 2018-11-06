@@ -6,7 +6,7 @@
 {{ $untagged := slice }}
 
 
-{{- range first 50 .Site.Data.themes.themes -}}
+{{- range .Site.Data.themes.themes -}}
   {{- with .tags -}}
     {{- range . -}}
       {{- if and ( not ( in ( $tags ) ( . | urlize ) ) ) ( gt ( len . ) 0 ) -}}
