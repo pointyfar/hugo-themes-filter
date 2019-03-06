@@ -33,7 +33,8 @@
         {{- range sort ( $tags ) "value" "asc" -}}
           <button class="button is-small is-outlined tag-btn {{.}}" 
                   id="t-{{ . | replaceRE "[.]" "_" | urlize }}" 
-                  onclick="tagsCheck('{{ . | replaceRE "[.]" "_"| urlize }}', 't-')"><span>{{- . | humanize | upper -}}</span></button>
+                  title="{{- . | humanize | upper -}}"
+                  onclick="tagsCheck('{{ . | replaceRE "[.]" "_"| urlize }}', 't-')"><span class="truncate">{{- . | humanize | upper -}}</span></button>
           <br>
         {{ end }}
       </div>
