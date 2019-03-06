@@ -59,11 +59,11 @@
                 {{.name}}
               </div>
               <div class="tags">
-                <div class="tag">{{with .min_version}}Hugo v{{.}}{{else}}No Hugo Version Specified{{end}}</div>
-                <div class="tag">{{with .license}}{{.}}{{else}}No License Specified{{end}}</div>
+                <div class="tag" title="Minimum Hugo version">{{with .min_version}}Hugo v{{.}}{{else}}No Hugo Version Specified{{end}}</div>
+                <div class="tag" title="License">{{with .license}}{{.}}{{else}}No License Specified{{end}}</div>
                 {{if isset . "repo_updated"}}
-                    <div class="tag">★ {{.repo_stars}}</div>
-                    <div class="tag is-white">{{ .repo_updated | dateFormat "Jan 2006"}}</div> 
+                    <div class="tag" title="Number of GitHub stars">★ {{.repo_stars}}</div>
+                    <div class="tag is-white" title="Date last updated">{{ .repo_updated | dateFormat "Jan 2006"}}</div> 
                 {{ else }}
                 <div class="tag is-white">-
                 </div> 
