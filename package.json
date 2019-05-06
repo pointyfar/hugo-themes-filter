@@ -7,17 +7,19 @@
     "build": "hugo"
   },
   "devDependencies": {
-    "del": "^3.0.0",
-    "file-loader": "^1.1.11",
-    "gulp": "gulpjs/gulp#4.0",
-    "gulp-autoprefixer": "^5.0.0",
+    "del": "^4.1.0",
+    "file-loader": "^3.0.0",
+    "gulp": "^4.0.1",
+    "gulp-autoprefixer": "^6.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-util": "^3.0.8",
     "minimist": "^1.2.0",
     "request": "^2.88.0",
-    "splashy": "^2.0.1",
-    "toml": "^2.3.3"
+    "splashy": "^4.0.1",
+    "toml": "^3.0.0"
   },
-  "dependencies": {
+  "dependencies": {},
+  "resolutions": {
+    "tar": "^4.4.2"
   }
 }

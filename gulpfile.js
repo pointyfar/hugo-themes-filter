@@ -6,7 +6,6 @@ var autoprefixer = require("gulp-autoprefixer");
 var toml = require('toml');
 var del = require("del");
 var rename = require("gulp-rename");
-var splashy = require('splashy')();
 var spawn = require('child_process').spawn;
 var request = require("request");
 var minimist = require("minimist");
@@ -106,16 +105,7 @@ gulp.task('themes:assemble', function(done) {
       }
       
       themejson['path'] = folder;
-      var color = []
-      themejson['colors'] = []
-        
-      if (fs.existsSync(imgPath)) {
-        themejson['hasimage'] = true;
-        themePromises.push(getPromises(imgPath, themejson));
-      } else {
-        themePromises.push(Promise.resolve(themejson))
-      }
-      // copyImage(imgPath, folder);
+      themePromises.push(getGHinit(themejson))
         
     counter++;
     }
@@ -123,13 +113,6 @@ gulp.task('themes:assemble', function(done) {
 
   done();
 });
-
-function getPromises(imgPath, themejson) {
-  return getColor(imgPath, themejson)
-        .then(function(colres){
-          return getGHinit(colres)
-        })
-}
 
 function parseRepo(url){
   var nurl = url;
@@ -152,14 +135,6 @@ function parseRepo(url){
 
   return urls
 
-}
-
-function getColor(imgPath, tj){
-    return splashy.fromFile(imgPath)
-                  .then(function(col) {
-                    tj['colors'] = col;
-                    return tj
-                  });
 }
 
 function getGHinit(themejson) {
