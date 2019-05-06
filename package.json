@@ -15,11 +15,10 @@
     "gulp-util": "^3.0.8",
     "minimist": "^1.2.0",
     "request": "^2.88.0",
-    "splashy": "^4.0.1",
     "toml": "^3.0.0"
   },
   "dependencies": {},
   "resolutions": {
-    "tar": "^4.4.2"
+    "tar": "4.4.2"
   }
 }
