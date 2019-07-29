@@ -1,0 +1,6158 @@
+{
+ "AllinOne": {
+  "theme": "AllinOne",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.3.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "AllinOne/static/js/vendors/jquery/jquery-3.3.1.min.js"
+   },
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "4.1.3",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      }
+     ]
+    },
+    "file": "AllinOne/static/js/vendors-extensions/bootstrap4/bootstrap.js"
+   }
+  ]
+ },
+ "KeepIt": {
+  "theme": "KeepIt",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.3.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "KeepIt/assets/js/jquery.min.js"
+   }
+  ]
+ },
+ "LeaveIt": {
+  "theme": "LeaveIt",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.3.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "LeaveIt/assets/js/jquery.min.js"
+   }
+  ]
+ },
+ "Midnight": {
+  "theme": "Midnight",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.3.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "Midnight/assets/js/jquery.slim.js"
+   }
+  ]
+ },
+ "Niello": {
+  "theme": "Niello",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.3.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "Niello/static/js/vendor/jquery-3.3.1.min.js"
+   }
+  ]
+ },
+ "agency": {
+  "theme": "agency",
+  "data": [
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.3.7",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "agency/static/js/bootstrap-v3.3.7/bootstrap.js"
+   },
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.3.7",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "agency/static/js/bootstrap-v3.3.7/bootstrap.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.1.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "agency/static/js/jquery-v3.3.1/jquery.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.1.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "agency/static/js/jquery-v3.3.1/jquery.min.js"
+   }
+  ]
+ },
+ "air": {
+  "theme": "air",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "2.1.3",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "air/static/js/jquery.js"
+   }
+  ]
+ },
+ "airspace-hugo": {
+  "theme": "airspace-hugo",
+  "data": [
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.1.0",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "airspace-hugo/static/js/bootstrap.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "1.10.2",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "airspace-hugo/static/js/jquery-1.10.2.min.js"
+   }
+  ]
+ },
+ "alpha-church": {
+  "theme": "alpha-church",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.3.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "alpha-church/assets/js/jquery.min.js"
+   }
+  ]
+ },
+ "beautifulhugo": {
+  "theme": "beautifulhugo",
+  "data": [
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.3.7",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "beautifulhugo/static/js/bootstrap.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "1.12.4",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "beautifulhugo/static/js/jquery.min.js"
+   }
+  ]
+ },
+ "bilberry-hugo-theme": {
+  "theme": "bilberry-hugo-theme",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.3.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "bilberry-hugo-theme/assets/js/externalDependencies.js"
+   }
+  ]
+ },
+ "bootie-docs": {
+  "theme": "bootie-docs",
+  "data": [
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.3.7",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "bootie-docs/static/js/bootstrap.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.2.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "bootie-docs/static/js/jquery.min.js"
+   }
+  ]
+ },
+ "bootstrap-bp-hugo-theme": {
+  "theme": "bootstrap-bp-hugo-theme",
+  "data": [
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "4.1.3",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      }
+     ]
+    },
+    "file": "bootstrap-bp-hugo-theme/assets/js/bootstrap.bundle.js"
+   },
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "4.1.3",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      }
+     ]
+    },
+    "file": "bootstrap-bp-hugo-theme/assets/js/bootstrap.bundle.min.js"
+   },
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "4.1.3",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      }
+     ]
+    },
+    "file": "bootstrap-bp-hugo-theme/assets/js/bootstrap.js"
+   },
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "4.1.3",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      }
+     ]
+    },
+    "file": "bootstrap-bp-hugo-theme/assets/js/bootstrap.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.3.1.slim",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "bootstrap-bp-hugo-theme/assets/js/jquery-3.3.1.slim.min.js"
+   }
+  ]
+ },
+ "casper": {
+  "theme": "casper",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "2.1.3",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "casper/static/js/jquery.js"
+   }
+  ]
+ },
+ "castanet": {
+  "theme": "castanet",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.3.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "castanet/static/js/castanet-min.js"
+   }
+  ]
+ },
+ "creative": {
+  "theme": "creative",
+  "data": [
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.3.2",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "creative/static/js/bootstrap.js"
+   },
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.3.2",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "creative/static/js/bootstrap.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "1.11.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "creative/static/js/jquery.js"
+   }
+  ]
+ },
+ "docdock": {
+  "theme": "docdock",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "2.x",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "docdock/static/js/jquery-2.x.min.js"
+   }
+  ]
+ },
+ "docuapi": {
+  "theme": "docuapi",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "2.2.0",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "docuapi/static/slate/javascripts/all.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "2.2.0",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "docuapi/static/slate/javascripts/all_nosearch.js"
+   }
+  ]
+ },
+ "dot-hugo-documentation-theme": {
+  "theme": "dot-hugo-documentation-theme",
+  "data": [
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "4.1.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "dot-hugo-documentation-theme/static/plugins/bootstrap/bootstrap.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "1.12.4",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "dot-hugo-documentation-theme/static/plugins/jquery/jquery-1.12.4.js"
+   }
+  ]
+ },
+ "forty": {
+  "theme": "forty",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "1.11.3",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "forty/static/js/jquery.min.js"
+   }
+  ]
+ },
+ "foundation-theme": {
+  "theme": "foundation-theme",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "2.2.2",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "foundation-theme/static/js/jquery.js"
+   }
+  ]
+ },
+ "freelancer": {
+  "theme": "freelancer",
+  "data": [
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.2.0",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "freelancer/static/js/bootstrap.js"
+   },
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.2.0",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "freelancer/static/js/bootstrap.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "1.11",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "freelancer/static/js/jquery-1.11.js"
+   }
+  ]
+ },
+ "ghostwriter": {
+  "theme": "ghostwriter",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "1.11.3",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "ghostwriter/static/js/jquery-1.11.3.min.js"
+   }
+  ]
+ },
+ "github-project-landing-page": {
+  "theme": "github-project-landing-page",
+  "data": [
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.2.0",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "github-project-landing-page/static/js/bootstrap.js"
+   },
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.2.0",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "github-project-landing-page/static/js/bootstrap.min.js"
+   }
+  ]
+ },
+ "grid-side": {
+  "theme": "grid-side",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "2.1.4",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "grid-side/static/js/jquery-2.1.4.min.js"
+   }
+  ]
+ },
+ "herring-cove": {
+  "theme": "herring-cove",
+  "data": [
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.0.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "herring-cove/static/js/bootstrap.js"
+   },
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.0.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "herring-cove/static/js/bootstrap.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "1.10.2",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "herring-cove/static/js/jquery-1.10.2.min.js"
+   }
+  ]
+ },
+ "highlights": {
+  "theme": "highlights",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "1.11.3",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "highlights/static/js/jquery.min.js"
+   }
+  ]
+ },
+ "hpstr-hugo-theme": {
+  "theme": "hpstr-hugo-theme",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "1.9.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hpstr-hugo-theme/static/js/vendor/jquery-1.9.1.min.js"
+   }
+  ]
+ },
+ "hugo-base-theme": {
+  "theme": "hugo-base-theme",
+  "data": [
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.2.0",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "hugo-base-theme/static/js/bootstrap.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "2.1.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-base-theme/static/js/jquery-2.1.1.min.js"
+   }
+  ]
+ },
+ "hugo-bootstrap-premium": {
+  "theme": "hugo-bootstrap-premium",
+  "data": [
+   {
+    "results": {
+     "component": "angularjs",
+     "version": "1.6.4",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/angular/angular.js/blob/master/CHANGELOG.md#169-fiery-basilisk-2018-02-02",
+        "https://vulnerabledoma.in/ngSanitize1.6.8_bypass.html"
+       ],
+       "severity": "low"
+      },
+      {
+       "info": [
+        "https://github.com/angular/angular.js/commit/8f31f1ff43b673a24f84422d5c13d6312b2c4d94"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-bootstrap-premium/assets/js/angular.min.js"
+   },
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.3.6",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "hugo-bootstrap-premium/assets/js/bootstrap.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "2.2.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-bootstrap-premium/assets/js/jquery.min.js"
+   }
+  ]
+ },
+ "hugo-bootswatch": {
+  "theme": "hugo-bootswatch",
+  "data": [
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.3.2",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "hugo-bootswatch/static/js/bootstrap.js"
+   },
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.3.2",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "hugo-bootswatch/static/js/bootstrap.min.js"
+   }
+  ]
+ },
+ "hugo-cards": {
+  "theme": "hugo-cards",
+  "data": [
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.3.6",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "hugo-cards/static/js/bootstrap.min.js"
+   }
+  ]
+ },
+ "hugo-coder-portfolio": {
+  "theme": "hugo-coder-portfolio",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.3.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-coder-portfolio/static/js/app.js"
+   }
+  ]
+ },
+ "hugo-conference": {
+  "theme": "hugo-conference",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "1.11.0",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-conference/static/js/jquery.js"
+   }
+  ]
+ },
+ "hugo-creative-portfolio-theme": {
+  "theme": "hugo-creative-portfolio-theme",
+  "data": [
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.3.6",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "hugo-creative-portfolio-theme/static/js/bootstrap.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "1.11.0",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-creative-portfolio-theme/static/js/jquery.min.js"
+   }
+  ]
+ },
+ "hugo-darkdoc-theme": {
+  "theme": "hugo-darkdoc-theme",
+  "data": [
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.3.6",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "hugo-darkdoc-theme/static/js/bootstrap.min.js"
+   }
+  ]
+ },
+ "hugo-dusky-neon-potato": {
+  "theme": "hugo-dusky-neon-potato",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.2.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-dusky-neon-potato/static/js/bundle.js"
+   }
+  ]
+ },
+ "hugo-elate-theme": {
+  "theme": "hugo-elate-theme",
+  "data": [
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.3.5",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "hugo-elate-theme/static/js/bootstrap.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "2.1.4",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-elate-theme/static/js/jquery.min.js"
+   }
+  ]
+ },
+ "hugo-faq-theme": {
+  "theme": "hugo-faq-theme",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "2.1.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-faq-theme/static/js/jquery-2.1.1.js"
+   },
+   {
+    "results": {
+     "component": "jquery-mobile",
+     "version": "1.4.4",
+     "vulnerabilities": [
+      {
+       "info": [
+        "http://sirdarckcat.blogspot.no/2017/02/unpatched-0day-jquery-mobile-xss.html"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "hugo-faq-theme/static/js/jquery.mobile.custom.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "2.1.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-faq-theme/exampleSite/static/js/jquery-2.1.1.js"
+   },
+   {
+    "results": {
+     "component": "jquery-mobile",
+     "version": "1.4.4",
+     "vulnerabilities": [
+      {
+       "info": [
+        "http://sirdarckcat.blogspot.no/2017/02/unpatched-0day-jquery-mobile-xss.html"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "hugo-faq-theme/exampleSite/static/js/jquery.mobile.custom.min.js"
+   }
+  ]
+ },
+ "hugo-finite": {
+  "theme": "hugo-finite",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "2.2.2",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-finite/static/js/jquery.js"
+   }
+  ]
+ },
+ "hugo-icon": {
+  "theme": "hugo-icon",
+  "data": [
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.3.5",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "hugo-icon/static/js/bootstrap.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "2.1.4",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-icon/static/js/jquery.min.js"
+   }
+  ]
+ },
+ "hugo-identity-theme": {
+  "theme": "hugo-identity-theme",
+  "data": [
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.3.7",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "hugo-identity-theme/static/assets/js/bootstrap-v3.3.7/bootstrap.js"
+   },
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.3.7",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "hugo-identity-theme/static/assets/js/bootstrap-v3.3.7/bootstrap.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.1.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-identity-theme/static/assets/js/jquery-v3.3.1/jquery.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.1.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-identity-theme/static/assets/js/jquery-v3.3.1/jquery.min.js"
+   }
+  ]
+ },
+ "hugo-lodi-theme": {
+  "theme": "hugo-lodi-theme",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "1.10.2",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-lodi-theme/static/js/jquery-1.js"
+   }
+  ]
+ },
+ "hugo-luxury-theme": {
+  "theme": "hugo-luxury-theme",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "1.11.3",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-luxury-theme/static/js/jquery.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "1.11.3",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-luxury-theme/exampleSite/static/js/jquery.min.js"
+   }
+  ]
+ },
+ "hugo-minimalist": {
+  "theme": "hugo-minimalist",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "1.11.0",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-minimalist/static/js/vendor/jquery-1.11.0.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "1.11.0",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-minimalist/static/js/vendor/jquery.min.js"
+   }
+  ]
+ },
+ "hugo-multi-bootswatch": {
+  "theme": "hugo-multi-bootswatch",
+  "data": [
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.3.5",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "hugo-multi-bootswatch/static/js/bootstrap.min-3.3.5.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "2.1.4",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-multi-bootswatch/static/js/jquery.min-2.1.4.js"
+   }
+  ]
+ },
+ "hugo-myportfolio-theme": {
+  "theme": "hugo-myportfolio-theme",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "1.11.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-myportfolio-theme/static/plugins/jquery/jquery.js"
+   },
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.3.2",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "hugo-myportfolio-theme/static/plugins/bootstrap/js/bootstrap.min.js"
+   }
+  ]
+ },
+ "hugo-now-ui": {
+  "theme": "hugo-now-ui",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.2.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-now-ui/docs/js/core/jquery.3.2.1.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.2.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-now-ui/static/js/core/jquery.3.2.1.min.js"
+   }
+  ]
+ },
+ "hugo-now": {
+  "theme": "hugo-now",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.1.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-now/static/js/vendor/jquery/jquery.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.1.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-now/static/js/dist/vendor/jquery/jquery.min.js"
+   }
+  ]
+ },
+ "hugo-orbit-theme": {
+  "theme": "hugo-orbit-theme",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "1.11.3",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-orbit-theme/static/assets/plugins/jquery-1.11.3.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "1.11.3",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-orbit-theme/exampleSite/static/assets/plugins/jquery-1.11.3.min.js"
+   },
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.3.6",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "hugo-orbit-theme/static/assets/plugins/bootstrap/js/bootstrap.js"
+   },
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.3.6",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "hugo-orbit-theme/static/assets/plugins/bootstrap/js/bootstrap.min.js"
+   },
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.3.6",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "hugo-orbit-theme/exampleSite/static/assets/plugins/bootstrap/js/bootstrap.js"
+   },
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.3.6",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "hugo-orbit-theme/exampleSite/static/assets/plugins/bootstrap/js/bootstrap.min.js"
+   }
+  ]
+ },
+ "hugo-pacman-theme": {
+  "theme": "hugo-pacman-theme",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "2.1.0",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-pacman-theme/static/js/jquery-2.1.0.min.js"
+   }
+  ]
+ },
+ "hugo-phlat-theme": {
+  "theme": "hugo-phlat-theme",
+  "data": [
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.3.6",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "hugo-phlat-theme/static/js/bootstrap.js"
+   },
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.3.6",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "hugo-phlat-theme/static/js/bootstrap.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "2.2.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-phlat-theme/static/js/jquery-2.2.1.min.js"
+   }
+  ]
+ },
+ "hugo-shopping-product-catalogue-simple": {
+  "theme": "hugo-shopping-product-catalogue-simple",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.3.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-shopping-product-catalogue-simple/static/js/jquery.min.js"
+   }
+  ]
+ },
+ "hugo-stellar-theme": {
+  "theme": "hugo-stellar-theme",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "1.11.3",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-stellar-theme/static/js/jquery.min.js"
+   }
+  ]
+ },
+ "hugo-theme-arch": {
+  "theme": "hugo-theme-arch",
+  "data": [
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.3.6",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "hugo-theme-arch/themes/hugo-theme-arch/static/bower_components/bootstrap/js/bootstrap.js"
+   },
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.3.6",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "hugo-theme-arch/themes/hugo-theme-arch/static/bower_components/bootstrap/js/bootstrap.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "1.12.0",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-theme-arch/themes/hugo-theme-arch/static/bower_components/jquery/dist/jquery-1.12.0.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "2.2.0",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-theme-arch/themes/hugo-theme-arch/static/bower_components/jquery/dist/jquery-2.2.0.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "2.2.0",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-theme-arch/themes/hugo-theme-arch/static/bower_components/jquery/dist/jquery.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "2.2.0",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-theme-arch/themes/hugo-theme-arch/static/bower_components/jquery/dist/jquery.min.js"
+   }
+  ]
+ },
+ "hugo-theme-cactus-plus": {
+  "theme": "hugo-theme-cactus-plus",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.3.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-theme-cactus-plus/static/js/jquery-3.3.1.min.js"
+   }
+  ]
+ },
+ "hugo-theme-cleanwhite": {
+  "theme": "hugo-theme-cleanwhite",
+  "data": [
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.3.2",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "hugo-theme-cleanwhite/static/js/bootstrap.js"
+   },
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.3.2",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "hugo-theme-cleanwhite/static/js/bootstrap.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "2.1.3",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-theme-cleanwhite/static/js/jquery.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "2.1.3",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-theme-cleanwhite/static/js/jquery.min.js"
+   }
+  ]
+ },
+ "hugo-theme-dopetrope": {
+  "theme": "hugo-theme-dopetrope",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "1.11.3",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-theme-dopetrope/static/assets/js/jquery.min.js"
+   }
+  ]
+ },
+ "hugo-theme-dream": {
+  "theme": "hugo-theme-dream",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.3.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-theme-dream/static/js/jquery.min.js"
+   }
+  ]
+ },
+ "hugo-theme-even": {
+  "theme": "hugo-theme-even",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.2.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-theme-even/static/lib/jquery/jquery-3.2.1.min.js"
+   }
+  ]
+ },
+ "hugo-theme-introduction": {
+  "theme": "hugo-theme-introduction",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.3.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-theme-introduction/docs/js/bundle.baa2874a80b328e7dec720d3a90efc6efd25ccdf1611f37d9571354e88987590.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.3.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-theme-introduction/assets/vendor/jquery/jquery-3.3.1.min.js"
+   }
+  ]
+ },
+ "hugo-theme-jane": {
+  "theme": "hugo-theme-jane",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.2.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-theme-jane/static/lib/jquery/jquery-3.2.1.min.js"
+   }
+  ]
+ },
+ "hugo-theme-learn": {
+  "theme": "hugo-theme-learn",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.3.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-theme-learn/static/js/jquery-3.3.1.min.js"
+   }
+  ]
+ },
+ "hugo-theme-massively": {
+  "theme": "hugo-theme-massively",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "1.11.3",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-theme-massively/static/assets/js/jquery.min.js"
+   }
+  ]
+ },
+ "hugo-theme-w3css-basic": {
+  "theme": "hugo-theme-w3css-basic",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.3.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-theme-w3css-basic/static/vendor/jquery/jquery-3.3.1.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.3.1.slim",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-theme-w3css-basic/static/vendor/jquery/jquery-3.3.1.slim.min.js"
+   }
+  ]
+ },
+ "hugo-theme-wave": {
+  "theme": "hugo-theme-wave",
+  "data": [
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.3.6",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "hugo-theme-wave/static/bower_components/bootstrap/js/bootstrap.js"
+   },
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.3.6",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "hugo-theme-wave/static/bower_components/bootstrap/js/bootstrap.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "2.2.4",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-theme-wave/static/bower_components/jquery/dist/jquery.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "2.2.4",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-theme-wave/static/bower_components/jquery/dist/jquery.min.js"
+   }
+  ]
+ },
+ "hugo-theme-zozo": {
+  "theme": "hugo-theme-zozo",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.3.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-theme-zozo/static/js/jquery-3.3.1.min.js"
+   }
+  ]
+ },
+ "hugo-tikva": {
+  "theme": "hugo-tikva",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.3.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-tikva/static/js/jquery-3.3.1.min.js"
+   }
+  ]
+ },
+ "hugo-travelify-theme": {
+  "theme": "hugo-travelify-theme",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "1.12.4",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-travelify-theme/static/js/jquery.js"
+   }
+  ]
+ },
+ "hugo-uno": {
+  "theme": "hugo-uno",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "1.11.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo-uno/static/js/jquery.min.js"
+   }
+  ]
+ },
+ "hugo_eiio": {
+  "theme": "hugo_eiio",
+  "data": [
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.3.0",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "hugo_eiio/static/js/bootstrap.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "1.11.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo_eiio/static/js/jquery.min.js"
+   }
+  ]
+ },
+ "hugo_theme_pickles": {
+  "theme": "hugo_theme_pickles",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.3.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugo_theme_pickles/static/js/bundle.js"
+   }
+  ]
+ },
+ "hugograyscale": {
+  "theme": "hugograyscale",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.3.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugograyscale/docs/vendor/jquery/jquery.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.3.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugograyscale/docs/vendor/jquery/jquery.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.3.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugograyscale/docs/vendor/jquery/jquery.slim.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.3.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugograyscale/docs/vendor/jquery/jquery.slim.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.3.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugograyscale/static/vendor/jquery/jquery.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.3.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugograyscale/static/vendor/jquery/jquery.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.3.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugograyscale/static/vendor/jquery/jquery.slim.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.3.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugograyscale/static/vendor/jquery/jquery.slim.min.js"
+   },
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "4.0.0",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "hugograyscale/docs/vendor/bootstrap/js/bootstrap.bundle.js"
+   },
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "4.0.0",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "hugograyscale/docs/vendor/bootstrap/js/bootstrap.bundle.min.js"
+   },
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "4.0.0",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "hugograyscale/docs/vendor/bootstrap/js/bootstrap.js"
+   },
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "4.0.0",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "hugograyscale/docs/vendor/bootstrap/js/bootstrap.min.js"
+   },
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "4.0.0",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "hugograyscale/static/vendor/bootstrap/js/bootstrap.bundle.js"
+   },
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "4.0.0",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "hugograyscale/static/vendor/bootstrap/js/bootstrap.bundle.min.js"
+   },
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "4.0.0",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "hugograyscale/static/vendor/bootstrap/js/bootstrap.js"
+   },
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "4.0.0",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "hugograyscale/static/vendor/bootstrap/js/bootstrap.min.js"
+   }
+  ]
+ },
+ "hugoscroll": {
+  "theme": "hugoscroll",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "1.11.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "hugoscroll/static/js/jquery.min.js"
+   }
+  ]
+ },
+ "infinity-hugo": {
+  "theme": "infinity-hugo",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "2.1.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "infinity-hugo/static/js/vendor/jquery-2.1.1.min.js"
+   }
+  ]
+ },
+ "journal": {
+  "theme": "journal",
+  "data": [
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.1.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "journal/static/js/bootstrap.min-3.1.1.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "2.1.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "journal/static/js/jquery-min-2.1.1.js"
+   }
+  ]
+ },
+ "kross-hugo-portfolio-template": {
+  "theme": "kross-hugo-portfolio-template",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.3.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "kross-hugo-portfolio-template/static/plugins/jQuery/jquery.min.js"
+   }
+  ]
+ },
+ "kube": {
+  "theme": "kube",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "2.1.4",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "kube/static/js/jquery-2.1.4.min.js"
+   }
+  ]
+ },
+ "landing-page-hugo": {
+  "theme": "landing-page-hugo",
+  "data": [
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.2.0",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "landing-page-hugo/static/js/bootstrap.js"
+   },
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.2.0",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "landing-page-hugo/static/js/bootstrap.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "1.11.0",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "landing-page-hugo/static/js/jquery-1.11.0.js"
+   }
+  ]
+ },
+ "meghna-hugo": {
+  "theme": "meghna-hugo",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "1.12.4",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "meghna-hugo/static/plugins/jquery/dist/jquery.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.3.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "meghna-hugo/static/plugins/wow/spec/javascripts/libs/jquery.js"
+   }
+  ]
+ },
+ "minimal-bootstrap-hugo-theme": {
+  "theme": "minimal-bootstrap-hugo-theme",
+  "data": [
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "4.0.0",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "minimal-bootstrap-hugo-theme/static/js/bootstrap.bundle.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.3.1.slim",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "minimal-bootstrap-hugo-theme/static/js/jquery-3.3.1.slim.min.js"
+   }
+  ]
+ },
+ "navigator-hugo": {
+  "theme": "navigator-hugo",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "2.2.4",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "navigator-hugo/static/plugins/jquery/dist/jquery.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "2.2.4",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "navigator-hugo/static/plugins/jquery/dist/jquery.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "2.1.4",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "navigator-hugo/static/plugins/lightbox2/dist/js/lightbox-plus-jquery.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "2.1.4",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "navigator-hugo/static/plugins/lightbox2/dist/js/lightbox-plus-jquery.min.js"
+   }
+  ]
+ },
+ "nofancy": {
+  "theme": "nofancy",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "2.1.3",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "nofancy/static/js/jquery.min.js"
+   }
+  ]
+ },
+ "parsa-hugo-personal-blog-theme": {
+  "theme": "parsa-hugo-personal-blog-theme",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.3.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "parsa-hugo-personal-blog-theme/static/plugins/jQuery/jquery.min.js"
+   }
+  ]
+ },
+ "persona": {
+  "theme": "persona",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "1.11.3",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "persona/vendor/jquery-1.11.3.min.js"
+   },
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.3.2",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "persona/vendor/bootstrap/js/bootstrap.js"
+   },
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.3.2",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "persona/vendor/bootstrap/js/bootstrap.min.js"
+   }
+  ]
+ },
+ "phugo": {
+  "theme": "phugo",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "1.11.3",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "phugo/static/assets/js/jquery.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "1.11.3",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "phugo/exampleSite/static/assets/js/jquery.min.js"
+   }
+  ]
+ },
+ "potato-dark": {
+  "theme": "potato-dark",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.2.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "potato-dark/static/js/bundle.js"
+   }
+  ]
+ },
+ "pristine": {
+  "theme": "pristine",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "1.11.2",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "pristine/static/js/jquery-1.11.2.min.js"
+   }
+  ]
+ },
+ "prologue": {
+  "theme": "prologue",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "1.11.3",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "prologue/static/js/jquery.min.js"
+   }
+  ]
+ },
+ "pulp": {
+  "theme": "pulp",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.3.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "pulp/assets/js/jquery-3.3.1.min.js"
+   }
+  ]
+ },
+ "purehugo": {
+  "theme": "purehugo",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "2.1.3",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "purehugo/assets/js/jquery.min.js"
+   }
+  ]
+ },
+ "restaurant-hugo": {
+  "theme": "restaurant-hugo",
+  "data": [
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.1.0",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "restaurant-hugo/static/js/bootstrap.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "1.10.2",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "restaurant-hugo/static/js/jquery.min.js"
+   }
+  ]
+ },
+ "retrofulhugo": {
+  "theme": "retrofulhugo",
+  "data": [
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.3.2",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "retrofulhugo/static/js/bootstrap.js"
+   },
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.3.2",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "retrofulhugo/static/js/bootstrap.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "1.11.2",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "retrofulhugo/static/js/jquery-1.11.2.min.js"
+   }
+  ]
+ },
+ "shiori": {
+  "theme": "shiori",
+  "data": [
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.3.2",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "shiori/static/javascripts/shiori.js"
+   },
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.3.2",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "shiori/static/javascripts/shiori.js"
+   }
+  ]
+ },
+ "simpleblox": {
+  "theme": "simpleblox",
+  "data": [
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "4.1.3",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      }
+     ]
+    },
+    "file": "simpleblox/static/js/bootstrap.bundle.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.3.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "simpleblox/static/js/jquery.min.js"
+   }
+  ]
+ },
+ "startbootstrap-clean-blog": {
+  "theme": "startbootstrap-clean-blog",
+  "data": [
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.3.7",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "startbootstrap-clean-blog/static/js/bootstrap.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "2.2.4",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "startbootstrap-clean-blog/static/js/jquery.min.js"
+   }
+  ]
+ },
+ "strange-case": {
+  "theme": "strange-case",
+  "data": [
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.3.7",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "strange-case/static/js/bootstrap.js"
+   },
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.3.7",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "strange-case/static/js/bootstrap.min.js"
+   },
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.3.7",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "strange-case/exampleSite/public/js/bootstrap.js"
+   },
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.3.7",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "strange-case/exampleSite/public/js/bootstrap.min.js"
+   }
+  ]
+ },
+ "strata": {
+  "theme": "strata",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "1.11.3",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "strata/static/js/jquery.min.js"
+   }
+  ]
+ },
+ "timer-hugo": {
+  "theme": "timer-hugo",
+  "data": [
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "4.1.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "timer-hugo/static/plugins/bootstrap/bootstrap.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "1.11.2",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "timer-hugo/static/plugins/jQurey/jquery.min.js"
+   }
+  ]
+ },
+ "twentyfourteen": {
+  "theme": "twentyfourteen",
+  "data": [
+   {
+    "results": {
+     "component": "jquery-migrate",
+     "version": "1.2.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "http://bugs.jquery.com/ticket/11290",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "twentyfourteen/static/js/jquery/jquery-migrate.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "1.11.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "twentyfourteen/static/js/jquery/jquery.js"
+   }
+  ]
+ },
+ "vanilla-bootstrap-hugo-theme": {
+  "theme": "vanilla-bootstrap-hugo-theme",
+  "data": [
+   {
+    "results": {
+     "component": "jquery",
+     "version": "3.3.1.slim",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "vanilla-bootstrap-hugo-theme/static/js/jquery-3.3.1.slim.min.js"
+   }
+  ]
+ },
+ "vex-hugo": {
+  "theme": "vex-hugo",
+  "data": [
+   {
+    "results": {
+     "component": "bootstrap",
+     "version": "3.1.0",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/28236"
+       ],
+       "severity": "high"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://github.com/twbs/bootstrap/issues/20184"
+       ],
+       "severity": "medium"
+      }
+     ]
+    },
+    "file": "vex-hugo/static/js/bootstrap.min.js"
+   },
+   {
+    "results": {
+     "component": "jquery",
+     "version": "2.1.1",
+     "vulnerabilities": [
+      {
+       "info": [
+        "https://github.com/jquery/jquery/issues/2432",
+        "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://bugs.jquery.com/ticket/11974",
+        "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "http://research.insecurelabs.org/jquery/test/"
+       ],
+       "severity": "medium"
+      },
+      {
+       "info": [
+        "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+       ],
+       "severity": "low"
+      }
+     ]
+    },
+    "file": "vex-hugo/static/js/vendor/jquery-2.1.1.min.js"
+   }
+  ]
+ }
+}
