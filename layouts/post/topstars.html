@@ -5,8 +5,8 @@
     <h6>List Updated {{now | dateFormat "02 Jan 2006"}}</h6>
     {{ .Content }}
     <br><br>
-    {{ $sorted := (sort .Site.Data.themes.themes "repo_stars" "desc") }}
-    {{ $starred := where .Site.Data.themes.themes "repo_stars" "!=" nil }}
+    
+    {{ $starred := where site.Data.themes.themes "repo_stars" "!=" nil }}
     
     {{ $.Scratch.Set "repos" slice }}
     

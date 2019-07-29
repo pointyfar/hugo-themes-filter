@@ -1,7 +1,7 @@
 <div class="notification is-size-7" id="notification">
   <button class="delete" onclick="hideNotif()"></button>
   
-  {{ $headless := .Site.GetPage "/notification" }}
+  {{ $headless := site.GetPage "/notification" }}
   <div class="content">
     {{ $headless.Content }}
   </div>

@@ -1,8 +1,8 @@
 {{ $currentPage := . }}
 <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item" href="{{.Site.BaseURL}}">{{.Site.Params.brand}}</a>
-    {{ range .Site.Menus.main }}
+    <a class="navbar-item" href="{{site.BaseURL}}">{{site.Params.brand}}</a>
+    {{ range site.Menus.main }}
     <a class="navbar-item" href="{{ .URL }}">
       {{ .Name }}
     </a>
@@ -17,7 +17,7 @@
     <div class="navbar-start">
     </div>
     <div class="navbar-end">
-      {{ if .IsHome }} 
+      {{ if or .IsHome .Params.showsearch }}
       <div class="navbar-item">
         <form>
           <div class="field has-addons">
@@ -39,10 +39,10 @@
       {{ end }}
 
       <div class="navbar-item navbar-notes">
-        {{ range .Site.Params.social }}
+        {{ range site.Params.social }}
         <a class="button is-dark" href="{{ .url }}"><i class="{{.icon}}"></i></a>
         {{ end }}
-        {{with .Site.Params.version}}
+        {{with site.Params.version}}
         <div class="tag is-dark is-small">v{{.}}</div>
         {{end}}
         <div class="tag is-dark is-small">Last Updated {{ now.Format "2 Jan 2006" }}</div>

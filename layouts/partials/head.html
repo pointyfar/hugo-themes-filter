@@ -1,13 +1,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 {{ if eq .Kind "home" }}
-  <title>{{ .Site.Params.brand }}</title>
+  <title>{{ site.Params.brand }}</title>
 {{ else }}
-  <title>{{ .Title }}{{if .Site.Params.brand}} – {{ .Site.Params.brand }} {{ end }}</title>
+  <title>{{ .Title }}{{if site.Params.brand}} – {{ site.Params.brand }} {{ end }}</title>
 {{ end }}
 
 <link href="{{"/vendor/fontawesome/css/fontawesome-all.css" | relURL }}" rel="stylesheet">
 
-{{- if .Site.IsServer -}}
+{{- if site.IsServer -}}
   {{- $cssOpts := (dict "targetPath" "styles/main.css" "enableSourceMap" true ) -}}
   {{- $styles := resources.Get "scss/main.scss" | resources.ExecuteAsTemplate "style.main.scss" . | toCSS $cssOpts -}}
   <link rel="stylesheet" href="{{- $styles.Permalink -}}" media="screen">

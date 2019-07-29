@@ -3,7 +3,7 @@
 
 
 {{ $js := $libs | resources.Concat "js/main.js" }}
-{{ if .Site.IsServer }}
+{{ if site.IsServer }}
 <script src="{{ $js.Permalink }}"></script>
 {{ else }}
 {{ $js := $js | minify | fingerprint }}

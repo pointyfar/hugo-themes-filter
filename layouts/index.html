@@ -6,7 +6,7 @@
 {{ $untagged := slice }}
 
 
-{{- range .Site.Data.themes.themes -}}
+{{- range site.Data.themes.themes -}}
   {{- with .tags -}}
     {{- range . -}}
       {{- if and ( not ( in ( $tags ) ( . | urlize ) ) ) ( gt ( len . ) 0 ) -}}
@@ -33,7 +33,7 @@
     <div class="column is-two-thirds card-wrapper">
       <div class="tabs is-small has-background-white sticky status-tabs">
         <ul>
-          <li><a><span id="selectedThemeCount"></span>&ensp;of {{ len .Site.Data.themes.themes }} themes</a></li>
+          <li><a><span id="selectedThemeCount"></span>&ensp;of {{ len site.Data.themes.themes }} themes</a></li>
           <li><a><span id="selectedTagsCount"></span>{{ len $tags }} tags</a></li>
           <li><a><span id="selectedLicCount"></span>{{ len $licenses }} licenses</a></li>
           <li><a><span id="selectedVerStatus">All</span>&ensp;Hugo Version</a></li>
@@ -43,7 +43,7 @@
       {{partial "notif.html" . }}
 
       <div id="themes-container">
-        {{ range .Site.Data.themes.themes | shuffle }}
+        {{ range site.Data.themes.themes | shuffle }}
           <div 
               id="theme-{{.name|urlize}}"
               class="filterDiv card"
