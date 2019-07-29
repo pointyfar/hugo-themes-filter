@@ -1,6 +1,7 @@
 ### Hugo ###
 hugo.exe
 /public/
+/retire/
 
 ## dev bundle unminified
 /static/_bundle.css
