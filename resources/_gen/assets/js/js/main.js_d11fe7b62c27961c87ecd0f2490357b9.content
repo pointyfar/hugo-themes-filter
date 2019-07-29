@@ -43,8 +43,7 @@ var sb=document.getElementsByClassName("star-button");for(var i=0;i<sb.length;i+
 function selectStar(){var target=parseInt(this.getAttribute('data-target'));if(selectedStars.indexOf(target)>=0){var idx=selectedStars.indexOf(target);selectedStars.splice(idx,1);}else{selectedStars.push(target);}
 toggleClass(this,activeClass);showCheck()}
 function assignStarIntervals(){for(var i=0;i<tiles.length;i++){var interval=0;var stars=parseInt(tiles[i].getAttribute('data-stars'));for(var j=0;j<starIntervals.length;j++){var post=starIntervals[j]['post']?starIntervals[j]['post']:100000;if(stars>=starIntervals[j]['pre']&&stars<=post){interval=starIntervals[j]['pre'];starIntervals[j]['count']++;}}
-tiles[i].setAttribute('data-starinterval',interval)}}
-var sortBtns=document.getElementsByClassName("sort-button");function initSort(){for(var i=0;i<sortBtns.length;i++){sortBtns[i].addEventListener("click",sortEl)}}
+tiles[i].setAttribute('data-starinterval',interval)}};var sortBtns=document.getElementsByClassName("sort-button");function initSort(){for(var i=0;i<sortBtns.length;i++){sortBtns[i].addEventListener("click",sortEl)}}
 initSort()
 function sortEl(){var attribute=this.getAttribute('data-attr');var direction=this.getAttribute('data-direction');var items=document.getElementsByClassName("filterDiv");var parent=document.getElementById('themes-container');var itemsArr=[];for(var i in items){if(items[i].nodeType==1){itemsArr.push(items[i]);}}
 var sorted=itemsArr.sort(function(a,b){var c=a;if(direction=="desc"){a=b;b=c;}
