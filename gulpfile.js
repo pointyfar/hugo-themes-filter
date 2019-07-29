@@ -10,6 +10,25 @@ var spawn = require('child_process').spawn;
 var request = require("request");
 var minimist = require("minimist");
 
+/*
+gulp.task('retire', function(done) {
+
+    var args = [
+      '--outputpath', 'retx.json',
+      '--outputformat','json',
+      '--path','./all-themes/meghna-hugo'
+    ]
+    console.log("args: ", args)
+    
+    cp.spawn('./node_modules/.bin/retire', args, {cwd: process.cwd()})
+    return done();
+    
+    
+    
+
+});*/
+
+
 var themesPath = 'all-themes';
 var themesImgPath = './static/theme-images';
 var themesJsonPath = './data/themes.json';
@@ -49,6 +68,18 @@ var exclude_dirs = [
 var exclude_stars = [
   "Shapez Theme"
 ]
+
+
+function retire(dir) {
+  var args = [
+    '--outputpath', `./retire/${dir}.json`,
+    '--outputformat','jsonsimple',
+    '--path',`./${themesPath}/${dir}`
+  ]
+
+  return spawn('./node_modules/.bin/retire', args, {cwd: process.cwd()})
+}
+
 
 function getFolders(dir) {
     return fs.readdirSync(dir)
@@ -91,6 +122,7 @@ gulp.task('themes:assemble', function(done) {
     if ( checkIncluded(folder) /*&& counter < 20*/ ) {
       
       console.log(folder);
+      /*retire(folder);*/
       var themePath = themesPath + '/' + folder + '/theme.';
       var imgPath = themesPath + '/' + folder + '/images/tn.png';
       
@@ -113,6 +145,91 @@ gulp.task('themes:assemble', function(done) {
 
   done();
 });
+
+gulp.task('themes:retire', function(done) {
+  console.log('checking themes deps:')
+  var folders = getFolders(themesPath);
+  var counter = 0;
+  var retiredresults = {};
+  var tasks = folders.map(function(folder) {
+    if (folder.length === 0) {
+      return done(); 
+    }
+    if ( checkIncluded(folder) /*&& counter < 95*/ ) {
+      
+      var retPath = './retire/' + folder;
+      var retjson = [];
+
+      retire(folder);
+      
+      counter++;
+    }
+  });
+  
+  writeretire(retiredresults)
+  done();
+});
+
+gulp.task('retire:write', function(done) {
+  var retiredresults = {};
+  var p = "./retire"
+  fs.readdir(p, (err, files) => {
+    files.forEach(file => {
+      var retjson = {};
+        if(file.length >0 ) {
+          if((fs.readFileSync( `${p}/${file}` , 'utf8'))) {
+            retjson = JSON.parse(fs.readFileSync(`${p}/${file}`, 'utf8'));
+
+            if(retjson.length > 0) {
+              var trimmed = {};
+              trimmed["theme"] = file.substr(0,(file.length - 5));
+              trimmed["data"] = [];
+              
+              for(var i = 0; i < retjson.length; i++){
+                var results = [];
+                var resx = {};
+                for(var j = 0; j < retjson[i]['results'].length; j++){
+                  var rjc = {}; 
+                  rjc["component"] = retjson[i]["results"][j]["component"]
+                  rjc["version"] = retjson[i]["results"][j]["version"]
+                  rjc["vulnerabilities"] = [];
+                  for(var k = 0; k < retjson[i]['results'][j]["vulnerabilities"].length; k++){
+                    var vuln = {};
+                    vuln["info"] = retjson[i]['results'][j]["vulnerabilities"][k]["info"];
+                    vuln["severity"] = retjson[i]['results'][j]["vulnerabilities"][k]["severity"];
+                    rjc["vulnerabilities"].push(vuln)
+                  }
+                  results.push(rjc);
+                  resx["results"] = rjc;
+                  resx["file"] = (retjson[i]["file"]).substring(56);
+                  trimmed["data"].push(resx)
+                }
+              }
+              
+              retiredresults[file.substring(0,(file.length-5))] = trimmed;
+            }
+          }
+          
+          
+          
+          
+        }
+      
+    });
+    writeretire(retiredresults)
+  });
+  done()
+});
+
+function writeretire(results){
+  try {
+    fs.writeFile('./data/retired.json', JSON.stringify(results, null, ' '), 'utf8', function (err) {
+      if (err) {return console.log(err)}
+    })
+  } catch {
+    console.log("Oops, error writing file...")
+  }
+}
 
 function parseRepo(url){
   var nurl = url;

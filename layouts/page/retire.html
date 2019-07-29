@@ -1,0 +1,151 @@
+{{ define "main"}}
+
+{{ $tags := slice }}
+{{ $licenses := slice }}
+{{ $hugoversion := slice }}
+{{ $untagged := slice }}
+
+
+{{- range site.Data.themes.themes -}}
+  {{- with .tags -}}
+    {{- range . -}}
+      {{- if and ( not ( in ( $tags ) ( . | urlize ) ) ) ( gt ( len . ) 0 ) -}}
+        {{- $tags = $tags | append  ( . | urlize ) -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{ $lic := ( string .license | replaceRE "[.]" "_" | urlize )}}
+  {{- if and ( not ( in $licenses $lic ) ) ( gt ( len .license ) 0 ) -}}
+    {{- $licenses = $licenses | append  $lic -}}
+  {{- end -}}
+  
+  {{- with .min_version -}}
+      {{- if ( not ( in ( $hugoversion ) ( string . ) ) ) -}}
+      {{- $hugoversion = $hugoversion | append ( string . ) -}}
+      {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+
+<div class="container-fluid main-container">
+  <div class="columns is-mobile">
+    <div class="column is-two-thirds card-wrapper">
+      <div class="tabs is-small has-background-white sticky status-tabs">
+        <ul>
+          <li><a><span id="selectedThemeCount"></span>&ensp;of {{ len site.Data.themes.themes }} themes</a></li>
+          <li><a><span id="selectedTagsCount"></span>{{ len $tags }} tags</a></li>
+          <li><a><span id="selectedLicCount"></span>{{ len $licenses }} licenses</a></li>
+          <li><a><span id="selectedVerStatus">All</span>&ensp;Hugo Version</a></li>
+          <li><a><span id="sortedStatus">Unsorted</span></a></li>
+        </ul>
+      </div>
+      {{partial "notif.html" . }}
+
+      <div id="themes-container">
+        {{ range site.Data.themes.themes }}
+          <div 
+              id="theme-{{.name|urlize}}"
+              class="filterDiv card"
+              data-name="{{.name|urlize}}"
+              data-tags="{{ range .tags }}{{ . | replaceRE "[.]" "_" | urlize }} {{ end }}"
+              data-license="{{ .license | replaceRE "[.]" "_" |urlize}}"
+              data-minver="{{.min_version}}"
+              data-stars="{{with .repo_stars}}{{.}}{{else}}0{{end}}"
+              data-updated="{{ with .repo_updated }}{{ $age := (sub now.Unix (time .).Unix) }}{{$age}}{{else}}{{ sub now.Unix (time (now.AddDate -5 0 0 )).Unix }}{{ end }}"
+          >
+            <header class="card-header">
+              <div class="card-header-title">
+                {{.name}}
+              </div>
+              <div class="tags">
+                <div class="tag" title="Minimum Hugo version">{{with .min_version}}Hugo v{{.}}{{else}}No Hugo Version Specified{{end}}</div>
+                <div class="tag" title="License">{{with .license}}{{.}}{{else}}No License Specified{{end}}</div>
+                {{if isset . "repo_updated"}}
+                    <div class="tag" title="Number of GitHub stars">★ {{.repo_stars}}</div>
+                    <div class="tag is-white" title="Date last updated">{{ .repo_updated | dateFormat "Jan 2006"}}</div> 
+                {{ else }}
+                <div class="tag is-white">-
+                </div> 
+                {{end}}
+              </div>
+            </header>
+            {{- with .colors}}
+              <div class="color-bars">
+              {{ range . }}<span class="color" style="background-color:{{.}}">&nbsp;</span>{{ end }}
+            </div>
+            {{ end }}
+            <div class="card-content is-size-7">
+
+              <div class="content">
+                {{with .description}}<p>{{ . }}</p>{{ end }}
+                {{- with .tags}}
+                  <div class="buttons">
+                    {{ range . }}
+                      {{ if gt ( len . ) 0 }}
+                      <button class="button is-small item-tags-button" onclick="tagsCheck('{{ . | replaceRE "[.]" "_"| urlize }}', 't-')">
+                        {{- . -}}
+                      </button> 
+                      {{ end }}
+                    {{ end }}
+                  </div>
+                {{ end }}
+                
+                {{- with .features }}
+                  
+                  <div class="tags">
+                    {{- if eq ( printf "%T" . ) "[]interface {}" }}
+                      {{ if gt ( len . ) 0 }}
+                        {{range .}}{{ if gt ( len . ) 0 }}<div class="tag is-small">{{.}}</div>{{ end }}{{ end }}
+                      {{ end }}
+                    {{ else }}<div class="tag is-small">{{ . }}</div>
+                    {{ end }}
+                  </div>
+                {{end}}
+                
+                {{ $ret := .path }}
+                {{ if isset site.Data.retired $ret }}
+                  {{ $res := index site.Data.retired $ret}}
+                  
+                  <div class="field is-grouped is-grouped-multiline">
+                    {{ range $res.data }}
+                      <div class="control">
+                        <div class="tags has-addons" title="{{.file}}">
+                          <span class="tag is-dark">{{.results.component}}: {{.results.version}}</span>
+                          {{range .results.vulnerabilities}}
+                            {{ $sev := cond (eq .severity "high") ("is-danger") (cond (eq .severity "medium") "is-info" "is-light") }}
+                            <span class="tag {{$sev}}">{{ first 1 .severity | upper }}
+                            </span>
+                            {{range $i, $e := .info}}
+                            <a class="tag is-link" href="{{$e}}">
+                                {{add 1 $i}}
+                          </a> 
+                            {{end}}
+                          {{end}}
+                        </div>
+                      </div>
+                    {{ end }}
+                  </div>
+                {{ end }}
+                
+              </div>
+            </div>
+            <footer class="card-footer is-size-7">
+              <span class="card-footer-item"><a href="https://themes.gohugo.io/{{.path | urlize}}">Hugo Theme Page</a></span>
+              {{with .homepage}}<span class="card-footer-item"><a href="{{.}}">Theme Homepage</a></span>{{ end }}
+            </footer>
+          </div>
+
+        {{ end }}
+
+      </div>
+    </div>
+    <div class="column is-one-third side">
+    {{ partial "sidebar.html" (dict "tags" $tags "licenses" $licenses "hugoversion" $hugoversion "untagged" $untagged) }}
+    </div>
+
+
+
+  </div>
+</div>
+{{ end }}
