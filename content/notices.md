@@ -25,6 +25,9 @@ Open Source is awesome! Many thanks to the teams behind the resources which I us
 [Splashy](https://github.com/microlinkhq/splashy)
 : Extracts dominant colors from an image
 
+[RetireJS](https://github.com/RetireJS/retire.js)
+: Detects JS vulnerabilities
+
 #### Disclaimer
 
 Product names, company names, and theme names referenced in this website are properties and either registered trademarks or trademarks of their respective owners. 
