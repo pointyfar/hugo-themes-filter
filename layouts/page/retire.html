@@ -117,7 +117,7 @@
                             <span class="tag {{$sev}}">{{ first 1 .severity | upper }}
                             </span>
                             {{range $i, $e := .info}}
-                            <a class="tag is-link" href="{{$e}}">
+                            <a class="tag is-link" href="{{$e}}" rel="noreferrer" target="_blank">
                                 {{add 1 $i}}
                           </a> 
                             {{end}}
@@ -131,8 +131,8 @@
               </div>
             </div>
             <footer class="card-footer is-size-7">
-              <span class="card-footer-item"><a href="https://themes.gohugo.io/{{.path | urlize}}">Hugo Theme Page</a></span>
-              {{with .homepage}}<span class="card-footer-item"><a href="{{.}}">Theme Homepage</a></span>{{ end }}
+              <span class="card-footer-item"><a href="https://themes.gohugo.io/{{.path | urlize}}" rel="noreferrer" target="_blank">Hugo Theme Page</a></span>
+              {{with .homepage}}<span class="card-footer-item"><a href="{{.}}" rel="noreferrer" target="_blank">Theme Homepage</a></span>{{ end }}
             </footer>
           </div>
 
