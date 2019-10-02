@@ -134,6 +134,8 @@ gulp.task('themes:assemble', function(done) {
       } else if (fs.existsSync(`${themePath}json`)) {
         console.log('json')
         themejson = JSON.parse(fs.readFileSync( `${themePath}json` , 'utf8'));
+      } else {
+        return 
       }
       
       themejson['path'] = folder;
