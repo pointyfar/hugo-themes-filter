@@ -37,21 +37,12 @@
   {{ end }}
 {{ end }}
 
-<h2>Themeslist:</h2>
-{{ $themeslist }}
-<hr>
-
-
 
 {{/* get theme folders */}}
 {{ $allthemes := slice }}
 {{ range (readDir "all-themes") }}
   {{ $allthemes = $allthemes | append .Name }}
 {{ end }}
-
-<h2>Allthemes</h2>
-{{$allthemes}}
-<hr>
 
 
 {{/* populate $themes */}}
@@ -138,11 +129,5 @@
 {{ end }}
 
 {{ $data := dict "themes" $themes "tags" $tags "licenses" $licenses "hugoversion" $hugoversion "untagged" $untagged  }}
-<h2>In partial assemblethemes</h2>
 
-{{ range first 10 $themes  }}
-{{.}}<br><br>
-{{ end }}
-<hr>
-END
-<hr>
+{{ return $data }}

@@ -1,12 +1,13 @@
 {{ define "main"}}
 
-{{ $data := dict "themes" "$themes" "tags" "$tags" "licenses" "$licenses" "hugoversion" "$hugoversion" "untagged" "$untagged"  }}
+{{ $data := partial "assemblethemes.html" . }}
 
-{{ $themes := slice}}
-{{ $tags := slice }}
-{{ $licenses := slice }}
-{{ $hugoversion := slice }}
-{{ $untagged := slice }}
+{{ $tags := $data.tags }}
+{{ $licenses := $data.licenses }}
+{{ $hugoversion := $data.hugoversion }}
+{{ $untagged := $data.untagged }}
+{{ $themes := $data.themes }}
+
 
 
 <div class="container-fluid main-container">
@@ -23,17 +24,11 @@
         </ul>
       </div>
       {{partial "notif.html" . }}
-      {{ partialCached "assemblethemes.html" . }}
       
       <div id="themes-container">
         <div class="content">
-          {{ range $k, $v := $data }}
-            <h1>{{$k}}</h1>
-            <div>{{$v}}</div>
-          {{ end }}
-          
-          {{ if false }}
-          {{ range $themes }}
+
+          {{ range shuffle $themes }}
           
           <div 
               id="theme-{{.name|urlize}}"
@@ -102,7 +97,6 @@
 
             
             
-          {{ end }}
           {{ end }}
           
         </div>
