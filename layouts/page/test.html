@@ -1,13 +1,11 @@
 {{ define "main"}}
 
-{{ $data := partial "assemblethemes.html" . }}
+{{ partial "assemblethemes.html" . }}
 
-{{ $tags := $data.tags }}
-{{ $licenses := $data.licenses }}
-{{ $hugoversion := $data.hugoversion }}
-{{ $untagged := $data.untagged }}
-{{ $themes := $data.themes }}
-
+{{ $tags := slice }}
+{{ $licenses := slice }}
+{{ $hugoversion := slice }}
+{{ $untagged := slice }}
 
 
 <div class="container-fluid main-container">
@@ -28,76 +26,8 @@
       <div id="themes-container">
         <div class="content">
 
-          {{ range shuffle $themes }}
           
-          <div 
-              id="theme-{{.name|urlize}}"
-              class="filterDiv card"
-              data-name="{{.name|urlize}}"
-              data-tags="{{ range .tags }}{{ . | replaceRE "[.]" "_" | urlize }} {{ end }}"
-              data-license="{{ .license | replaceRE "[.]" "_" |urlize}}"
-              data-minver="{{.min_version}}"
-              data-stars="{{if gt .stargazers -1}}{{.stargazers}}{{else}}0{{end}}"
-          >
-            <header class="card-header">
-              <div class="card-header-title">
-                {{.name}}
-              </div>
-              <div class="tags">
-                <div class="tag" title="Minimum Hugo version">{{with .min_version}}Hugo v{{.}}{{else}}No Hugo Version Specified{{end}}</div>
-                <div class="tag" title="License">{{with .license}}{{.}}{{else}}No License Specified{{end}}</div>
-                {{if gt .stargazers -1}}
-                  <div class="tag" title="Number of GitHub stars">★ {{.stargazers}}</div>
-                  {{ if .gitupdated }}
-                    <div class="tag is-white" title="Date last updated">{{ .gitupdated | dateFormat "Jan 2006"}}</div> 
-                  {{ end }}
-                {{ else }}
-                
-                <div class="tag is-white">-
-                </div> 
-                {{end}}
-              </div>
-            </header>
-            <div class="card-content is-size-7">
-              <div class="content">
-                {{with .description}}<p>{{ . }}</p>{{ end }}
-                {{- with .tags}}
-                  <div class="buttons">
-                    {{ range . }}
-                      {{ if gt ( len . ) 0 }}
-                      <button class="button is-small item-tags-button" onclick="tagsCheck('{{ . | replaceRE "[.]" "_"| urlize }}', 't-')">
-                        {{- . -}}
-                      </button> 
-                      {{ end }}
-                    {{ end }}
-                  </div>
-                {{ end }}
-                
-                {{- with .features }}
-                  
-                  <div class="tags">
-                    {{- if eq ( printf "%T" . ) "[]interface {}" }}
-                      {{ if gt ( len . ) 0 }}
-                        {{range .}}{{ if gt ( len . ) 0 }}<div class="tag is-small">{{.}}</div>{{ end }}{{ end }}
-                      {{ end }}
-                    {{ else }}<div class="tag is-small">{{ . }}</div>
-                    {{ end }}
-                  </div>
-                {{end}}
-
-              </div>
-            </div>
-            <footer class="card-footer is-size-7">
-              <span class="card-footer-item"><a href="https://themes.gohugo.io/{{.path | urlize}}" rel="noreferrer" target="_blank">Hugo Theme Page</a></span>
-              <span class="card-footer-item"><a href="{{.repo_url | absURL | safeHTMLAttr}}" rel="noreferrer" target="_blank">Theme Repo</a></span>
-              {{with .homepage}}<span class="card-footer-item"><a href="{{.}}" rel="noreferrer" target="_blank">Theme Homepage</a></span>{{ end }}
-            </footer>
-          </div>
-
-
-            
-            
-          {{ end }}
+          
           
         </div>
       </div>

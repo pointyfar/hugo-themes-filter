@@ -130,4 +130,10 @@
 
 {{ $data := dict "themes" $themes "tags" $tags "licenses" $licenses "hugoversion" $hugoversion "untagged" $untagged  }}
 
-{{ return $data }}
+<h1>In partial</h1>
+themes: {{ $themes }}
+<hr>
+tags: {{$tags}}
+<hr>
+{{$themeslist}}
+<hr>
