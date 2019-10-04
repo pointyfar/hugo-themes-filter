@@ -5,14 +5,13 @@ title = "PointyFar's Filterable Hugo Themes"
 [params]
   copyright = "Copyright © 2018"
   author = "Pointy Far"
-
   footerNotice = "Powered by Hugo. Themed by PointyFar"
-
   brand = "PFHT"
-  
   version = "0.7"
   
 [[params.social]]
   url = "https://github.com/pointyfar/"
   icon = "fab fa-github"
 
+[[module.imports]]
+    path="github.com/bep/hugo-github/repo"

@@ -1,35 +1,18 @@
 {{ define "main"}}
 
-{{ $tags := slice }}
-{{ $licenses := slice }}
-{{ $hugoversion := slice }}
-{{ $untagged := slice }}
+{{ $data := partialCached "assemblethemes.html" . }}
 
+{{ $tags := $data.tags }}
+{{ $licenses := $data.licenses }}
+{{ $hugoversion := $data.hugoversion }}
+{{ $untagged := $data.untagged }}
+{{ $themes := $data.themes }}
 
-{{- range site.Data.themes.themes -}}
-  {{- with .tags -}}
-    {{- range . -}}
-      {{- if and ( not ( in ( $tags ) ( . | urlize ) ) ) ( gt ( len . ) 0 ) -}}
-        {{- $tags = $tags | append  ( . | urlize ) -}}
-      {{- end -}}
-    {{- end -}}
-  {{- end -}}
-
-  {{ $lic := ( string .license | replaceRE "[.]" "_" | urlize )}}
-  {{- if and ( not ( in $licenses $lic ) ) ( gt ( len .license ) 0 ) -}}
-    {{- $licenses = $licenses | append  $lic -}}
-  {{- end -}}
-  
-  {{- with .min_version -}}
-      {{- if ( not ( in ( $hugoversion ) ( string . ) ) ) -}}
-      {{- $hugoversion = $hugoversion | append ( string . ) -}}
-      {{- end -}}
-  {{- end -}}
-{{- end -}}
 
 
 <div class="container-fluid main-container">
   <div class="columns is-mobile">
+
     <div class="column is-two-thirds card-wrapper">
       <div class="tabs is-small has-background-white sticky status-tabs">
         <ul>
@@ -41,9 +24,12 @@
         </ul>
       </div>
       {{partial "notif.html" . }}
-
+      
       <div id="themes-container">
-        {{ range site.Data.themes.themes | shuffle }}
+        <div class="content">
+
+          {{ range shuffle $themes }}
+          
           <div 
               id="theme-{{.name|urlize}}"
               class="filterDiv card"
@@ -51,8 +37,7 @@
               data-tags="{{ range .tags }}{{ . | replaceRE "[.]" "_" | urlize }} {{ end }}"
               data-license="{{ .license | replaceRE "[.]" "_" |urlize}}"
               data-minver="{{.min_version}}"
-              data-stars="{{with .repo_stars}}{{.}}{{else}}0{{end}}"
-              data-updated="{{ with .repo_updated }}{{ $age := (sub now.Unix (time .).Unix) }}{{$age}}{{else}}{{ sub now.Unix (time (now.AddDate -5 0 0 )).Unix }}{{ end }}"
+              data-stars="{{if gt .stargazers -1}}{{.stargazers}}{{else}}0{{end}}"
           >
             <header class="card-header">
               <div class="card-header-title">
@@ -61,22 +46,19 @@
               <div class="tags">
                 <div class="tag" title="Minimum Hugo version">{{with .min_version}}Hugo v{{.}}{{else}}No Hugo Version Specified{{end}}</div>
                 <div class="tag" title="License">{{with .license}}{{.}}{{else}}No License Specified{{end}}</div>
-                {{if isset . "repo_updated"}}
-                    <div class="tag" title="Number of GitHub stars">★ {{.repo_stars}}</div>
-                    <div class="tag is-white" title="Date last updated">{{ .repo_updated | dateFormat "Jan 2006"}}</div> 
+                {{if gt .stargazers -1}}
+                  <div class="tag" title="Number of GitHub stars">★ {{.stargazers}}</div>
+                  {{ if .gitupdated }}
+                    <div class="tag is-white" title="Date last updated">{{ .gitupdated | dateFormat "Jan 2006"}}</div> 
+                  {{ end }}
                 {{ else }}
+                
                 <div class="tag is-white">-
                 </div> 
                 {{end}}
               </div>
             </header>
-            {{- with .colors}}
-              <div class="color-bars">
-              {{ range . }}<span class="color" style="background-color:{{.}}">&nbsp;</span>{{ end }}
-            </div>
-            {{ end }}
             <div class="card-content is-size-7">
-
               <div class="content">
                 {{with .description}}<p>{{ . }}</p>{{ end }}
                 {{- with .tags}}
@@ -102,18 +84,22 @@
                     {{ end }}
                   </div>
                 {{end}}
-                
+
               </div>
             </div>
             <footer class="card-footer is-size-7">
               <span class="card-footer-item"><a href="https://themes.gohugo.io/{{.path | urlize}}" rel="noreferrer" target="_blank">Hugo Theme Page</a></span>
+              <span class="card-footer-item"><a href="{{.repo_url | absURL | safeHTMLAttr}}" rel="noreferrer" target="_blank">Theme Repo</a></span>
               {{with .homepage}}<span class="card-footer-item"><a href="{{.}}" rel="noreferrer" target="_blank">Theme Homepage</a></span>{{ end }}
-              
             </footer>
           </div>
 
-        {{ end }}
 
+            
+            
+          {{ end }}
+          
+        </div>
       </div>
     </div>
     <div class="column is-one-third side">

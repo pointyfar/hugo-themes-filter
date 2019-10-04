@@ -1,4 +1,15 @@
 {{ define "main" }}
+
+{{ $data := partialCached "assemblethemes.html" . }}
+
+{{ $tags := $data.tags }}
+{{ $licenses := $data.licenses }}
+{{ $hugoversion := $data.hugoversion }}
+{{ $untagged := $data.untagged }}
+{{ $themes := $data.themes }}
+
+
+
 <div class="container-fluid single-container">
   <div class="section content container">
     <h2>{{.Title}}</h2>
@@ -6,13 +17,14 @@
     {{ .Content }}
     <br><br>
     
-    {{ $starred := where site.Data.themes.themes "repo_stars" "!=" nil }}
+    {{ $starred := where $themes "stargazers" "!=" nil }}
     
     {{ $.Scratch.Set "repos" slice }}
+    {{ $topstarred := slice }}
     
      {{range $starred}}
-        {{ if ge .repo_stars 200 }}
-          {{ $.Scratch.Add "repos" . }}
+        {{ if ge .stargazers 200 }}
+          {{ $topstarred = $topstarred | append . }}
         {{ end }}
      {{ end }}
      
@@ -24,11 +36,11 @@
       <th>Description</th>
     </tr></thead>
     <tbody>
-    {{range $i, $e := sort ($.Scratch.Get "repos") "repo_stars" "desc"}}
+    {{range $i, $e := sort $topstarred "stargazers" "desc"}}
     <tr>
       <td class="number-column">{{add 1 $i}}</td>
-      <td><a href="{{$e.repo_gh}}">{{$e.name}}</a></td>
-      <td class="number-column">{{$e.repo_stars}}</td>
+      <td><a href="{{$e.repo_url}}">{{$e.name}}</a></td>
+      <td class="number-column">{{$e.stargazers}}</td>
       <td>{{$e.description}}</td>
       
     </tr>

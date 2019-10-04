@@ -1,0 +1,133 @@
+{{ $tags := slice }}
+{{ $licenses := slice }}
+{{ $hugoversion := slice }}
+{{ $untagged := slice }}
+
+{{/* get .gitmodules */}}
+{{ $gitmodules := readFile "/all-themes/.gitmodules" }}
+
+{{/* split at newline */}}
+{{ $gitarr := split $gitmodules "\n" }}
+
+{{/* themeslist: [{path: themefolder , url: themerepo}] */}}
+{{ $themeslist := slice }}
+
+{{/* themes: [{theme info}] */}}
+{{ $themes := slice }}
+
+{{/* remove empty lines */}}
+{{ $trimmedgitarr := slice }}
+{{ range $gitarr }}
+  {{ if gt (len . ) 1 }}
+    {{ $trimmedgitarr = $trimmedgitarr | append . }}
+  {{ end }}
+{{ end }}
+
+{{/* populate $themeslist */}}
+{{ $tempslice := slice }}
+{{ range $i, $e := $trimmedgitarr }}
+  {{ if eq (mod $i 3) 1 }}
+    {{ $th := strings.TrimPrefix "	path = " $e }}
+    {{ $tempslice = $tempslice | append $th }}
+  {{ else if eq (mod $i 3) 2 }}
+    {{ $th := strings.TrimPrefix "	url = " $e }}
+    {{ $tempslice = $tempslice | append $th }}
+    {{ $themeslist = $themeslist | append (dict "path" (index $tempslice 0) "url" (index $tempslice 1)) }}
+    {{ $tempslice = slice }}
+  {{ end }}
+{{ end }}
+
+
+{{/* get theme folders */}}
+{{ $allthemes := slice }}
+{{ range (readDir "all-themes") }}
+  {{ $allthemes = $allthemes | append .Name }}
+{{ end }}
+
+
+{{/* populate $themes */}}
+{{ range $themeslist }}
+  {{ $scratch := newScratch }}
+  
+  {{ $scratch.SetInMap "info" "stargazers" -1 }}
+  {{ $scratch.SetInMap "info" "gitupdated" now }}
+  
+  {{ $scratch.SetInMap "info" "repo_url" .url }}
+  
+  {{/* getJSON github repo */}}
+  {{ if in .url "github" }}
+  {{/* if false */}}
+    {{ $url := strings.TrimPrefix "https://github.com/" .url }}
+    {{ $url = strings.TrimSuffix ".git" $url }}
+    {{ $git := partialCached "github/repo" $url $url }}
+    {{ $scratch.SetInMap "info" "stargazers" $git.stargazers_count }}
+    {{ $scratch.SetInMap "info" "gitupdated" $git.pushed_at }}
+  {{ end }}
+  
+  {{ $themepath := .path }}
+  {{ $tomlpath := (print "all-themes/" .path "/theme.toml" ) }}
+  
+  {{/* check that submodule exists */}}
+  {{ if in $allthemes .path }}
+    {{ range (readDir (print "all-themes/" .path )) }}
+      {{/* get and parse theme.toml */}}
+      {{ if eq .Name "theme.toml" }}
+        {{ $tomlstring := readFile $tomlpath }}
+        
+        {{/* stringify unquoted version values eg "min_version = 0.24.1" */}}
+        {{ $tomlstring = $tomlstring | replaceRE "min_version *= *(\\d\\S*)" "min_version = \"$1\"" }}
+        
+        {{ $resourcepath := printf "data/%s.toml" $themepath }}
+        {{ $toml :=  $tomlstring | resources.FromString $resourcepath | transform.Unmarshal }}
+        
+        {{ $scratch.SetInMap "info" "name" $toml.name }}
+        {{ $scratch.SetInMap "info" "description" $toml.description }}
+        {{ $scratch.SetInMap "info" "path" $themepath }}
+        
+        
+        {{- with $toml.tags -}}
+        {{ $scratch.SetInMap "info" "tags" $toml.tags }}
+          {{- range . -}}
+            {{- if and ( not ( in ( $tags ) ( . | urlize ) ) ) ( gt ( len . ) 0 ) -}}
+              {{- $tags = $tags | append  ( . | urlize ) -}}
+            {{- end -}}
+          {{- end -}}
+        {{- end -}}
+        
+        
+        {{ $scratch.SetInMap "info" "license" $toml.license }}
+        {{ $lic := ( string $toml.license | replaceRE "[.]" "_" | urlize )}}
+        {{- if and ( not ( in $licenses $lic ) ) ( gt ( len $toml.license ) 0 ) -}}
+          {{- $licenses = $licenses | append  $lic -}}
+        {{- end -}}
+        
+        
+        {{- with $toml.min_version -}}
+          {{ $scratch.SetInMap "info" "min_version" . }}
+          {{- if ( not ( in ( $hugoversion ) ( string . ) ) ) -}}
+            {{- $hugoversion = $hugoversion | append ( string . ) -}}
+          {{- end -}}
+        {{- end -}}
+        
+        {{ with $toml.features }}
+          {{ $scratch.SetInMap "info" "features" . }}
+        {{ end }}
+        
+        {{ with $toml.homepage }}
+          {{ $scratch.SetInMap "info" "homepage" . }}
+        {{ end }}
+        
+        
+        {{ $themes = $themes | append ($scratch.Get "info") }}
+        
+      {{ end }}
+    {{ end }}
+  {{ end }}
+      
+  
+  
+{{ end }}
+
+{{ $data := dict "themes" $themes "tags" $tags "licenses" $licenses "hugoversion" $hugoversion "untagged" $untagged  }}
+
+{{ return $data }}
