@@ -77,8 +77,10 @@
         {{/* stringify unquoted version values eg "min_version = 0.24.1" */}}
         {{ $tomlstring = $tomlstring | replaceRE "min_version *= *(\\d\\S*)" "min_version = \"$1\"" }}
         
-        {{ $resourcepath := printf "data/%s.toml" $themepath }}
-        {{ $toml :=  $tomlstring | resources.FromString $resourcepath | transform.Unmarshal }}
+        {{ $resourcepath := printf "assets/data/%s.toml" $themepath }}
+        {{ $tomlresource :=  $tomlstring | resources.FromString $resourcepath }}
+        {{ $tomlresource.Permalink }}
+        {{ $toml := $tomlresource | transform.Unmarshal }}
         
         {{ $scratch.SetInMap "info" "name" $toml.name }}
         {{ $scratch.SetInMap "info" "description" $toml.description }}
@@ -130,10 +132,4 @@
 
 {{ $data := dict "themes" $themes "tags" $tags "licenses" $licenses "hugoversion" $hugoversion "untagged" $untagged  }}
 
-<h1>In partial</h1>
-themes: {{ $themes }}
-<hr>
-tags: {{$tags}}
-<hr>
-{{$themeslist}}
-<hr>
+{{return $data}}
