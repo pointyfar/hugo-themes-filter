@@ -111,8 +111,9 @@ gulp.task('themes:assemble', function(done) {
       return done(); 
     }
     if ( checkIncluded(folder) /*&& counter < 20*/ ) {
+      counter++;
       
-      console.log(folder);
+      console.log(`${counter} ${folder}`);
       /*retire(folder);*/
       var themePath = themesPath + '/' + folder + '/theme.';
       var imgPath = themesPath + '/' + folder + '/images/tn.png';
@@ -126,13 +127,13 @@ gulp.task('themes:assemble', function(done) {
         console.log('json')
         themejson = JSON.parse(fs.readFileSync( `${themePath}json` , 'utf8'));
       } else {
+        console.log(`theme ${folder} has no theme.toml/json`)
         return 
       }
       
       themejson['path'] = folder;
       themePromises.push(getGHinit(themejson))
         
-    counter++;
     }
   });
 
