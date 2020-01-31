@@ -2,6 +2,8 @@ baseURL = "https://pfht.netlify.com/"
 languageCode = "en-us"
 title = "PointyFar's Filterable Hugo Themes"
 
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
 [params]
   copyright = "Copyright © 2018"
   author = "Pointy Far"
@@ -12,6 +14,3 @@ title = "PointyFar's Filterable Hugo Themes"
 [[params.social]]
   url = "https://github.com/pointyfar/"
   icon = "fab fa-github"
-
-[[module.imports]]
-    path="github.com/bep/hugo-github/repo"
