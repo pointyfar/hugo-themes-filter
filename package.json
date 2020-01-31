@@ -8,6 +8,7 @@
   },
   "devDependencies": {
     "del": "^4.1.0",
+    "dotenv": "^8.2.0",
     "file-loader": "^3.0.0",
     "gulp": "^4.0.1",
     "gulp-autoprefixer": "^6.1.0",
@@ -18,7 +19,6 @@
     "retire": "^2.0.3",
     "toml": "^3.0.0"
   },
-  "dependencies": {},
   "resolutions": {
     "tar": "4.4.2"
   }
