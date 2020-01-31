@@ -1,6 +1,7 @@
 var fs = require('fs');
 var path = require('path');
 var gulp = require('gulp');
+require('dotenv').config();
 var console = require('gulp-util');
 var autoprefixer = require("gulp-autoprefixer");
 var toml = require('toml');
@@ -33,17 +34,7 @@ var themesPath = 'all-themes';
 var themesImgPath = './static/theme-images';
 var themesJsonPath = './data/themes.json';
 
-var getToken = function() {
-  var gh_token = "";
-  try {
-    gh_token = fs.readFileSync("tokens/GH_STARS", "utf8")
-  } catch(e) {
-    console.log(e)
-  }
-  return gh_token
-}
-
-var GH_STARS = getToken();
+var GH_STARS = process.env.GITHUB_TOKEN;
 
 var args = minimist(process.argv.slice(2),{
   string: 'token',
