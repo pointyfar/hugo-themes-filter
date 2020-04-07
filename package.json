@@ -7,16 +7,16 @@
     "build": "hugo"
   },
   "devDependencies": {
-    "del": "^4.1.0",
+    "del": "^5.1.0",
     "dotenv": "^8.2.0",
-    "file-loader": "^3.0.0",
+    "file-loader": "^6.0.0",
     "gulp": "^4.0.1",
-    "gulp-autoprefixer": "^6.1.0",
-    "gulp-rename": "^1.2.2",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-rename": "^2.0.0",
     "gulp-util": "^3.0.8",
-    "minimist": "^1.2.0",
+    "minimist": "^1.2.5",
     "request": "^2.88.0",
-    "retire": "^2.0.3",
+    "retire": "^2.2.0",
     "toml": "^3.0.0"
   },
   "resolutions": {
