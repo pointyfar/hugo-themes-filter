@@ -39,3 +39,13 @@ I `git submodule`-d the [Hugo themes repo](https://github.com/gohugoio/hugoTheme
 #### Whooops
 
 Find something broken? Do let me know by emailing me at [pointyfar@gmail.com](mailto:pointyfar@gmail.com)! 
+
+
+**Updating Themes**
+
+```
+git submodule foreach git pull origin master
+cd all-themes
+git submodule update --init
+gulp themes
+```
