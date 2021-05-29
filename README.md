@@ -47,5 +47,6 @@ Find something broken? Do let me know by emailing me at [pointyfar@gmail.com](ma
 git submodule foreach git pull origin master
 cd all-themes
 git submodule update --init
+cd ../
 gulp themes
 ```
