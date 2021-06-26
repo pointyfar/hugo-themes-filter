@@ -1,3 +1,50 @@
 [submodule "all-themes"]
 	path = all-themes
 	url = https://github.com/gohugoio/hugoThemes.git
+[submodule "all-components/hugo-utilitybelt"]
+	path = all-components/hugo-utilitybelt
+	url = https://github.com/lockedatapublished/hugo-utilitybelt.git
+	branch = master
+[submodule "all-components/hugo-search-fuse-js"]
+	path = all-components/hugo-search-fuse-js
+	url = https://github.com/kaushalmodi/hugo-search-fuse-js
+	branch = master
+[submodule "all-components/hugo-cloak-email"]
+	path = all-components/hugo-cloak-email
+	url = https://github.com/martignoni/hugo-cloak-email
+	branch = master
+[submodule "all-components/hugo-notice"]
+	path = all-components/hugo-notice
+	url = https://github.com/martignoni/hugo-notice
+	branch = master
+[submodule "all-components/juliette-hugo-component"]
+	path = all-components/juliette-hugo-component
+	url = https://github.com/regisphilibert/juliette-hugo-component
+	branch = master
+[submodule "all-components/hugo-atom-feed"]
+	path = all-components/hugo-atom-feed
+	url = https://github.com/kaushalmodi/hugo-atom-feed
+	branch = master
+[submodule "all-components/hugo-shortcode-gallery"]
+	path = all-components/hugo-shortcode-gallery
+	url = https://github.com/mfg92/hugo-shortcode-gallery
+	branch = master
+[submodule "all-components/my-hugo-extras"]
+	path = all-components/my-hugo-extras
+	url = https://github.com/brainspark/my-hugo-extras
+	branch = master
+[submodule "all-components/hugo-jf2"]
+	path = all-components/hugo-jf2
+	url = https://github.com/kaushalmodi/hugo-jf2
+	branch = master
+[submodule "all-components/hugo-external-site"]
+	path = all-components/hugo-external-site
+	url = https://github.com/ikemo3/hugo-external-site
+	branch = master
+[submodule "all-components/dnb-hugo-shortcodes"]
+	path = all-components/dnb-hugo-shortcodes
+	url = https://github.com/davidsneighbour/dnb-hugo-shortcodes
+	branch = master
+[submodule "all-components/fractal-forest"]
+	path = all-components/fractal-forest
+	url = https://git.habd.as/comfusion/fractal-forest
